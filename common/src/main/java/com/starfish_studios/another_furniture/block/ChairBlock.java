@@ -6,16 +6,17 @@ import com.starfish_studios.another_furniture.util.block.ShapeUtil;
 import com.starfish_studios.another_furniture.util.block.TuckableBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -29,7 +30,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class ChairBlock extends SeatBlock implements SimpleWaterloggedBlock, HammerableBlock, TuckableBlock {
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final IntegerProperty VARIANT = ModBlockStateProperties.VARIANT;
 
@@ -93,20 +94,22 @@ public class ChairBlock extends SeatBlock implements SimpleWaterloggedBlock, Ham
     }
 
     @Override
-    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
-        if (state.getValue(WATERLOGGED)) level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+    public BlockState updateShape(final BlockState state, final LevelReader level, final ScheduledTickAccess ticks, final BlockPos currentPos, final Direction direction, final BlockPos neighbourPos, final BlockState neighbourState, final RandomSource random) {
+        if (state.getValue(WATERLOGGED)) {
+            ticks.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+        }
         if (state.getValue(TUCKED) && level instanceof Level level1) {
             if (!TuckableBlock.canTuckUnderBlockInfront(state, level1, currentPos)) {
                 return state.setValue(TUCKED, false);
             }
         }
-        return super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
+        return super.updateShape(state, level, ticks, currentPos, direction, neighbourPos, neighbourState, random);
     }
 
     @Override
-    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
-        if (tryHammerBlock(VARIANT, stack, state, level, pos, player)) return ItemInteractionResult.SUCCESS;
-        return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+    protected InteractionResult useItemOn(final ItemStack stack, final BlockState state, final Level level, final BlockPos pos, final Player player, final InteractionHand hand, final BlockHitResult hitResult) {
+        if (tryHammerBlock(VARIANT, stack, state, level, pos, player)) return InteractionResult.SUCCESS;
+        return InteractionResult.PASS;
     }
 
     @Override

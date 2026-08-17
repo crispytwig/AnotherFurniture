@@ -42,7 +42,7 @@ public class SeatEntity extends Entity {
     }
     @Override
     public void tick() {
-        if (this.level().isClientSide) return;
+        if (this.level().isClientSide()) return;
 
         BlockState state = this.level().getBlockState(this.blockPosition());
         boolean canSit;

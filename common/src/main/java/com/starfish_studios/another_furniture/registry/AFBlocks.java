@@ -1,6 +1,7 @@
 package com.starfish_studios.another_furniture.registry;
 
 import com.starfish_studios.another_furniture.block.*;
+import com.starfish_studios.another_furniture.block.ShelfBlock;
 import com.starfish_studios.another_furniture.block.properties.ModBlockStateProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;

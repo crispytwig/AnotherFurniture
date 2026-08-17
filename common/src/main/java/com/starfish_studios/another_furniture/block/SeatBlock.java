@@ -5,6 +5,7 @@ import com.starfish_studios.another_furniture.registry.AFBlockTags;
 import com.starfish_studios.another_furniture.registry.AFEntityTypeTags;
 import com.starfish_studios.another_furniture.registry.AFRegistry;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -57,7 +58,7 @@ public class SeatBlock extends Block {
         }
 
 
-        if (level.isClientSide) return InteractionResult.SUCCESS;
+        if (level.isClientSide()) return InteractionResult.SUCCESS;
         sitDown(level, pos, getLeashed(player).orElse(player));
         return InteractionResult.SUCCESS;
     }
@@ -104,18 +105,18 @@ public class SeatBlock extends Block {
     public static boolean ejectSeatedExceptPlayer(Level level, SeatEntity seatEntity) {
         List<Entity> passengers = seatEntity.getPassengers();
         if (!passengers.isEmpty() && passengers.get(0) instanceof Player) return false;
-        if (!level.isClientSide) seatEntity.ejectPassengers();
+        if (!level.isClientSide()) seatEntity.ejectPassengers();
         return true;
     }
 
     public static boolean canBePickedUp(Entity passenger) {
         if (passenger instanceof Player) return false;
         if (passenger instanceof TamableAnimal ta && !ta.isTame()) return false;
-        return passenger instanceof LivingEntity && passenger.getType().is(AFEntityTypeTags.CAN_SIT_IN_SEATS);
+        return passenger instanceof LivingEntity && passenger.is(AFEntityTypeTags.CAN_SIT_IN_SEATS);
     }
 
     public static void sitDown(Level level, BlockPos pos, Entity entity) {
-        if (level.isClientSide) return;
+        if (level.isClientSide()) return;
 
         SeatEntity seat = new SeatEntity(level, pos);
         level.addFreshEntity(seat);
@@ -137,7 +138,7 @@ public class SeatBlock extends Block {
     }
 
     @Override
-    public int getAnalogOutputSignal(BlockState state, Level level, BlockPos pos) {
+    public int getAnalogOutputSignal(final BlockState state, final Level level, final BlockPos pos, final Direction direction) {
         return isSeatOccupied(level, pos) ? 15 : 0;
     }
 }

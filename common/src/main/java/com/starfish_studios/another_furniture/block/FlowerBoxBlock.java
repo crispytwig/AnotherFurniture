@@ -8,6 +8,7 @@ import com.starfish_studios.another_furniture.registry.AFItemTags;
 import com.starfish_studios.another_furniture.util.block.BlockPart;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -19,13 +20,13 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.BlockHitResult;
@@ -39,7 +40,7 @@ public class FlowerBoxBlock extends BaseEntityBlock {
         return CODEC;
     }
 
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final EnumProperty<HorizontalConnectionType> TYPE = ModBlockStateProperties.HORIZONTAL_CONNECTION_TYPE;
     public static final BooleanProperty ATTACHED = BlockStateProperties.ATTACHED;
     protected static final VoxelShape NORTH_AABB = Block.box(0, 10, 8, 16, 16, 16);
@@ -81,7 +82,7 @@ public class FlowerBoxBlock extends BaseEntityBlock {
     }
 
     @Override
-    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
+    public BlockState updateShape(final BlockState state, final LevelReader level, final ScheduledTickAccess ticks, final BlockPos currentPos, final Direction direction, final BlockPos neighbourPos, final BlockState neighbourState, final RandomSource random) {
         BlockState above = level.getBlockState(currentPos.above());
         boolean attached = state.getValue(ATTACHED);
         if (direction == Direction.UP && attached && above.isFaceSturdy(level, currentPos, Direction.DOWN)) {
@@ -126,18 +127,18 @@ public class FlowerBoxBlock extends BaseEntityBlock {
 
 
     @Override
-    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+    protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         BlockEntity blockEntity = level.getBlockEntity(pos);
-        if (!(blockEntity instanceof FlowerBoxBlockEntity flowerBoxBE)) return ItemInteractionResult.FAIL;
+        if (!(blockEntity instanceof FlowerBoxBlockEntity flowerBoxBE)) return InteractionResult.FAIL;
 
-        if (!stack.is(AFItemTags.FLOWER_BOX_PLACEABLES) || stack.is(AFItemTags.FLOWER_BOX_BANNED)) return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+        if (!stack.is(AFItemTags.FLOWER_BOX_PLACEABLES) || stack.is(AFItemTags.FLOWER_BOX_BANNED)) return InteractionResult.PASS;
 
         Direction facing = state.getValue(FACING);
         int slot = BlockPart.get1D(pos, hitResult.getLocation(), facing.getClockWise(), 2);
-        if (!level.isClientSide && flowerBoxBE.placeFlower(player.getAbilities().instabuild ? stack.copy() : stack, slot))
-            return ItemInteractionResult.SUCCESS;
+        if (!level.isClientSide() && flowerBoxBE.placeFlower(player.getAbilities().instabuild ? stack.copy() : stack, slot))
+            return InteractionResult.SUCCESS;
 
-        return ItemInteractionResult.CONSUME;
+        return InteractionResult.CONSUME;
     }
 
     @Override

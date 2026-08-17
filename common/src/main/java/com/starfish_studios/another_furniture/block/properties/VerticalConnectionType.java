@@ -1,7 +1,6 @@
 package com.starfish_studios.another_furniture.block.properties;
 
 import net.minecraft.util.StringRepresentable;
-import net.minecraft.world.level.block.state.BlockState;
 
 public enum VerticalConnectionType implements StringRepresentable {
     SINGLE("single"),

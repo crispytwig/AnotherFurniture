@@ -10,7 +10,6 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
@@ -26,6 +25,7 @@ import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.pathfinder.PathComputationType;
+import net.minecraft.world.level.redstone.Orientation;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -39,7 +39,7 @@ public class LampBlock extends Block implements SimpleWaterloggedBlock {
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final BooleanProperty LIT = BlockStateProperties.LIT;
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
-    public static final DirectionProperty FACING = ModBlockStateProperties.FACING_EXCEPT_DOWN;
+    public static final EnumProperty<Direction> FACING = ModBlockStateProperties.FACING_EXCEPT_DOWN;
     public static final IntegerProperty LEVEL = ModBlockStateProperties.LEVEL_1_3;
     public static final BooleanProperty BASE = ModBlockStateProperties.BASE;
 
@@ -127,8 +127,8 @@ public class LampBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     @Override
-    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
-        if (level.isClientSide) return;
+    public void neighborChanged(final BlockState state, final Level level, final BlockPos pos, final Block block, final @Nullable Orientation orientation, final boolean movedByPiston) {
+        if (level.isClientSide()) return;
 
         BlockState below = level.getBlockState(pos.below());
         boolean powered = level.hasNeighborSignal(pos) || (below.getBlock() instanceof LampConnectorBlock && below.getValue(POWERED));
@@ -143,9 +143,9 @@ public class LampBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     @Override
-    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+    protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         if (player.getItemInHand(hand).is(AFItemTags.LAMPS) && state.getValue(FACING) == Direction.UP && hitResult.getDirection() == Direction.UP) {
-            return ItemInteractionResult.FAIL; //todo check if can place lamps on top
+            return InteractionResult.FAIL; //todo check if can place lamps on top
         }
         if (player.isCrouching()) {
             int light = state.getValue(LEVEL);
@@ -157,7 +157,7 @@ public class LampBlock extends Block implements SimpleWaterloggedBlock {
         }
         level.setBlock(pos, state, 3);
         level.playSound(null, pos, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS, 1.0f, 1.0f);
-        return ItemInteractionResult.sidedSuccess(level.isClientSide);
+        return level.isClientSide() ? InteractionResult.SUCCESS : InteractionResult.SUCCESS_SERVER;
     }
 
     @Override

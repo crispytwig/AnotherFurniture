@@ -1,7 +1,6 @@
 package com.starfish_studios.another_furniture.registry;
 
 import com.starfish_studios.another_furniture.AnotherFurniture;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 
 import java.util.function.Supplier;

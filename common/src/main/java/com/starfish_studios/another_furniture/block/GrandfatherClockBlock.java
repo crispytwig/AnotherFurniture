@@ -25,7 +25,6 @@ package com.starfish_studios.another_furniture.block;
 //import net.minecraft.world.level.block.state.StateDefinition;
 //import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 //import net.minecraft.world.level.block.state.properties.BooleanProperty;
-//import net.minecraft.world.level.block.state.properties.DirectionProperty;
 //import net.minecraft.world.level.block.state.properties.EnumProperty;
 //import net.minecraft.world.level.material.FluidState;
 //import net.minecraft.world.level.material.Fluids;
@@ -38,7 +37,7 @@ package com.starfish_studios.another_furniture.block;
 //public class GrandfatherClockBlock extends BaseEntityBlock implements SimpleWaterloggedBlock {
 //
 //    public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-//    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+//    public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
 //    public static final EnumProperty<VerticalConnectionType> TYPE = ModBlockStateProperties.VERTICAL_CONNECTION_NO_SINGLE_TYPE;
 //
 //    protected static final VoxelShape AABB_BOTTOM_NORTH = Shapes.or(Block.box(0, 0, 2, 16, 12, 14), Block.box(2, 12, 4, 14, 16, 12));

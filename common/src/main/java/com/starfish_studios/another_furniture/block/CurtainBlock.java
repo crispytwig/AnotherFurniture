@@ -2,28 +2,25 @@ package com.starfish_studios.another_furniture.block;
 
 import com.starfish_studios.another_furniture.block.properties.HorizontalConnectionType;
 import com.starfish_studios.another_furniture.block.properties.ModBlockStateProperties;
-import com.starfish_studios.another_furniture.block.properties.VerticalConnectionType;
 import com.starfish_studios.another_furniture.registry.AFSoundEvents;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
@@ -34,11 +31,11 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class CurtainBlock extends Block implements SimpleWaterloggedBlock {
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final EnumProperty<HorizontalConnectionType> HORIZONTAL_CONNECTION_TYPE = ModBlockStateProperties.HORIZONTAL_CONNECTION_TYPE;
     public static final BooleanProperty OPEN = BlockStateProperties.OPEN;
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
-    public static final DirectionProperty VERTICAL_CONNECTION_TYPE = ModBlockStateProperties.VERTICAL_CONNECTION_TYPE_UP_DOWN;
+    public static final EnumProperty<Direction> VERTICAL_CONNECTION_TYPE = ModBlockStateProperties.VERTICAL_CONNECTION_TYPE_UP_DOWN;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     protected static final VoxelShape NORTH = Block.box(0.0D, 0.0D, 14.0D, 16.0D, 16.0D, 16.0D);
@@ -119,18 +116,20 @@ public class CurtainBlock extends Block implements SimpleWaterloggedBlock {
 
     public void setPlacedBy(Level level, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack stack) {
         super.setPlacedBy(level, pos, state, placer, stack);
-        if (level.isClientSide) return;
+        if (level.isClientSide()) return;
 
         BlockPos blockPos = pos.below();
 
         level.setBlock(blockPos, state.setValue(VERTICAL_CONNECTION_TYPE, Direction.DOWN).setValue(WATERLOGGED, level.getFluidState(blockPos).getType() == Fluids.WATER), 3);
-        level.blockUpdated(pos, Blocks.AIR);
+        level.updateNeighborsAt(pos, Blocks.AIR);
         state.updateNeighbourShapes(level, pos, 3);
     }
 
     @Override
-    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
-        if (state.getValue(WATERLOGGED)) level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+    public BlockState updateShape(final BlockState state, final LevelReader level, final ScheduledTickAccess ticks, final BlockPos currentPos, final Direction direction, final BlockPos neighbourPos, final BlockState neighbourState, final RandomSource random) {
+        if (state.getValue(WATERLOGGED)) {
+            ticks.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+        }
         Direction facing = state.getValue(FACING);
         Direction facing_vertical = state.getValue(VERTICAL_CONNECTION_TYPE);
         if (direction.getAxis().isVertical()) {
@@ -157,7 +156,7 @@ public class CurtainBlock extends Block implements SimpleWaterloggedBlock {
 
 
         level.playSound(null, pos, AFSoundEvents.CURTAIN.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
-        return InteractionResult.sidedSuccess(level.isClientSide);
+        return level.isClientSide() ? InteractionResult.SUCCESS : InteractionResult.SUCCESS_SERVER;
     }
 
     public void toggleFromTop(BlockState state, Level level, BlockPos pos) {

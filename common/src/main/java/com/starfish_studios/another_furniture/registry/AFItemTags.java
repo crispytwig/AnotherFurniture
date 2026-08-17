@@ -3,7 +3,6 @@ package com.starfish_studios.another_furniture.registry;
 import com.starfish_studios.another_furniture.AnotherFurniture;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;

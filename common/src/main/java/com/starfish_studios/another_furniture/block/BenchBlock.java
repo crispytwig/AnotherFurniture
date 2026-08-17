@@ -5,16 +5,17 @@ import com.starfish_studios.another_furniture.block.properties.ModBlockStateProp
 import com.starfish_studios.another_furniture.util.block.HammerableBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -29,7 +30,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class BenchBlock extends SeatBlock implements SimpleWaterloggedBlock, HammerableBlock {
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final EnumProperty<HorizontalConnectionType> CONNECTION_TYPE = ModBlockStateProperties.HORIZONTAL_CONNECTION_TYPE_1;
     public static final EnumProperty<HorizontalConnectionType> BACK_TYPE = ModBlockStateProperties.HORIZONTAL_CONNECTION_TYPE_2;
     public static final BooleanProperty BACK = ModBlockStateProperties.BACK;
@@ -92,9 +93,9 @@ public class BenchBlock extends SeatBlock implements SimpleWaterloggedBlock, Ham
     }
 
     @Override
-    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
+    public BlockState updateShape(final BlockState state, final LevelReader level, final ScheduledTickAccess ticks, final BlockPos currentPos, final Direction direction, final BlockPos neighbourPos, final BlockState neighbourState, final RandomSource random) {
         if (state.getValue(WATERLOGGED)) {
-            level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+            ticks.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         }
         Direction facing = state.getValue(FACING);
         if (direction != facing.getClockWise() && direction != facing.getCounterClockWise()) return state;
@@ -114,9 +115,9 @@ public class BenchBlock extends SeatBlock implements SimpleWaterloggedBlock, Ham
 
 
     @Override
-    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
-        if (tryHammerBlock(BACK, stack, state, level, pos, player)) return ItemInteractionResult.SUCCESS;
-        return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+    protected InteractionResult useItemOn(final ItemStack stack, final BlockState state, final Level level, final BlockPos pos, final Player player, final InteractionHand hand, final BlockHitResult hitResult) {
+        if (tryHammerBlock(BACK, stack, state, level, pos, player)) return InteractionResult.SUCCESS;
+        return InteractionResult.PASS;
     }
 
     @Override

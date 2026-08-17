@@ -42,7 +42,7 @@ public class SmallShelfBlock extends BaseEntityBlock implements SimpleWaterlogge
 
     public static final EnumProperty<HorizontalConnectionType> TYPE = ModBlockStateProperties.HORIZONTAL_CONNECTION_TYPE;
     public static final EnumProperty<SlabType> HALF = ModBlockStateProperties.HALF;
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     protected static final VoxelShape TOP_AABB_NORTH = Block.box(0, 14, 8, 16, 16, 16);

@@ -4,15 +4,18 @@ import com.starfish_studios.another_furniture.block.properties.ModBlockStateProp
 import com.starfish_studios.another_furniture.registry.AFBlockTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.pathfinder.PathComputationType;
@@ -22,7 +25,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class TableBlock extends Block implements SimpleWaterloggedBlock {
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty LEG1 = ModBlockStateProperties.LEG_1;
     public static final BooleanProperty LEG2 = ModBlockStateProperties.LEG_2;
     public static final BooleanProperty LEG3 = ModBlockStateProperties.LEG_3;
@@ -87,8 +90,10 @@ public class TableBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     @Override
-    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
-        if (state.getValue(WATERLOGGED)) level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+    public BlockState updateShape(final BlockState state, final LevelReader level, final ScheduledTickAccess ticks, final BlockPos currentPos, final Direction direction, final BlockPos neighbourPos, final BlockState neighbourState, final RandomSource random) {
+        if (state.getValue(WATERLOGGED)) {
+            ticks.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+        }
         return getConnections(state, level, currentPos);
     }
 
@@ -140,7 +145,7 @@ public class TableBlock extends Block implements SimpleWaterloggedBlock {
         return false;
     }
 
-    public BlockState getConnections(BlockState state, LevelAccessor level, BlockPos pos) {
+    public BlockState getConnections(BlockState state, BlockGetter level, BlockPos pos) {
         boolean n = validConnection(level.getBlockState(pos.north()));
         boolean e = validConnection(level.getBlockState(pos.east()));
         boolean s = validConnection(level.getBlockState(pos.south()));

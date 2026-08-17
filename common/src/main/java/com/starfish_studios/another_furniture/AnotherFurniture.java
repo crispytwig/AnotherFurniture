@@ -2,7 +2,9 @@ package com.starfish_studios.another_furniture;
 
 import com.starfish_studios.another_furniture.integration.IntegrationHandler;
 import com.starfish_studios.another_furniture.registry.*;
-import net.minecraft.resources.ResourceLocation;
+
+import net.minecraft.resources.Identifier;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,7 +24,7 @@ public class AnotherFurniture {
         IntegrationHandler.init();
     }
 
-    public static ResourceLocation res(String name) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
+    public static Identifier res(String name) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, name);
     }
 }
