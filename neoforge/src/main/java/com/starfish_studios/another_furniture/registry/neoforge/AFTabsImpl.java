@@ -12,10 +12,10 @@ import java.util.function.Supplier;
 
 public class AFTabsImpl {
     public static final Supplier<CreativeModeTab> AFM_TAB = AFRegistryImpl.MOD_TABS.register(AnotherFurniture.MOD_ID, () -> CreativeModeTab.builder()
-            .icon(() -> new ItemStack(AFBlocks.OAK_CHAIR.get().asItem()))
+            .icon(() -> new ItemStack(AFBlocks.OAK_CHAIR.asItem()))
             .title(Component.translatable("item_group." + AnotherFurniture.MOD_ID + ".tab"))
             .displayItems(((parameters, output) -> {
-                output.acceptAll(AFRegistry.getAllModItems());
+                AFRegistry.getAllModItems().forEach((item) -> output.accept(item));
             })).build());
 
     public static void register(IEventBus eventBus) {

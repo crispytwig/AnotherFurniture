@@ -1,13 +1,17 @@
 package com.starfish_studios.another_furniture.registry.neoforge;
 
+import com.google.common.base.Function;
 import com.starfish_studios.another_furniture.AnotherFurniture;
 import com.starfish_studios.another_furniture.mixin.neoforge.FireBlockAccessor;
 import com.starfish_studios.another_furniture.registry.AFRegistry;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.blockentity.state.BlockEntityRenderState;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.references.BlockItemId;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -20,6 +24,7 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.common.util.FakePlayer;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -41,16 +46,28 @@ public class AFRegistryImpl {
 
     public static final HashMap<String, List<Supplier<? extends ItemLike>>> ITEMS_TAB_MAP = new HashMap<>();
 
-    public static <T extends Block> Supplier<T> registerBlock(String name, Supplier<T> block) {
-        return BLOCKS.register(name, block);
+    public static Block registerBlockItem(BlockItemId id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
+        var block = registerBlock(id.block(), blockFactory, properties);
+        var item = registerItem(id.item(), (p) -> new Item(p), new Item.Properties());
+        return block;
     }
 
-    public static <T extends Item> Supplier<T> registerItem(String name, Supplier<T> item, String tab_id) {
-        if (tab_id != null) {
-            ITEMS_TAB_MAP.computeIfAbsent(tab_id, k -> new ArrayList<>());
-            ITEMS_TAB_MAP.get(tab_id).add(item);
-        }
-        return ITEMS.register(name, item);
+    public static Block registerBlock(ResourceKey<Block> key, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
+        return BLOCKS.register(key.identifier().getPath(), () -> blockFactory.apply(properties.setId(key))).get();
+    }
+
+    public static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
+        var key = ResourceKey.create(Registries.BLOCK, AnotherFurniture.res(name));
+        return registerBlock(key, blockFactory, properties);
+    }
+
+    public static Item registerItem(ResourceKey<Item> key, Function<Item.Properties, Item> itemFactory, Item.Properties properties) {
+        return ITEMS.register(key.identifier().getPath(), () -> itemFactory.apply(properties)).get();
+    }
+
+    public static Item registerItem(String name, Function<Item.Properties, Item> itemFactory, Item.Properties properties) {
+        var key = ResourceKey.create(Registries.ITEM, AnotherFurniture.res(name));
+        return registerItem(key, itemFactory, properties);
     }
 
     public static <T extends SoundEvent> Supplier<T> registerSoundEvent(String name, Supplier<T> soundEvent) {
@@ -58,7 +75,8 @@ public class AFRegistryImpl {
     }
 
     public static <T extends Entity> Supplier<EntityType<T>> registerEntityType(String name, EntityType.EntityFactory<T> factory, MobCategory category, float width, float height) {
-        return ENTITY_TYPES.register(name, () -> EntityType.Builder.of(factory, category).sized(width, height).build(name));
+        var key = ResourceKey.create(Registries.ENTITY_TYPE, AnotherFurniture.res(name));
+        return ENTITY_TYPES.register(name, () -> EntityType.Builder.of(factory, category).sized(width, height).build(key));
     }
 
     public static <T extends BlockEntityType<E>, E extends BlockEntity> Supplier<T> registerBlockEntityType(String name, Supplier<T> blockEntity) {
@@ -66,14 +84,14 @@ public class AFRegistryImpl {
     }
 
     public static <T extends BlockEntity> BlockEntityType<T> createBlockEntityType(AFRegistry.BlockEntitySupplier<T> blockEntity, Block... validBlocks) {
-        return BlockEntityType.Builder.of(blockEntity::create, validBlocks).build(null);
+        return new BlockEntityType<>(blockEntity::create, validBlocks);
     }
 
     public static <T extends Entity> void registerEntityRenderers(Supplier<EntityType<T>> type, EntityRendererProvider<T> renderProvider) {
         EntityRenderers.register(type.get(), renderProvider);
     }
 
-    public static <T extends BlockEntity> void registerBlockEntityRenderer(Supplier<BlockEntityType<T>> type, BlockEntityRendererProvider<T> renderProvider) {
+    public static <T extends BlockEntity, S extends BlockEntityRenderState> void registerBlockEntityRenderer(Supplier<BlockEntityType<T>> type, BlockEntityRendererProvider<T, S> renderProvider) {
         BlockEntityRenderers.register(type.get(), renderProvider);
     }
 
