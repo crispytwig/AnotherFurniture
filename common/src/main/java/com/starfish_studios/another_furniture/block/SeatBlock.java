@@ -63,24 +63,20 @@ public class SeatBlock extends Block {
         return InteractionResult.SUCCESS;
     }
 
-//    @Override
-//    public void updateEntityAfterFallOn(BlockGetter reader, Entity entity) {
-//        BlockPos pos = entity.blockPosition();
-//        if (reader.getBlockState(pos).getBlock() != this) {
-//            pos = pos.below(); // Might be a full height block, like the Tall Stool
-//            if (reader.getBlockState(pos).getBlock() != this) {
-//                super.updateEntityAfterFallOn(reader, entity);
-//                return;
-//            }
-//        }
-//
-//        if (!(entity instanceof LivingEntity) || !canBePickedUp(entity) || isSeatOccupied(entity.level(), pos)) {
-//            super.updateEntityAfterFallOn(reader, entity);
-//            return;
-//        }
-//
-//        sitDown(entity.level(), pos, entity);
-//    }
+    public void fallOn(final Level level, final BlockState state, final BlockPos pos, final Entity entity, final double fallDistance) {
+        var belowPos = pos.below();
+        if (level.getBlockState(belowPos).getBlock() != this) {
+            super.fallOn(level, state, pos, entity, fallDistance);
+            return;
+        }
+
+        if (!(entity instanceof LivingEntity) || !canBePickedUp(entity) || isSeatOccupied(level, belowPos)) {
+            super.fallOn(level, state, pos, entity, fallDistance);
+            return;
+        }
+
+        sitDown(level, belowPos, entity);
+    }
 
     public static boolean isSeatBlocked(Level level, BlockPos pos) {
         return !(level.getBlockState(pos.above()).getCollisionShape(level, pos).isEmpty() ||
