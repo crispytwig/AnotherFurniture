@@ -134,7 +134,7 @@ public class FlowerBoxBlock extends BaseEntityBlock {
 
         Direction facing = state.getValue(FACING);
         int slot = BlockPart.get1D(pos, hitResult.getLocation(), facing.getClockWise(), 2);
-        if (!level.isClientSide() && flowerBoxBE.placeFlower(player.getAbilities().instabuild ? stack.copy() : stack, slot))
+        if (flowerBoxBE.placeFlower(player.getAbilities().instabuild ? stack.copy() : stack, slot))
             return InteractionResult.SUCCESS;
 
         return InteractionResult.CONSUME;

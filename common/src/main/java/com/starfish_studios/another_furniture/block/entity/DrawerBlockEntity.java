@@ -1,5 +1,7 @@
 package com.starfish_studios.another_furniture.block.entity;
 
+import java.util.List;
+
 import com.starfish_studios.another_furniture.block.DrawerBlock;
 import com.starfish_studios.another_furniture.registry.AFBlockEntityTypes;
 import net.minecraft.core.BlockPos;
@@ -13,6 +15,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.Container;
 import net.minecraft.world.ContainerHelper;
+import net.minecraft.world.entity.ContainerUser;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -57,6 +60,7 @@ public class DrawerBlockEntity extends RandomizableContainerBlockEntity {
         };
     }
 
+    @Override
     protected void saveAdditional(final ValueOutput output) {
         super.saveAdditional(output);
         if (!this.trySaveLootTable(output)) {
@@ -77,37 +81,49 @@ public class DrawerBlockEntity extends RandomizableContainerBlockEntity {
 
     }
 
+    @Override
     public int getContainerSize() {
         return 27;
     }
 
+    @Override
     protected NonNullList<ItemStack> getItems() {
         return this.items;
     }
 
+    @Override
     protected void setItems(NonNullList<ItemStack> itemStacks) {
         this.items = itemStacks;
     }
 
+    @Override
     protected Component getDefaultName() {
         return Component.translatable("container.another_furniture.drawer");
     }
 
+    @Override
     protected AbstractContainerMenu createMenu(int containerId, Inventory inventory) {
         return ChestMenu.threeRows(containerId, inventory, this);
     }
 
-    public void startOpen(Player player) {
+    @Override
+    public void startOpen(ContainerUser player) {
         if (!this.remove && !player.getLivingEntity().isSpectator()) {
             this.openersCounter.incrementOpeners(player.getLivingEntity(), this.getLevel(), this.getBlockPos(), this.getBlockState(), player.getContainerInteractionRange());
         }
     }
 
-    public void stopOpen(Player player) {
+    @Override
+    public void stopOpen(ContainerUser player) {
         if (!this.remove && !player.getLivingEntity().isSpectator()) {
             this.openersCounter.decrementOpeners(player.getLivingEntity(), this.getLevel(), this.getBlockPos(), this.getBlockState());
         }
     }
+
+    @Override
+	public List<ContainerUser> getEntitiesWithContainerOpen() {
+		return this.openersCounter.getEntitiesWithContainerOpen(this.getLevel(), this.getBlockPos());
+	}
 
     public void recheckOpen() {
         if (!this.remove) {

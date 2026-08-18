@@ -58,6 +58,10 @@ public class DrawerBlock extends BaseEntityBlock {
         return InteractionResult.SUCCESS;
     }
 
+    protected void affectNeighborsAfterRemoval(final BlockState state, final ServerLevel level, final BlockPos pos, final boolean movedByPiston) {
+        Containers.updateNeighboursAfterDestroy(state, level, pos);
+    }
+
     /*
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
         if (state.is(newState.getBlock())) return;
@@ -71,7 +75,7 @@ public class DrawerBlock extends BaseEntityBlock {
     }
     */
 
-    public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+    protected void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         BlockEntity blockEntity = level.getBlockEntity(pos);
         if (blockEntity instanceof DrawerBlockEntity drawerBE) drawerBE.recheckOpen();
     }
@@ -81,9 +85,6 @@ public class DrawerBlock extends BaseEntityBlock {
         return new DrawerBlockEntity(pos, state);
     }
 
-    public RenderShape getRenderShape(BlockState state) {
-        return RenderShape.MODEL;
-    }
 
     public boolean hasAnalogOutputSignal(BlockState state) {
         return true;

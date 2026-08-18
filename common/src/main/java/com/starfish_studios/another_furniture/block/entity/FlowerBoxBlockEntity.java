@@ -50,11 +50,6 @@ public class FlowerBoxBlockEntity extends BlockEntity implements Clearable {
     }
 
     @Override
-    public ClientboundBlockEntityDataPacket getUpdatePacket() {
-        return ClientboundBlockEntityDataPacket.create(this);
-    }
-
-    @Override
     public CompoundTag getUpdateTag(final HolderLookup.Provider registries) {
         CompoundTag compoundtag = new CompoundTag();
         //ContainerHelper.saveAllItems(registries, this.items, true);
@@ -77,7 +72,7 @@ public class FlowerBoxBlockEntity extends BlockEntity implements Clearable {
 
     private void markUpdated() {
         this.setChanged();
-        this.getLevel().sendBlockUpdated(this.getBlockPos(), this.getBlockState(), this.getBlockState(), 3);
+        //this.getLevel().sendBlockUpdated(this.getBlockPos(), this.getBlockState(), this.getBlockState(), 3);
     }
 
     @Override

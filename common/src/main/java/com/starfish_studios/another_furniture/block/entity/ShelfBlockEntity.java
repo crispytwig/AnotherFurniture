@@ -9,6 +9,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.Clearable;
+import net.minecraft.world.Container;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -16,18 +17,20 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.ListBackedContainer;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.phys.AABB;
 
-public class ShelfBlockEntity extends BlockEntity implements Clearable {
+public class ShelfBlockEntity extends BlockEntity implements ListBackedContainer {
     private final NonNullList<ItemStack> items = NonNullList.withSize(4, ItemStack.EMPTY);
 
     public ShelfBlockEntity(BlockPos blockPos, BlockState blockState) {
         super(AFBlockEntityTypes.SHELF.get(), blockPos, blockState);
     }
 
+    @Override
     public NonNullList<ItemStack> getItems() {
         return this.items;
     }
@@ -45,6 +48,7 @@ public class ShelfBlockEntity extends BlockEntity implements Clearable {
         ContainerHelper.saveAllItems(output, this.items, true);
     }
 
+    @Override
     public ClientboundBlockEntityDataPacket getUpdatePacket() {
         return ClientboundBlockEntityDataPacket.create(this);
     }
@@ -85,6 +89,7 @@ public class ShelfBlockEntity extends BlockEntity implements Clearable {
         this.getLevel().sendBlockUpdated(this.getBlockPos(), this.getBlockState(), this.getBlockState(), 3);
     }
 
+    @Override
     public void clearContent() {
         this.items.clear();
     }
@@ -111,5 +116,10 @@ public class ShelfBlockEntity extends BlockEntity implements Clearable {
     @PlatformOnly(PlatformOnly.FORGE)
     public AABB getRenderBoundingBox() {
         return new AABB(worldPosition.offset(0, 1, 0));
+    }
+
+    @Override
+    public boolean stillValid(final Player player) {
+        return Container.stillValidBlockEntity(this, player);
     }
 }
