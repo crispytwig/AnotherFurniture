@@ -14,7 +14,6 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -98,6 +97,7 @@ public class ShelfBlock extends BaseEntityBlock implements SimpleWaterloggedBloc
         return InteractionResult.PASS;
     }
 
+    /*
     @Override
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
         if (state.is(newState.getBlock())) return;
@@ -106,6 +106,7 @@ public class ShelfBlock extends BaseEntityBlock implements SimpleWaterloggedBloc
         if (blockentity instanceof ShelfBlockEntity shelfBE) Containers.dropContents(level, pos, shelfBE.getItems());
         super.onRemove(state, level, pos, newState, isMoving);
     }
+    */
 
     @Override
     public boolean useShapeForLightOcclusion(BlockState state) {

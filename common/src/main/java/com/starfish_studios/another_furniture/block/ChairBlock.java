@@ -107,7 +107,7 @@ public class ChairBlock extends SeatBlock implements SimpleWaterloggedBlock, Ham
     }
 
     @Override
-    protected InteractionResult useItemOn(final ItemStack stack, final BlockState state, final Level level, final BlockPos pos, final Player player, final InteractionHand hand, final BlockHitResult hitResult) {
+    protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         if (tryHammerBlock(VARIANT, stack, state, level, pos, player)) return InteractionResult.SUCCESS;
         return InteractionResult.PASS;
     }

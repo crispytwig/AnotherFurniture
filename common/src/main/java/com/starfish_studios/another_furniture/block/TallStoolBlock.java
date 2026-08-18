@@ -75,6 +75,7 @@ public class TallStoolBlock extends SeatBlock implements SimpleWaterloggedBlock 
         super.fallOn(level, state, pos, entity, dmg * 0.5F);
     }
 
+    /*
     @Override
     public void updateEntityAfterFallOn(BlockGetter reader, Entity entity) {
         if (entity.isSuppressingBounce()) {
@@ -85,6 +86,7 @@ public class TallStoolBlock extends SeatBlock implements SimpleWaterloggedBlock 
         if (entity instanceof Player) return;
         super.updateEntityAfterFallOn(reader, entity);
     }
+    
 
     private void bounceUp(Entity entity) {
         Vec3 vec3 = entity.getDeltaMovement();
@@ -93,6 +95,7 @@ public class TallStoolBlock extends SeatBlock implements SimpleWaterloggedBlock 
         entity.setDeltaMovement(vec3.x, -vec3.y * (double)0.66F * d0, vec3.z);
 
     }
+    */
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {

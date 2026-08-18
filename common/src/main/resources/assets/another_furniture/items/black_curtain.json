@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "another_furniture:item/black_curtain"
+    }
+}

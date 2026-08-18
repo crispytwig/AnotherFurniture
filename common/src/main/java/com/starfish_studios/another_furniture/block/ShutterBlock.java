@@ -87,27 +87,26 @@ public class ShutterBlock extends Block implements SimpleWaterloggedBlock, Hamme
     }
 
     @Override
-    public void neighborChanged(final BlockState state, final Level level, final BlockPos pos, final Block block, final @Nullable Orientation orientation, final boolean movedByPiston) {
+    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, @Nullable Orientation orientation, boolean movedByPiston) {
         if (level.isClientSide()) return;
 
         boolean powered = level.hasNeighborSignal(pos);
-        BlockState newState = state;
-        if (powered != newState.getValue(POWERED)) {
-            if (newState.getValue(OPEN) != powered) {
-                newState = newState.setValue(OPEN, powered);
-                toggleShutters(newState.setValue(OPEN, !powered), level, pos, null);
+        if (powered != state.getValue(POWERED)) {
+            if (state.getValue(OPEN) != powered) {
+                state = state.setValue(OPEN, powered);
+                toggleShutters(state.setValue(OPEN, !powered), level, pos, null);
             }
-            newState = newState.setValue(POWERED, powered);
-            if (newState.getValue(WATERLOGGED)) level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+            state = state.setValue(POWERED, powered);
+            if (state.getValue(WATERLOGGED)) level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
 
         }
-        VerticalConnectionType type = getType(newState, level.getBlockState(pos.above()), level.getBlockState(pos.below()));
-        newState = newState.setValue(VERTICAL, type);
-        level.setBlock(pos, newState, 3);
+        VerticalConnectionType type = getType(state, level.getBlockState(pos.above()), level.getBlockState(pos.below()));
+        state = state.setValue(VERTICAL, type);
+        level.setBlock(pos, state, 3);
     }
 
     @Override
-    protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+    protected InteractionResult useItemOn(final ItemStack stack, final BlockState state, final Level level, final BlockPos pos, final Player player, final InteractionHand hand, final BlockHitResult hitResult) {
         if (tryHammerBlock(VARIANT, stack, state, level, pos, player)) return InteractionResult.SUCCESS;
         return InteractionResult.PASS;
     }

@@ -15,14 +15,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.redstone.Orientation;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class LampConnectorBlock extends Block implements SimpleWaterloggedBlock {
@@ -36,6 +34,7 @@ public class LampConnectorBlock extends Block implements SimpleWaterloggedBlock 
 
     private final DyeColor color;
     public LampConnectorBlock(DyeColor color, Properties properties) {
+        properties.overrideDescription(getLampByColor(color).getDescriptionId());
         super(properties);
         this.color = color;
         this.registerDefaultState(this.stateDefinition.any()
@@ -85,7 +84,7 @@ public class LampConnectorBlock extends Block implements SimpleWaterloggedBlock 
     }
 
     @Override
-    public void neighborChanged(final BlockState state, final Level level, final BlockPos pos, final Block block, final @Nullable Orientation orientation, final boolean movedByPiston) {
+    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, @Nullable Orientation orientation, boolean movedByPiston) {
         if (level.isClientSide()) return;
 
         BlockState below = level.getBlockState(pos.below());
@@ -105,28 +104,22 @@ public class LampConnectorBlock extends Block implements SimpleWaterloggedBlock 
 
     public static Block getLampByColor(DyeColor color) {
         return switch (color) {
-            case WHITE -> AFBlocks.WHITE_LAMP.get();
-            case ORANGE -> AFBlocks.ORANGE_LAMP.get();
-            case MAGENTA -> AFBlocks.MAGENTA_LAMP.get();
-            case LIGHT_BLUE -> AFBlocks.LIGHT_BLUE_LAMP.get();
-            case YELLOW -> AFBlocks.YELLOW_LAMP.get();
-            case LIME -> AFBlocks.LIME_LAMP.get();
-            case PINK -> AFBlocks.PINK_LAMP.get();
-            case GRAY -> AFBlocks.GRAY_LAMP.get();
-            case LIGHT_GRAY -> AFBlocks.LIGHT_GRAY_LAMP.get();
-            case CYAN -> AFBlocks.CYAN_LAMP.get();
-            case PURPLE -> AFBlocks.PURPLE_LAMP.get();
-            case BLUE -> AFBlocks.BLUE_LAMP.get();
-            case BROWN -> AFBlocks.BROWN_LAMP.get();
-            case GREEN -> AFBlocks.GREEN_LAMP.get();
-            case RED -> AFBlocks.RED_LAMP.get();
-            case BLACK -> AFBlocks.BLACK_LAMP.get();
+            case WHITE -> AFBlocks.WHITE_LAMP;
+            case ORANGE -> AFBlocks.ORANGE_LAMP;
+            case MAGENTA -> AFBlocks.MAGENTA_LAMP;
+            case LIGHT_BLUE -> AFBlocks.LIGHT_BLUE_LAMP;
+            case YELLOW -> AFBlocks.YELLOW_LAMP;
+            case LIME -> AFBlocks.LIME_LAMP;
+            case PINK -> AFBlocks.PINK_LAMP;
+            case GRAY -> AFBlocks.GRAY_LAMP;
+            case LIGHT_GRAY -> AFBlocks.LIGHT_GRAY_LAMP;
+            case CYAN -> AFBlocks.CYAN_LAMP;
+            case PURPLE -> AFBlocks.PURPLE_LAMP;
+            case BLUE -> AFBlocks.BLUE_LAMP;
+            case BROWN -> AFBlocks.BROWN_LAMP;
+            case GREEN -> AFBlocks.GREEN_LAMP;
+            case RED -> AFBlocks.RED_LAMP;
+            case BLACK -> AFBlocks.BLACK_LAMP;
         };
-    }
-
-    @Override
-    public @NotNull String getDescriptionId() {
-        Block lamp = getLampByColor(color);
-        return lamp.getDescriptionId();
     }
 }

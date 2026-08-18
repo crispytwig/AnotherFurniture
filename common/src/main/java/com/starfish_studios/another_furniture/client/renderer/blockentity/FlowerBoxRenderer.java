@@ -1,3 +1,4 @@
+/*
 package com.starfish_studios.another_furniture.client.renderer.blockentity;
 
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -78,3 +79,4 @@ public class FlowerBoxRenderer implements BlockEntityRenderer<FlowerBoxBlockEnti
         poseStack.popPose();
     }
 }
+*/

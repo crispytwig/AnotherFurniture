@@ -107,6 +107,7 @@ public class ServiceBellBlock extends BaseEntityBlock implements SimpleWaterlogg
         level.gameEvent(null, GameEvent.BLOCK_DEACTIVATE, pos);
     }
 
+    /*
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
         if (!isMoving && !state.is(newState.getBlock())) {
             if (state.getValue(POWERED)) {
@@ -116,6 +117,7 @@ public class ServiceBellBlock extends BaseEntityBlock implements SimpleWaterlogg
             super.onRemove(state, level, pos, newState, isMoving);
         }
     }
+    */
 
     public int getSignal(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return state.getValue(POWERED) ? 15 : 0;
@@ -157,6 +159,6 @@ public class ServiceBellBlock extends BaseEntityBlock implements SimpleWaterlogg
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType) {
-        return createTickerHelper(blockEntityType, AFBlockEntityTypes.SERVICE_BELL.get(), level.isClientSide ? ServiceBellBlockEntity::clientTick : null);
+        return createTickerHelper(blockEntityType, AFBlockEntityTypes.SERVICE_BELL.get(), level.isClientSide() ? ServiceBellBlockEntity::clientTick : null);
     }
 }

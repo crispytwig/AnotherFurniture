@@ -12,7 +12,6 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -141,6 +140,7 @@ public class FlowerBoxBlock extends BaseEntityBlock {
         return InteractionResult.CONSUME;
     }
 
+    /*
     @Override
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
         if (state.is(newState.getBlock())) return;
@@ -149,6 +149,7 @@ public class FlowerBoxBlock extends BaseEntityBlock {
         if (blockEntity instanceof FlowerBoxBlockEntity flowerBoxBE) Containers.dropContents(level, pos, flowerBoxBE.getItems());
         super.onRemove(state, level, pos, newState, isMoving);
     }
+    */
 
     @Override
     public RenderShape getRenderShape(BlockState state) {
