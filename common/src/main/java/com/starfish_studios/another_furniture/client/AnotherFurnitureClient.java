@@ -13,7 +13,7 @@ public class AnotherFurnitureClient {
     public static void init() {
         AFRegistry.registerEntityRenderers(AFEntityTypes.SEAT, SeatRenderer::new);
 
-        //AFRegistry.registerBlockEntityRenderer(AFBlockEntityTypes.SHELF, ShelfRenderer::new);
+        AFRegistry.registerBlockEntityRenderer(AFBlockEntityTypes.SHELF, ShelfRenderer::new);
         //AFRegistry.registerBlockEntityRenderer(AFBlockEntityTypes.SERVICE_BELL, ServiceBellButtonRenderer::new);
         AFRegistry.registerBlockEntityRenderer(AFBlockEntityTypes.FLOWER_BOX, FlowerBoxRenderer::new);
         //AFRegistry.registerBlockEntityRenderer(AFBlockEntityTypes.GRANDFATHER_CLOCK, GrandfatherClockRenderer::new);
