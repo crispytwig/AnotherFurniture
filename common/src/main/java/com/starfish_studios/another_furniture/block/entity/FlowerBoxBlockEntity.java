@@ -5,29 +5,39 @@ import dev.architectury.injectables.annotations.PlatformOnly;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
+import net.minecraft.core.component.DataComponentGetter;
+import net.minecraft.core.component.DataComponentMap;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.ProblemReporter;
 import net.minecraft.world.Clearable;
+import net.minecraft.world.Container;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.ListBackedContainer;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.storage.TagValueOutput;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.phys.AABB;
 
-public class FlowerBoxBlockEntity extends BlockEntity implements Clearable {
+public class FlowerBoxBlockEntity extends BlockEntity implements ListBackedContainer {
     private final NonNullList<ItemStack> items = NonNullList.withSize(2, ItemStack.EMPTY);
 
     public FlowerBoxBlockEntity(BlockPos blockPos, BlockState blockState) {
         super(AFBlockEntityTypes.FLOWER_BOX.get(), blockPos, blockState);
     }
 
+    @Override
     public NonNullList<ItemStack> getItems() {
         return this.items;
     }
@@ -35,6 +45,11 @@ public class FlowerBoxBlockEntity extends BlockEntity implements Clearable {
     public Item getItemFromSlot(int slot) {
         return this.items.get(slot).getItem();
     }
+
+    @Override
+	public int getMaxStackSize() {
+		return 1;
+	}
 
     @Override
     public void loadAdditional(final ValueInput input) {
@@ -50,10 +65,16 @@ public class FlowerBoxBlockEntity extends BlockEntity implements Clearable {
     }
 
     @Override
-    public CompoundTag getUpdateTag(final HolderLookup.Provider registries) {
-        CompoundTag compoundtag = new CompoundTag();
-        //ContainerHelper.saveAllItems(registries, this.items, true);
-        return compoundtag;
+    public ClientboundBlockEntityDataPacket getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
+    }
+
+    @Override
+    public CompoundTag getUpdateTag(HolderLookup.Provider registries) {
+        ProblemReporter.Collector reporter = new ProblemReporter.Collector();
+        TagValueOutput output = TagValueOutput.createWithContext(reporter, registries);
+        ContainerHelper.saveAllItems(output, this.items, true);
+        return output.buildResult();
     }
 
     public boolean placeFlower(ItemStack stack, int slot) {
@@ -72,7 +93,7 @@ public class FlowerBoxBlockEntity extends BlockEntity implements Clearable {
 
     private void markUpdated() {
         this.setChanged();
-        //this.getLevel().sendBlockUpdated(this.getBlockPos(), this.getBlockState(), this.getBlockState(), 3);
+        this.getLevel().sendBlockUpdated(this.getBlockPos(), this.getBlockState(), this.getBlockState(), 3);
     }
 
     @Override
@@ -103,4 +124,26 @@ public class FlowerBoxBlockEntity extends BlockEntity implements Clearable {
     public AABB getRenderBoundingBox() {
         return new AABB(worldPosition.offset(0, 1, 0));
     }
+
+    @Override
+    public boolean stillValid(Player player) {
+        return Container.stillValidBlockEntity(this, player);
+    }
+
+    @Override
+	protected void applyImplicitComponents(DataComponentGetter components) {
+		super.applyImplicitComponents(components);
+		components.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY).copyInto(this.items);
+	}
+
+	@Override
+	protected void collectImplicitComponents(DataComponentMap.Builder components) {
+		super.collectImplicitComponents(components);
+		components.set(DataComponents.CONTAINER, ItemContainerContents.fromItems(this.items));
+	}
+
+	@Override
+	public void removeComponentsFromTag(ValueOutput output) {
+		output.discard("Items");
+	}
 }
