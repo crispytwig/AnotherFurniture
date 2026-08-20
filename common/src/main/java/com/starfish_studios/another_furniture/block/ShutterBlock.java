@@ -108,7 +108,7 @@ public class ShutterBlock extends Block implements SimpleWaterloggedBlock, Hamme
     @Override
     protected InteractionResult useItemOn(final ItemStack stack, final BlockState state, final Level level, final BlockPos pos, final Player player, final InteractionHand hand, final BlockHitResult hitResult) {
         if (tryHammerBlock(VARIANT, stack, state, level, pos, player)) return InteractionResult.SUCCESS;
-        return InteractionResult.PASS;
+        return InteractionResult.TRY_WITH_EMPTY_HAND;
     }
 
     @Override
