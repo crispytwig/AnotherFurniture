@@ -15,7 +15,7 @@ public class AFTabsImpl {
     public static final CreativeModeTab AFM_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             AnotherFurniture.res("tab"),
             FabricCreativeModeTab.builder().title(Component.translatable("item_group." + AnotherFurniture.MOD_ID + ".tab"))
-            .icon(() -> new ItemStack(AFBlocks.OAK_CHAIR.asItem())).displayItems((parameters, output) -> {
+            .icon(() -> new ItemStack(AFBlocks.OAK_CHAIR.get().asItem())).displayItems((parameters, output) -> {
                 AFRegistry.getAllModItems().forEach((item) -> output.accept(item));
             }).build());
 

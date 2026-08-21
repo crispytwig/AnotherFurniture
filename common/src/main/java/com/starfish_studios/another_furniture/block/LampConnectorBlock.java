@@ -104,22 +104,22 @@ public class LampConnectorBlock extends Block implements SimpleWaterloggedBlock 
 
     public static Block getLampByColor(DyeColor color) {
         return switch (color) {
-            case WHITE -> AFBlocks.WHITE_LAMP;
-            case ORANGE -> AFBlocks.ORANGE_LAMP;
-            case MAGENTA -> AFBlocks.MAGENTA_LAMP;
-            case LIGHT_BLUE -> AFBlocks.LIGHT_BLUE_LAMP;
-            case YELLOW -> AFBlocks.YELLOW_LAMP;
-            case LIME -> AFBlocks.LIME_LAMP;
-            case PINK -> AFBlocks.PINK_LAMP;
-            case GRAY -> AFBlocks.GRAY_LAMP;
-            case LIGHT_GRAY -> AFBlocks.LIGHT_GRAY_LAMP;
-            case CYAN -> AFBlocks.CYAN_LAMP;
-            case PURPLE -> AFBlocks.PURPLE_LAMP;
-            case BLUE -> AFBlocks.BLUE_LAMP;
-            case BROWN -> AFBlocks.BROWN_LAMP;
-            case GREEN -> AFBlocks.GREEN_LAMP;
-            case RED -> AFBlocks.RED_LAMP;
-            case BLACK -> AFBlocks.BLACK_LAMP;
+            case WHITE -> AFBlocks.WHITE_LAMP.get();
+            case ORANGE -> AFBlocks.ORANGE_LAMP.get();
+            case MAGENTA -> AFBlocks.MAGENTA_LAMP.get();
+            case LIGHT_BLUE -> AFBlocks.LIGHT_BLUE_LAMP.get();
+            case YELLOW -> AFBlocks.YELLOW_LAMP.get();
+            case LIME -> AFBlocks.LIME_LAMP.get();
+            case PINK -> AFBlocks.PINK_LAMP.get();
+            case GRAY -> AFBlocks.GRAY_LAMP.get();
+            case LIGHT_GRAY -> AFBlocks.LIGHT_GRAY_LAMP.get();
+            case CYAN -> AFBlocks.CYAN_LAMP.get();
+            case PURPLE -> AFBlocks.PURPLE_LAMP.get();
+            case BLUE -> AFBlocks.BLUE_LAMP.get();
+            case BROWN -> AFBlocks.BROWN_LAMP.get();
+            case GREEN -> AFBlocks.GREEN_LAMP.get();
+            case RED -> AFBlocks.RED_LAMP.get();
+            case BLACK -> AFBlocks.BLACK_LAMP.get();
         };
     }
 }

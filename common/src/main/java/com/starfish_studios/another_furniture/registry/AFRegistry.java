@@ -5,8 +5,6 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.blockentity.state.BlockEntityRenderState;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.core.BlockPos;
-import net.minecraft.references.BlockItemId;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -22,35 +20,18 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
-import com.google.common.base.Function;
-
 import java.util.Collection;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class AFRegistry {
-
     @ExpectPlatform
-    public static Block registerBlockItem(BlockItemId id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
+    public static <T extends Block> Supplier<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> factory, BlockBehaviour.Properties properties) {
         throw new AssertionError();
     }
 
     @ExpectPlatform
-    public static Block registerBlock(ResourceKey<Block> key, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
-        throw new AssertionError();
-    }
-
-    @ExpectPlatform
-    public static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
-        throw new AssertionError();
-    }
-
-    @ExpectPlatform
-    public static Item registerItem(ResourceKey<Item> key, Function<Item.Properties, Item> itemFactory, Item.Properties properties) {
-        throw new AssertionError();
-    }
-
-    @ExpectPlatform
-    public static Item registerItem(String name, Function<Item.Properties, Item> itemFactory, Item.Properties properties) {
+    public static <T extends Item> Supplier<T> registerItem(String name, Function<Item.Properties, T> factory, Item.Properties properties, String tab_id) {
         throw new AssertionError();
     }
 
@@ -118,7 +99,7 @@ public class AFRegistry {
     }
 
     @ExpectPlatform
-    public static Collection<Item> getAllModItems() {
+    public static Collection<ItemStack> getAllModItems() {
         throw new AssertionError();
     }
 }

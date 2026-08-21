@@ -186,22 +186,22 @@ public class LampBlock extends Block implements SimpleWaterloggedBlock {
 
     public static Block getLampConnectorByColor(DyeColor color) {
         return switch (color) {
-            case WHITE -> AFBlocks.WHITE_LAMP_CONNECTOR;
-            case ORANGE -> AFBlocks.ORANGE_LAMP_CONNECTOR;
-            case MAGENTA -> AFBlocks.MAGENTA_LAMP_CONNECTOR;
-            case LIGHT_BLUE -> AFBlocks.LIGHT_BLUE_LAMP_CONNECTOR;
-            case YELLOW -> AFBlocks.YELLOW_LAMP_CONNECTOR;
-            case LIME -> AFBlocks.LIME_LAMP_CONNECTOR;
-            case PINK -> AFBlocks.PINK_LAMP_CONNECTOR;
-            case GRAY -> AFBlocks.GRAY_LAMP_CONNECTOR;
-            case LIGHT_GRAY -> AFBlocks.LIGHT_GRAY_LAMP_CONNECTOR;
-            case CYAN -> AFBlocks.CYAN_LAMP_CONNECTOR;
-            case PURPLE -> AFBlocks.PURPLE_LAMP_CONNECTOR;
-            case BLUE -> AFBlocks.BLUE_LAMP_CONNECTOR;
-            case BROWN -> AFBlocks.BROWN_LAMP_CONNECTOR;
-            case GREEN -> AFBlocks.GREEN_LAMP_CONNECTOR;
-            case RED -> AFBlocks.RED_LAMP_CONNECTOR;
-            case BLACK -> AFBlocks.BLACK_LAMP_CONNECTOR;
+            case WHITE -> AFBlocks.WHITE_LAMP_CONNECTOR.get();
+            case ORANGE -> AFBlocks.ORANGE_LAMP_CONNECTOR.get();
+            case MAGENTA -> AFBlocks.MAGENTA_LAMP_CONNECTOR.get();
+            case LIGHT_BLUE -> AFBlocks.LIGHT_BLUE_LAMP_CONNECTOR.get();
+            case YELLOW -> AFBlocks.YELLOW_LAMP_CONNECTOR.get();
+            case LIME -> AFBlocks.LIME_LAMP_CONNECTOR.get();
+            case PINK -> AFBlocks.PINK_LAMP_CONNECTOR.get();
+            case GRAY -> AFBlocks.GRAY_LAMP_CONNECTOR.get();
+            case LIGHT_GRAY -> AFBlocks.LIGHT_GRAY_LAMP_CONNECTOR.get();
+            case CYAN -> AFBlocks.CYAN_LAMP_CONNECTOR.get();
+            case PURPLE -> AFBlocks.PURPLE_LAMP_CONNECTOR.get();
+            case BLUE -> AFBlocks.BLUE_LAMP_CONNECTOR.get();
+            case BROWN -> AFBlocks.BROWN_LAMP_CONNECTOR.get();
+            case GREEN -> AFBlocks.GREEN_LAMP_CONNECTOR.get();
+            case RED -> AFBlocks.RED_LAMP_CONNECTOR.get();
+            case BLACK -> AFBlocks.BLACK_LAMP_CONNECTOR.get();
         };
     }
 }
