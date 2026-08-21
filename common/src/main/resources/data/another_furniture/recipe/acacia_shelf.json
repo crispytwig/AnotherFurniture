@@ -3,12 +3,8 @@
     "category": "building",
     "group": "shelves",
     "key": {
-        "#": {
-            "item": "minecraft:acacia_planks"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:acacia_planks",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "###",

@@ -3,9 +3,7 @@
     "category": "building",
     "group": "shutters",
     "key": {
-        "S": {
-            "item": "minecraft:jungle_slab"
-        }
+        "S": "minecraft:jungle_slab"
     },
     "pattern": [
         "SS",

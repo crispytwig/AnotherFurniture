@@ -3,9 +3,7 @@
     "category": "building",
     "group": "shutters",
     "key": {
-        "S": {
-            "item": "minecraft:dark_oak_slab"
-        }
+        "S": "minecraft:dark_oak_slab"
     },
     "pattern": [
         "SS",

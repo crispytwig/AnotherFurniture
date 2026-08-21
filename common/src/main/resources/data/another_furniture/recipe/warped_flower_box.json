@@ -3,15 +3,9 @@
     "category": "building",
     "group": "flower_boxes",
     "key": {
-        "#": {
-            "item": "minecraft:warped_planks"
-        },
-        "D": {
-            "item": "minecraft:dirt"
-        },
-        "S": {
-            "item": "minecraft:warped_slab"
-        }
+        "#": "minecraft:warped_planks",
+        "D": "minecraft:dirt",
+        "S": "minecraft:warped_slab"
     },
     "pattern": [
         "SDS",

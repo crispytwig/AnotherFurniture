@@ -3,12 +3,8 @@
     "category": "building",
     "group": "benches",
     "key": {
-        "S": {
-            "item": "minecraft:bamboo_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "S": "minecraft:bamboo_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "/  ",

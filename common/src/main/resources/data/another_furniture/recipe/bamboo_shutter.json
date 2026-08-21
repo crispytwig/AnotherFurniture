@@ -3,9 +3,7 @@
     "category": "building",
     "group": "shutters",
     "key": {
-        "S": {
-            "item": "minecraft:bamboo_slab"
-        }
+        "S": "minecraft:bamboo_slab"
     },
     "pattern": [
         "SS",

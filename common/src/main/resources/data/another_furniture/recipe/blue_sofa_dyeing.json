@@ -3,12 +3,8 @@
     "category": "building",
     "group": "sofas",
     "ingredients": [
-        {
-            "item": "minecraft:blue_dye"
-        },
-        {
-            "item": "another_furniture:white_sofa"
-        }
+        "minecraft:blue_dye",
+        "another_furniture:white_sofa"
     ],
     "result": {
         "id": "another_furniture:blue_sofa"

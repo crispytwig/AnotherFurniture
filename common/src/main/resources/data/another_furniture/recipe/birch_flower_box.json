@@ -3,15 +3,9 @@
     "category": "building",
     "group": "flower_boxes",
     "key": {
-        "#": {
-            "item": "minecraft:birch_planks"
-        },
-        "D": {
-            "item": "minecraft:dirt"
-        },
-        "S": {
-            "item": "minecraft:birch_slab"
-        }
+        "#": "minecraft:birch_planks",
+        "D": "minecraft:dirt",
+        "S": "minecraft:birch_slab"
     },
     "pattern": [
         "SDS",

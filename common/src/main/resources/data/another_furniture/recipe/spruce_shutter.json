@@ -3,9 +3,7 @@
     "category": "building",
     "group": "shutters",
     "key": {
-        "S": {
-            "item": "minecraft:spruce_slab"
-        }
+        "S": "minecraft:spruce_slab"
     },
     "pattern": [
         "SS",

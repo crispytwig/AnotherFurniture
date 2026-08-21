@@ -3,12 +3,8 @@
     "category": "building",
     "group": "chairs",
     "key": {
-        "#": {
-            "item": "minecraft:cherry_planks"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:cherry_planks",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "# ",

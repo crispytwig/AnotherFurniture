@@ -3,12 +3,8 @@
     "category": "building",
     "group": "benches",
     "key": {
-        "S": {
-            "item": "minecraft:cherry_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "S": "minecraft:cherry_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "/  ",

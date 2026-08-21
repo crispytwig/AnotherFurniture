@@ -3,12 +3,8 @@
     "category": "building",
     "group": "benches",
     "key": {
-        "S": {
-            "item": "minecraft:crimson_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "S": "minecraft:crimson_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "/  ",

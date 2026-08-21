@@ -3,12 +3,8 @@
     "category": "building",
     "group": "benches",
     "key": {
-        "S": {
-            "item": "minecraft:dark_oak_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "S": "minecraft:dark_oak_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "/  ",

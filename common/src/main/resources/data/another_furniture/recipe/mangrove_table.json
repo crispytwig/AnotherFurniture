@@ -3,12 +3,8 @@
     "category": "building",
     "group": "tables",
     "key": {
-        "#": {
-            "item": "minecraft:mangrove_planks"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:mangrove_planks",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "###",

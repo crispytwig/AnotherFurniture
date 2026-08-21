@@ -1,20 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "key": {
-    "I": {
-      "item": "minecraft:iron_ingot"
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "key": {
+        "I": "minecraft:iron_ingot",
+        "N": "minecraft:iron_nugget"
     },
-    "N": {
-      "item": "minecraft:iron_nugget"
+    "pattern": [
+        " N ",
+        "III"
+    ],
+    "result": {
+        "count": 3,
+        "id": "another_furniture:service_bell"
     }
-  },
-  "pattern": [
-    " N ",
-    "III"
-  ],
-  "result": {
-    "count": 3,
-    "id": "another_furniture:service_bell"
-  }
 }

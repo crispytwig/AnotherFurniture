@@ -3,15 +3,9 @@
     "category": "building",
     "group": "drawers",
     "key": {
-        "#": {
-            "item": "minecraft:spruce_planks"
-        },
-        "S": {
-            "item": "minecraft:spruce_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:spruce_planks",
+        "S": "minecraft:spruce_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "###",

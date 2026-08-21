@@ -3,15 +3,9 @@
     "category": "building",
     "group": "drawers",
     "key": {
-        "#": {
-            "item": "minecraft:cherry_planks"
-        },
-        "S": {
-            "item": "minecraft:cherry_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:cherry_planks",
+        "S": "minecraft:cherry_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "###",

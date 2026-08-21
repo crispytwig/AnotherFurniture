@@ -3,12 +3,8 @@
     "category": "building",
     "group": "benches",
     "key": {
-        "S": {
-            "item": "minecraft:jungle_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "S": "minecraft:jungle_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "/  ",

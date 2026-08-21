@@ -3,15 +3,9 @@
     "category": "building",
     "group": "drawers",
     "key": {
-        "#": {
-            "item": "minecraft:birch_planks"
-        },
-        "S": {
-            "item": "minecraft:birch_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:birch_planks",
+        "S": "minecraft:birch_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "###",

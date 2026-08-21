@@ -3,15 +3,9 @@
     "category": "building",
     "group": "flower_boxes",
     "key": {
-        "#": {
-            "item": "minecraft:crimson_planks"
-        },
-        "D": {
-            "item": "minecraft:dirt"
-        },
-        "S": {
-            "item": "minecraft:crimson_slab"
-        }
+        "#": "minecraft:crimson_planks",
+        "D": "minecraft:dirt",
+        "S": "minecraft:crimson_slab"
     },
     "pattern": [
         "SDS",

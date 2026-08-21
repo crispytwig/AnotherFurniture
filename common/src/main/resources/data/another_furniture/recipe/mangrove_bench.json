@@ -3,12 +3,8 @@
     "category": "building",
     "group": "benches",
     "key": {
-        "S": {
-            "item": "minecraft:mangrove_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "S": "minecraft:mangrove_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "/  ",

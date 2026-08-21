@@ -3,15 +3,9 @@
     "category": "building",
     "group": "drawers",
     "key": {
-        "#": {
-            "item": "minecraft:warped_planks"
-        },
-        "S": {
-            "item": "minecraft:warped_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:warped_planks",
+        "S": "minecraft:warped_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "###",

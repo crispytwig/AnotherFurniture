@@ -3,12 +3,8 @@
     "category": "building",
     "group": "chairs",
     "key": {
-        "#": {
-            "item": "minecraft:bamboo_planks"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:bamboo_planks",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "# ",

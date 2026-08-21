@@ -3,12 +3,8 @@
     "category": "building",
     "group": "chairs",
     "key": {
-        "#": {
-            "item": "minecraft:crimson_planks"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:crimson_planks",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "# ",

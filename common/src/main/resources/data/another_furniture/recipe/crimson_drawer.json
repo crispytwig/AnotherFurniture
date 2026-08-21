@@ -3,15 +3,9 @@
     "category": "building",
     "group": "drawers",
     "key": {
-        "#": {
-            "item": "minecraft:crimson_planks"
-        },
-        "S": {
-            "item": "minecraft:crimson_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:crimson_planks",
+        "S": "minecraft:crimson_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "###",

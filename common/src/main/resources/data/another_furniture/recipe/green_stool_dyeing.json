@@ -3,12 +3,8 @@
     "category": "building",
     "group": "stools",
     "ingredients": [
-        {
-            "item": "minecraft:green_dye"
-        },
-        {
-            "item": "another_furniture:white_stool"
-        }
+        "minecraft:green_dye",
+        "another_furniture:white_stool"
     ],
     "result": {
         "id": "another_furniture:green_stool"

@@ -3,15 +3,9 @@
     "category": "building",
     "group": "flower_boxes",
     "key": {
-        "#": {
-            "item": "minecraft:acacia_planks"
-        },
-        "D": {
-            "item": "minecraft:dirt"
-        },
-        "S": {
-            "item": "minecraft:acacia_slab"
-        }
+        "#": "minecraft:acacia_planks",
+        "D": "minecraft:dirt",
+        "S": "minecraft:acacia_slab"
     },
     "pattern": [
         "SDS",

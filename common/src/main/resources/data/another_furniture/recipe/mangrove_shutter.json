@@ -3,9 +3,7 @@
     "category": "building",
     "group": "shutters",
     "key": {
-        "S": {
-            "item": "minecraft:mangrove_slab"
-        }
+        "S": "minecraft:mangrove_slab"
     },
     "pattern": [
         "SS",

@@ -3,15 +3,9 @@
     "category": "building",
     "group": "stools",
     "key": {
-        "#": {
-            "tag": "minecraft:planks"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        },
-        "W": {
-            "item": "minecraft:red_wool"
-        }
+        "#": "#minecraft:planks",
+        "/": "minecraft:stick",
+        "W": "minecraft:red_wool"
     },
     "pattern": [
         "#W#",

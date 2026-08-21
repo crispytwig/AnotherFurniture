@@ -1,25 +1,19 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"category": "building",
-	"group": "curtains",
-	"key": {
-		"/": {
-			"item": "minecraft:stick"
-		},
-		"W": {
-			"item": "minecraft:white_wool"
-		},
-		"T": {
-			"item": "minecraft:torch"
-		}
-	},
-	"pattern": [
-		" W ",
-		"WTW",
-		" / "
-	],
-	"result": {
-		"count": 3,
-		"id": "another_furniture:white_lamp"
-	}
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "group": "curtains",
+    "key": {
+        "/": "minecraft:stick",
+        "W": "minecraft:white_wool",
+        "T": "minecraft:torch"
+    },
+    "pattern": [
+        " W ",
+        "WTW",
+        " / "
+    ],
+    "result": {
+        "count": 3,
+        "id": "another_furniture:white_lamp"
+    }
 }

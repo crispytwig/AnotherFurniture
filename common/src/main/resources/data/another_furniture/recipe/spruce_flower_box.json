@@ -3,15 +3,9 @@
     "category": "building",
     "group": "flower_boxes",
     "key": {
-        "#": {
-            "item": "minecraft:spruce_planks"
-        },
-        "D": {
-            "item": "minecraft:dirt"
-        },
-        "S": {
-            "item": "minecraft:spruce_slab"
-        }
+        "#": "minecraft:spruce_planks",
+        "D": "minecraft:dirt",
+        "S": "minecraft:spruce_slab"
     },
     "pattern": [
         "SDS",

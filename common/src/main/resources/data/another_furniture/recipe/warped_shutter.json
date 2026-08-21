@@ -3,9 +3,7 @@
     "category": "building",
     "group": "shutters",
     "key": {
-        "S": {
-            "item": "minecraft:warped_slab"
-        }
+        "S": "minecraft:warped_slab"
     },
     "pattern": [
         "SS",

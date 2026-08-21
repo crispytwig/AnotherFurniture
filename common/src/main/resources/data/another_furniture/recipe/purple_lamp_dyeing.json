@@ -3,12 +3,8 @@
     "category": "building",
     "group": "lamps",
     "ingredients": [
-        {
-            "item": "minecraft:purple_dye"
-        },
-        {
-            "item": "another_furniture:white_lamp"
-        }
+        "minecraft:purple_dye",
+        "another_furniture:white_lamp"
     ],
     "result": {
         "id": "another_furniture:purple_lamp"

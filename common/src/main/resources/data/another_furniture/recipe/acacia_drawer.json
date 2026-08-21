@@ -3,15 +3,9 @@
     "category": "building",
     "group": "drawers",
     "key": {
-        "#": {
-            "item": "minecraft:acacia_planks"
-        },
-        "S": {
-            "item": "minecraft:acacia_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:acacia_planks",
+        "S": "minecraft:acacia_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "###",

@@ -3,12 +3,8 @@
     "category": "building",
     "group": "curtains",
     "key": {
-        "/": {
-            "item": "minecraft:stick"
-        },
-        "W": {
-            "item": "minecraft:magenta_wool"
-        }
+        "/": "minecraft:stick",
+        "W": "minecraft:magenta_wool"
     },
     "pattern": [
         "//",

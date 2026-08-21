@@ -3,15 +3,9 @@
     "category": "building",
     "group": "drawers",
     "key": {
-        "#": {
-            "item": "minecraft:dark_oak_planks"
-        },
-        "S": {
-            "item": "minecraft:dark_oak_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:dark_oak_planks",
+        "S": "minecraft:dark_oak_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "###",

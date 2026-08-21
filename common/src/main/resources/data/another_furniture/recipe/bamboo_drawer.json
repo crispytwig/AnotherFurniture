@@ -3,15 +3,9 @@
     "category": "building",
     "group": "drawers",
     "key": {
-        "#": {
-            "item": "minecraft:bamboo_planks"
-        },
-        "S": {
-            "item": "minecraft:bamboo_slab"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:bamboo_planks",
+        "S": "minecraft:bamboo_slab",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "###",

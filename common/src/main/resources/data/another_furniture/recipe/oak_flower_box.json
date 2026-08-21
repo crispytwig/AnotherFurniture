@@ -1,24 +1,18 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"category": "building",
-	"group": "flower_boxes",
-	"key": {
-		"#": {
-			"item": "minecraft:oak_planks"
-		},
-		"D": {
-			"item": "minecraft:dirt"
-		},
-		"S": {
-			"item": "minecraft:oak_slab"
-		}
-	},
-	"pattern": [
-		"SDS",
-		"###"
-	],
-	"result": {
-		"count": 3,
-		"id": "another_furniture:oak_flower_box"
-	}
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "group": "flower_boxes",
+    "key": {
+        "#": "minecraft:oak_planks",
+        "D": "minecraft:dirt",
+        "S": "minecraft:oak_slab"
+    },
+    "pattern": [
+        "SDS",
+        "###"
+    ],
+    "result": {
+        "count": 3,
+        "id": "another_furniture:oak_flower_box"
+    }
 }

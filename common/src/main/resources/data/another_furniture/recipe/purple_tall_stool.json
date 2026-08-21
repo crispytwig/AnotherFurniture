@@ -3,15 +3,9 @@
     "category": "building",
     "group": "tall_stools",
     "key": {
-        "#": {
-            "tag": "minecraft:planks"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        },
-        "W": {
-            "item": "minecraft:purple_wool"
-        }
+        "#": "#minecraft:planks",
+        "/": "minecraft:stick",
+        "W": "minecraft:purple_wool"
     },
     "pattern": [
         "#W#",

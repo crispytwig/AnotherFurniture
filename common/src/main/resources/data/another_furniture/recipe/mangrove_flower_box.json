@@ -3,15 +3,9 @@
     "category": "building",
     "group": "flower_boxes",
     "key": {
-        "#": {
-            "item": "minecraft:mangrove_planks"
-        },
-        "D": {
-            "item": "minecraft:dirt"
-        },
-        "S": {
-            "item": "minecraft:mangrove_slab"
-        }
+        "#": "minecraft:mangrove_planks",
+        "D": "minecraft:dirt",
+        "S": "minecraft:mangrove_slab"
     },
     "pattern": [
         "SDS",

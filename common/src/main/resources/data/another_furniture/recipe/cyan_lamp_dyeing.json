@@ -3,12 +3,8 @@
     "category": "building",
     "group": "lamps",
     "ingredients": [
-        {
-            "item": "minecraft:cyan_dye"
-        },
-        {
-            "item": "another_furniture:white_lamp"
-        }
+        "minecraft:cyan_dye",
+        "another_furniture:white_lamp"
     ],
     "result": {
         "id": "another_furniture:cyan_lamp"

@@ -3,15 +3,9 @@
     "category": "building",
     "group": "flower_boxes",
     "key": {
-        "#": {
-            "item": "minecraft:bamboo_planks"
-        },
-        "D": {
-            "item": "minecraft:dirt"
-        },
-        "S": {
-            "item": "minecraft:bamboo_slab"
-        }
+        "#": "minecraft:bamboo_planks",
+        "D": "minecraft:dirt",
+        "S": "minecraft:bamboo_slab"
     },
     "pattern": [
         "SDS",

@@ -3,12 +3,8 @@
     "category": "building",
     "group": "tables",
     "key": {
-        "#": {
-            "item": "minecraft:dark_oak_planks"
-        },
-        "/": {
-            "item": "minecraft:stick"
-        }
+        "#": "minecraft:dark_oak_planks",
+        "/": "minecraft:stick"
     },
     "pattern": [
         "###",
