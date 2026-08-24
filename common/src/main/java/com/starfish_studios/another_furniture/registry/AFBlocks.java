@@ -267,13 +267,13 @@ public class AFBlocks {
 
     public static <T extends Block> Supplier<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> block, BlockBehaviour.Properties properties) {
         Supplier<T> supplier = AFRegistry.registerBlock(name, block, properties);
-        AFRegistry.registerItem(name, (itemProperties) -> new BlockItem(supplier.get(), itemProperties), new Item.Properties(), "tab");
+        AFRegistry.registerItem(name, (itemProperties) -> new BlockItem(supplier.get(), itemProperties), new Item.Properties().useBlockDescriptionPrefix(), "tab");
         return supplier;
     }
 
     public static <T extends Block> Supplier<T> registerBlockHidden(String name, Function<BlockBehaviour.Properties, T> block, BlockBehaviour.Properties properties) {
         Supplier<T> supplier = AFRegistry.registerBlock(name, block, properties);
-        AFRegistry.registerItem(name, (itemProperties) -> new BlockItem(supplier.get(), itemProperties), new Item.Properties(), null);
+        AFRegistry.registerItem(name, (itemProperties) -> new BlockItem(supplier.get(), itemProperties), new Item.Properties().useBlockDescriptionPrefix(), null);
         return supplier;
     }
 
