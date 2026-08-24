@@ -3,12 +3,8 @@
 	"package": "com.starfish_studios.another_furniture.mixin.fabric",
 	"compatibilityLevel": "JAVA_21",
 	"minVersion": "0.8",
-	"_plugin": "com.starfish_studios.another_furniture.mixin.fabric.ConditionalMixinPlugin",
 	"client": [],
 	"_mixins": [
-		"create.ContraptionMixin",
-		"create.AbstractContraptionEntityMixin",
-		"create.BlockMovementChecksMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

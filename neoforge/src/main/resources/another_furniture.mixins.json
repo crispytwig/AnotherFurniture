@@ -3,13 +3,9 @@
 	"package": "com.starfish_studios.another_furniture.mixin.neoforge",
 	"compatibilityLevel": "JAVA_21",
 	"minVersion": "0.8",
-	"plugin": "com.starfish_studios.another_furniture.mixin.neoforge.ConditionalMixinPlugin",
 	"client": [],
 	"mixins": [
-		"FireBlockAccessor",
-		"create.ContraptionMixin",
-		"create.AbstractContraptionEntityMixin",
-		"create.BlockMovementChecksMixin"
+		"FireBlockAccessor"
 	],
 	"injectors": {
 		"defaultRequire": 1
