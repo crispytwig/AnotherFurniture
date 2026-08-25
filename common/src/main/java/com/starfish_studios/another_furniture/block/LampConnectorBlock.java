@@ -8,7 +8,9 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.ScheduledTickAccess;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -61,8 +63,9 @@ public class LampConnectorBlock extends Block implements SimpleWaterloggedBlock 
         return blockstate.setValue(WATERLOGGED, waterlogged);
     }
 
-    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
-        if (state.getValue(WATERLOGGED)) level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+    @Override
+    protected BlockState updateShape(BlockState state, LevelReader level, ScheduledTickAccess scheduledTickAccess, BlockPos currentPos, Direction direction, BlockPos neighborPos, BlockState neighborState, RandomSource random) {
+        if (state.getValue(WATERLOGGED)) scheduledTickAccess.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
 
         if (direction == Direction.UP || direction == Direction.DOWN) {
             BlockState aState = level.getBlockState(currentPos.above());

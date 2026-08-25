@@ -16,8 +16,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -26,6 +26,7 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.level.redstone.Orientation;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -95,10 +96,11 @@ public class LampBlock extends Block implements SimpleWaterloggedBlock {
         return clickedFace != Direction.DOWN ? blockstate.setValue(FACING, clickedFace).setValue(WATERLOGGED, waterlogged) : null;
     }
 
-    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
+    @Override
+    protected BlockState updateShape(BlockState state, LevelReader level, ScheduledTickAccess scheduledTickAccess, BlockPos currentPos, Direction direction, BlockPos neighborPos, BlockState neighborState, RandomSource random) {
         if (!state.canSurvive(level, currentPos)) return Blocks.AIR.defaultBlockState();
 
-        if (state.getValue(WATERLOGGED)) level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+        if (state.getValue(WATERLOGGED)) scheduledTickAccess.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
 
         if (state.getValue(FACING) == Direction.UP && (direction == Direction.UP || direction == Direction.DOWN)) {
             BlockState aState = level.getBlockState(currentPos.above());
