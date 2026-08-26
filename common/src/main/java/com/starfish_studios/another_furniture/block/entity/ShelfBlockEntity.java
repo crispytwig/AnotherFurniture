@@ -83,7 +83,7 @@ public class ShelfBlockEntity extends BlockEntity implements ListBackedContainer
 
     @Override
     public boolean canPlaceItem(final int slot, final ItemStack itemStack) {
-        return this.acceptsItemType(itemStack) && (this.getItem(slot).isEmpty() || this.getItem(slot).getCount() < this.getMaxStackSize(itemStack) || ItemStack.isSameItemSameComponents(itemStack, this.getItem(slot)));
+        return (this.getItem(slot).isEmpty() || (this.getItem(slot).getCount() < this.getMaxStackSize(itemStack) && ItemStack.isSameItem(itemStack, this.getItem(slot))));
     }
 
     @Override
