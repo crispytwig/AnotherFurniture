@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "group": "shelves",
+    "key": {
+        "#": "minecraft:pale_oak_planks",
+        "/": "minecraft:stick"
+    },
+    "pattern": [
+        "###",
+        "/  "
+    ],
+    "result": {
+        "count": 3,
+        "id": "another_furniture:pale_oak_shelf"
+    }
+}

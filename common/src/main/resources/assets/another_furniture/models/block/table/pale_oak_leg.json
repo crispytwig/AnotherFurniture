@@ -1,0 +1,7 @@
+{
+    "parent": "another_furniture:block/template/table_leg",
+    "textures": {
+        "sides": "another_furniture:block/table/pale_oak_sides",
+        "supports": "another_furniture:block/table/pale_oak_supports"
+    }
+}

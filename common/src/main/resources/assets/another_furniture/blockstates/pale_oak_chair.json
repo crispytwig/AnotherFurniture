@@ -1,0 +1,334 @@
+{
+    "variants": {
+        "facing=north,tucked=false,variant=1": {
+            "model": "another_furniture:block/chair/pale_oak_1"
+        },
+        "facing=east,tucked=false,variant=1": {
+            "model": "another_furniture:block/chair/pale_oak_1",
+            "y": 90
+        },
+        "facing=south,tucked=false,variant=1": {
+            "model": "another_furniture:block/chair/pale_oak_1",
+            "y": 180
+        },
+        "facing=west,tucked=false,variant=1": {
+            "model": "another_furniture:block/chair/pale_oak_1",
+            "y": 270
+        },
+        "facing=north,tucked=true,variant=1": {
+            "model": "another_furniture:block/chair/pale_oak_1_tucked"
+        },
+        "facing=east,tucked=true,variant=1": {
+            "model": "another_furniture:block/chair/pale_oak_1_tucked",
+            "y": 90
+        },
+        "facing=south,tucked=true,variant=1": {
+            "model": "another_furniture:block/chair/pale_oak_1_tucked",
+            "y": 180
+        },
+        "facing=west,tucked=true,variant=1": {
+            "model": "another_furniture:block/chair/pale_oak_1_tucked",
+            "y": 270
+        },
+        "facing=north,tucked=false,variant=2": {
+            "model": "another_furniture:block/chair/pale_oak_2"
+        },
+        "facing=east,tucked=false,variant=2": {
+            "model": "another_furniture:block/chair/pale_oak_2",
+            "y": 90
+        },
+        "facing=south,tucked=false,variant=2": {
+            "model": "another_furniture:block/chair/pale_oak_2",
+            "y": 180
+        },
+        "facing=west,tucked=false,variant=2": {
+            "model": "another_furniture:block/chair/pale_oak_2",
+            "y": 270
+        },
+        "facing=north,tucked=true,variant=2": {
+            "model": "another_furniture:block/chair/pale_oak_2_tucked"
+        },
+        "facing=east,tucked=true,variant=2": {
+            "model": "another_furniture:block/chair/pale_oak_2_tucked",
+            "y": 90
+        },
+        "facing=south,tucked=true,variant=2": {
+            "model": "another_furniture:block/chair/pale_oak_2_tucked",
+            "y": 180
+        },
+        "facing=west,tucked=true,variant=2": {
+            "model": "another_furniture:block/chair/pale_oak_2_tucked",
+            "y": 270
+        },
+        "facing=north,tucked=false,variant=3": {
+            "model": "another_furniture:block/chair/pale_oak_3"
+        },
+        "facing=east,tucked=false,variant=3": {
+            "model": "another_furniture:block/chair/pale_oak_3",
+            "y": 90
+        },
+        "facing=south,tucked=false,variant=3": {
+            "model": "another_furniture:block/chair/pale_oak_1",
+            "y": 180
+        },
+        "facing=west,tucked=false,variant=3": {
+            "model": "another_furniture:block/chair/pale_oak_3",
+            "y": 270
+        },
+        "facing=north,tucked=true,variant=3": {
+            "model": "another_furniture:block/chair/pale_oak_3_tucked"
+        },
+        "facing=east,tucked=true,variant=3": {
+            "model": "another_furniture:block/chair/pale_oak_3_tucked",
+            "y": 90
+        },
+        "facing=south,tucked=true,variant=3": {
+            "model": "another_furniture:block/chair/pale_oak_3_tucked",
+            "y": 180
+        },
+        "facing=west,tucked=true,variant=3": {
+            "model": "another_furniture:block/chair/pale_oak_3_tucked",
+            "y": 270
+        },
+        "facing=north,tucked=false,variant=4": {
+            "model": "another_furniture:block/chair/pale_oak_4"
+        },
+        "facing=east,tucked=false,variant=4": {
+            "model": "another_furniture:block/chair/pale_oak_4",
+            "y": 90
+        },
+        "facing=south,tucked=false,variant=4": {
+            "model": "another_furniture:block/chair/pale_oak_4",
+            "y": 180
+        },
+        "facing=west,tucked=false,variant=4": {
+            "model": "another_furniture:block/chair/pale_oak_4",
+            "y": 270
+        },
+        "facing=north,tucked=true,variant=4": {
+            "model": "another_furniture:block/chair/pale_oak_4_tucked"
+        },
+        "facing=east,tucked=true,variant=4": {
+            "model": "another_furniture:block/chair/pale_oak_4_tucked",
+            "y": 90
+        },
+        "facing=south,tucked=true,variant=4": {
+            "model": "another_furniture:block/chair/pale_oak_4_tucked",
+            "y": 180
+        },
+        "facing=west,tucked=true,variant=4": {
+            "model": "another_furniture:block/chair/pale_oak_4_tucked",
+            "y": 270
+        },
+        "facing=north,tucked=false,variant=5": {
+            "model": "another_furniture:block/chair/pale_oak_5"
+        },
+        "facing=east,tucked=false,variant=5": {
+            "model": "another_furniture:block/chair/pale_oak_5",
+            "y": 90
+        },
+        "facing=south,tucked=false,variant=5": {
+            "model": "another_furniture:block/chair/pale_oak_5",
+            "y": 180
+        },
+        "facing=west,tucked=false,variant=5": {
+            "model": "another_furniture:block/chair/pale_oak_5",
+            "y": 270
+        },
+        "facing=north,tucked=true,variant=5": {
+            "model": "another_furniture:block/chair/pale_oak_5_tucked"
+        },
+        "facing=east,tucked=true,variant=5": {
+            "model": "another_furniture:block/chair/pale_oak_5_tucked",
+            "y": 90
+        },
+        "facing=south,tucked=true,variant=5": {
+            "model": "another_furniture:block/chair/pale_oak_5_tucked",
+            "y": 180
+        },
+        "facing=west,tucked=true,variant=5": {
+            "model": "another_furniture:block/chair/pale_oak_5_tucked",
+            "y": 270
+        },
+        "facing=north,tucked=false,variant=6": {
+            "model": "another_furniture:block/chair/pale_oak_6"
+        },
+        "facing=east,tucked=false,variant=6": {
+            "model": "another_furniture:block/chair/pale_oak_6",
+            "y": 90
+        },
+        "facing=south,tucked=false,variant=6": {
+            "model": "another_furniture:block/chair/pale_oak_6",
+            "y": 180
+        },
+        "facing=west,tucked=false,variant=6": {
+            "model": "another_furniture:block/chair/pale_oak_6",
+            "y": 270
+        },
+        "facing=north,tucked=true,variant=6": {
+            "model": "another_furniture:block/chair/pale_oak_6_tucked"
+        },
+        "facing=east,tucked=true,variant=6": {
+            "model": "another_furniture:block/chair/pale_oak_6_tucked",
+            "y": 90
+        },
+        "facing=south,tucked=true,variant=6": {
+            "model": "another_furniture:block/chair/pale_oak_6_tucked",
+            "y": 180
+        },
+        "facing=west,tucked=true,variant=6": {
+            "model": "another_furniture:block/chair/pale_oak_6_tucked",
+            "y": 270
+        },
+        "facing=north,tucked=false,variant=7": {
+            "model": "another_furniture:block/chair/pale_oak_7"
+        },
+        "facing=east,tucked=false,variant=7": {
+            "model": "another_furniture:block/chair/pale_oak_7",
+            "y": 90
+        },
+        "facing=south,tucked=false,variant=7": {
+            "model": "another_furniture:block/chair/pale_oak_7",
+            "y": 180
+        },
+        "facing=west,tucked=false,variant=7": {
+            "model": "another_furniture:block/chair/pale_oak_7",
+            "y": 270
+        },
+        "facing=north,tucked=true,variant=7": {
+            "model": "another_furniture:block/chair/pale_oak_7_tucked"
+        },
+        "facing=east,tucked=true,variant=7": {
+            "model": "another_furniture:block/chair/pale_oak_7_tucked",
+            "y": 90
+        },
+        "facing=south,tucked=true,variant=7": {
+            "model": "another_furniture:block/chair/pale_oak_7_tucked",
+            "y": 180
+        },
+        "facing=west,tucked=true,variant=7": {
+            "model": "another_furniture:block/chair/pale_oak_7_tucked",
+            "y": 270
+        },
+        "facing=north,tucked=false,variant=8": {
+            "model": "another_furniture:block/chair/pale_oak_8"
+        },
+        "facing=east,tucked=false,variant=8": {
+            "model": "another_furniture:block/chair/pale_oak_8",
+            "y": 90
+        },
+        "facing=south,tucked=false,variant=8": {
+            "model": "another_furniture:block/chair/pale_oak_8",
+            "y": 180
+        },
+        "facing=west,tucked=false,variant=8": {
+            "model": "another_furniture:block/chair/pale_oak_8",
+            "y": 270
+        },
+        "facing=north,tucked=true,variant=8": {
+            "model": "another_furniture:block/chair/pale_oak_8_tucked"
+        },
+        "facing=east,tucked=true,variant=8": {
+            "model": "another_furniture:block/chair/pale_oak_8_tucked",
+            "y": 90
+        },
+        "facing=south,tucked=true,variant=8": {
+            "model": "another_furniture:block/chair/pale_oak_8_tucked",
+            "y": 180
+        },
+        "facing=west,tucked=true,variant=8": {
+            "model": "another_furniture:block/chair/pale_oak_8_tucked",
+            "y": 270
+        },
+        "facing=north,tucked=false,variant=9": {
+            "model": "another_furniture:block/chair/pale_oak_9"
+        },
+        "facing=east,tucked=false,variant=9": {
+            "model": "another_furniture:block/chair/pale_oak_9",
+            "y": 90
+        },
+        "facing=south,tucked=false,variant=9": {
+            "model": "another_furniture:block/chair/pale_oak_9",
+            "y": 180
+        },
+        "facing=west,tucked=false,variant=9": {
+            "model": "another_furniture:block/chair/pale_oak_9",
+            "y": 270
+        },
+        "facing=north,tucked=true,variant=9": {
+            "model": "another_furniture:block/chair/pale_oak_9_tucked"
+        },
+        "facing=east,tucked=true,variant=9": {
+            "model": "another_furniture:block/chair/pale_oak_9_tucked",
+            "y": 90
+        },
+        "facing=south,tucked=true,variant=9": {
+            "model": "another_furniture:block/chair/pale_oak_9_tucked",
+            "y": 180
+        },
+        "facing=west,tucked=true,variant=9": {
+            "model": "another_furniture:block/chair/pale_oak_9_tucked",
+            "y": 270
+        },
+        "facing=north,tucked=false,variant=10": {
+            "model": "another_furniture:block/chair/pale_oak_10"
+        },
+        "facing=east,tucked=false,variant=10": {
+            "model": "another_furniture:block/chair/pale_oak_10",
+            "y": 90
+        },
+        "facing=south,tucked=false,variant=10": {
+            "model": "another_furniture:block/chair/pale_oak_10",
+            "y": 180
+        },
+        "facing=west,tucked=false,variant=10": {
+            "model": "another_furniture:block/chair/pale_oak_10",
+            "y": 270
+        },
+        "facing=north,tucked=true,variant=10": {
+            "model": "another_furniture:block/chair/pale_oak_10_tucked"
+        },
+        "facing=east,tucked=true,variant=10": {
+            "model": "another_furniture:block/chair/pale_oak_10_tucked",
+            "y": 90
+        },
+        "facing=south,tucked=true,variant=10": {
+            "model": "another_furniture:block/chair/pale_oak_10_tucked",
+            "y": 180
+        },
+        "facing=west,tucked=true,variant=10": {
+            "model": "another_furniture:block/chair/pale_oak_10_tucked",
+            "y": 270
+        },
+        "facing=north,tucked=false,variant=11": {
+            "model": "another_furniture:block/chair/pale_oak_11"
+        },
+        "facing=east,tucked=false,variant=11": {
+            "model": "another_furniture:block/chair/pale_oak_11",
+            "y": 90
+        },
+        "facing=south,tucked=false,variant=11": {
+            "model": "another_furniture:block/chair/pale_oak_11",
+            "y": 180
+        },
+        "facing=west,tucked=false,variant=11": {
+            "model": "another_furniture:block/chair/pale_oak_11",
+            "y": 270
+        },
+        "facing=north,tucked=true,variant=11": {
+            "model": "another_furniture:block/chair/pale_oak_11_tucked"
+        },
+        "facing=east,tucked=true,variant=11": {
+            "model": "another_furniture:block/chair/pale_oak_11_tucked",
+            "y": 90
+        },
+        "facing=south,tucked=true,variant=11": {
+            "model": "another_furniture:block/chair/pale_oak_11_tucked",
+            "y": 180
+        },
+        "facing=west,tucked=true,variant=11": {
+            "model": "another_furniture:block/chair/pale_oak_11_tucked",
+            "y": 270
+        }
+    }
+}

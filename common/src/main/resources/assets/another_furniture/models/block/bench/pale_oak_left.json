@@ -1,0 +1,7 @@
+{
+    "parent": "another_furniture:block/template/bench_left",
+    "textures": {
+        "2": "another_furniture:block/bench/pale_oak",
+        "particle": "another_furniture:block/bench/pale_oak"
+    }
+}

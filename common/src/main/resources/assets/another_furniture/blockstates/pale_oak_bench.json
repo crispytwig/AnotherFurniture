@@ -1,0 +1,332 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "facing": "north",
+                "horizontal_1": "single"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_single"
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "horizontal_1": "single"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_single",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "horizontal_1": "single"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_single",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "horizontal_1": "single"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_single",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "horizontal_1": "left"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_left"
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "horizontal_1": "left"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_left",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "horizontal_1": "left"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_left",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "horizontal_1": "left"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_left",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "horizontal_1": "right"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_right"
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "horizontal_1": "right"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_right",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "horizontal_1": "right"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_right",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "horizontal_1": "right"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_right",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "horizontal_1": "middle"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_middle"
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "horizontal_1": "middle"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_middle",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "horizontal_1": "middle"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_middle",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "horizontal_1": "middle"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_middle",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "horizontal_2": "single",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_single"
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "horizontal_2": "single",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_single",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "horizontal_2": "single",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_single",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "horizontal_2": "single",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_single",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "horizontal_2": "left",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_left"
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "horizontal_2": "left",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_left",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "horizontal_2": "left",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_left",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "horizontal_2": "left",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_left",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "horizontal_2": "right",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_right"
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "horizontal_2": "right",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_right",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "horizontal_2": "right",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_right",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "horizontal_2": "right",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_right",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "horizontal_2": "middle",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_middle"
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "horizontal_2": "middle",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_middle",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "horizontal_2": "middle",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_middle",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "horizontal_2": "middle",
+                "back": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/bench/pale_oak_back_middle",
+                "y": 270
+            }
+        }
+    ]
+}

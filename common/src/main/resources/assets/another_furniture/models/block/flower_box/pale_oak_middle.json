@@ -1,0 +1,7 @@
+{
+    "parent": "another_furniture:block/template/flower_box_middle",
+    "textures": {
+        "top_sides": "another_furniture:block/flower_box/pale_oak_top_sides",
+        "bottom": "another_furniture:block/flower_box/pale_oak_bottom"
+    }
+}

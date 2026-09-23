@@ -1,0 +1,124 @@
+{
+    "variants": {
+        "facing=north,attached=true,horizontal=single": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached"
+        },
+        "facing=east,attached=true,horizontal=single": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached",
+            "y": 90
+        },
+        "facing=south,attached=true,horizontal=single": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached",
+            "y": 180
+        },
+        "facing=west,attached=true,horizontal=single": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached",
+            "y": 270
+        },
+        "facing=north,attached=true,horizontal=left": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached_left"
+        },
+        "facing=east,attached=true,horizontal=left": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached_left",
+            "y": 90
+        },
+        "facing=south,attached=true,horizontal=left": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached_left",
+            "y": 180
+        },
+        "facing=west,attached=true,horizontal=left": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached_left",
+            "y": 270
+        },
+        "facing=north,attached=true,horizontal=middle": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached_middle"
+        },
+        "facing=east,attached=true,horizontal=middle": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached_middle",
+            "y": 90
+        },
+        "facing=south,attached=true,horizontal=middle": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached_middle",
+            "y": 180
+        },
+        "facing=west,attached=true,horizontal=middle": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached_middle",
+            "y": 270
+        },
+        "facing=north,attached=true,horizontal=right": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached_right"
+        },
+        "facing=east,attached=true,horizontal=right": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached_right",
+            "y": 90
+        },
+        "facing=south,attached=true,horizontal=right": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached_right",
+            "y": 180
+        },
+        "facing=west,attached=true,horizontal=right": {
+            "model": "another_furniture:block/flower_box/pale_oak_attached_right",
+            "y": 270
+        },
+        "facing=north,attached=false,horizontal=single": {
+            "model": "another_furniture:block/flower_box/pale_oak"
+        },
+        "facing=east,attached=false,horizontal=single": {
+            "model": "another_furniture:block/flower_box/pale_oak",
+            "y": 90
+        },
+        "facing=south,attached=false,horizontal=single": {
+            "model": "another_furniture:block/flower_box/pale_oak",
+            "y": 180
+        },
+        "facing=west,attached=false,horizontal=single": {
+            "model": "another_furniture:block/flower_box/pale_oak",
+            "y": 270
+        },
+        "facing=north,attached=false,horizontal=left": {
+            "model": "another_furniture:block/flower_box/pale_oak_left"
+        },
+        "facing=east,attached=false,horizontal=left": {
+            "model": "another_furniture:block/flower_box/pale_oak_left",
+            "y": 90
+        },
+        "facing=south,attached=false,horizontal=left": {
+            "model": "another_furniture:block/flower_box/pale_oak_left",
+            "y": 180
+        },
+        "facing=west,attached=false,horizontal=left": {
+            "model": "another_furniture:block/flower_box/pale_oak_left",
+            "y": 270
+        },
+        "facing=north,attached=false,horizontal=middle": {
+            "model": "another_furniture:block/flower_box/pale_oak_middle"
+        },
+        "facing=east,attached=false,horizontal=middle": {
+            "model": "another_furniture:block/flower_box/pale_oak_middle",
+            "y": 90
+        },
+        "facing=south,attached=false,horizontal=middle": {
+            "model": "another_furniture:block/flower_box/pale_oak_middle",
+            "y": 180
+        },
+        "facing=west,attached=false,horizontal=middle": {
+            "model": "another_furniture:block/flower_box/pale_oak_middle",
+            "y": 270
+        },
+        "facing=north,attached=false,horizontal=right": {
+            "model": "another_furniture:block/flower_box/pale_oak_right"
+        },
+        "facing=east,attached=false,horizontal=right": {
+            "model": "another_furniture:block/flower_box/pale_oak_right",
+            "y": 90
+        },
+        "facing=south,attached=false,horizontal=right": {
+            "model": "another_furniture:block/flower_box/pale_oak_right",
+            "y": 180
+        },
+        "facing=west,attached=false,horizontal=right": {
+            "model": "another_furniture:block/flower_box/pale_oak_right",
+            "y": 270
+        }
+    }
+}

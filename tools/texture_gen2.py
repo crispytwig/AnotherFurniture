@@ -20,8 +20,8 @@ def get_palette_data(path = "C:\\Users\\jacec\\Desktop\\another_furniture\\tools
     print(palette_data)
     return palette_data
 
-def generate_wood_types(plank_path = "C:\\Users\\jacec\\Desktop\\another_furniture\\tools\\palettes\\planks", template_path = "C:\\Users\\lukeh\\Desktop\\Starfish-Modding\\AnotherFurniture\\common\\src\\main\\resources\\assets\\another_furniture\\textures\\block", banned_variants = ["shutter"]):
-    wood_types = ["oak", "spruce", "birch", "jungle", "acacia", "dark_oak", "mangrove", "crimson", "warped", "bamboo", "cherry"]
+def generate_wood_types(plank_path = "C:\\Users\\jacec\\Desktop\\modding\\another_furniture\\tools\\palettes\\planks", template_path = "C:\\Users\\jacec\\Desktop\\modding\\another_furniture\\common\\src\\main\\resources\\assets\\another_furniture\\textures\\block", banned_variants = ["shutter"]):
+    wood_types = ["oak", "spruce", "birch", "jungle", "acacia", "dark_oak", "mangrove", "crimson", "warped", "bamboo", "cherry", "pale_oak"]
 
     
 
@@ -160,7 +160,7 @@ def generate_color_types(color_path = "C:\\Users\\jacec\\Desktop\\another_furnit
 
 
 
-generate_wood_types(template_path = "C:\\Users\\jacec\\Desktop\\asdfg")
+generate_wood_types()
 
 #generate_color_types()
 #    "C:\\Users\\lukeh\\Desktop\\Starfish-Modding\\AnotherFurniture\\common\\src\\main\\resources\\assets\\another_furniture\\textures\\block\\curtain",

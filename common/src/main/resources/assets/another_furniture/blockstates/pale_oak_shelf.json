@@ -1,0 +1,64 @@
+{
+    "variants": {
+        "facing=north,horizontal=single": {
+            "model": "another_furniture:block/shelf/pale_oak_full"
+        },
+        "facing=east,horizontal=single": {
+            "model": "another_furniture:block/shelf/pale_oak_full",
+            "y": 90
+        },
+        "facing=south,horizontal=single": {
+            "model": "another_furniture:block/shelf/pale_oak_full",
+            "y": 180
+        },
+        "facing=west,horizontal=single": {
+            "model": "another_furniture:block/shelf/pale_oak_full",
+            "y": 270
+        },
+        "facing=north,horizontal=left": {
+            "model": "another_furniture:block/shelf/pale_oak_l"
+        },
+        "facing=east,horizontal=left": {
+            "model": "another_furniture:block/shelf/pale_oak_l",
+            "y": 90
+        },
+        "facing=south,horizontal=left": {
+            "model": "another_furniture:block/shelf/pale_oak_l",
+            "y": 180
+        },
+        "facing=west,horizontal=left": {
+            "model": "another_furniture:block/shelf/pale_oak_l",
+            "y": 270
+        },
+        "facing=north,horizontal=middle": {
+            "model": "another_furniture:block/shelf/pale_oak_top"
+        },
+        "facing=east,horizontal=middle": {
+            "model": "another_furniture:block/shelf/pale_oak_top",
+            "y": 90
+        },
+        "facing=south,horizontal=middle": {
+            "model": "another_furniture:block/shelf/pale_oak_top",
+            "y": 180
+        },
+        "facing=west,horizontal=middle": {
+            "model": "another_furniture:block/shelf/pale_oak_top",
+            "y": 270
+        },
+        "facing=north,horizontal=right": {
+            "model": "another_furniture:block/shelf/pale_oak_r"
+        },
+        "facing=east,horizontal=right": {
+            "model": "another_furniture:block/shelf/pale_oak_r",
+            "y": 90
+        },
+        "facing=south,horizontal=right": {
+            "model": "another_furniture:block/shelf/pale_oak_r",
+            "y": 180
+        },
+        "facing=west,horizontal=right": {
+            "model": "another_furniture:block/shelf/pale_oak_r",
+            "y": 270
+        }
+    }
+}

@@ -11,6 +11,7 @@
 		{"id": "another_furniture:warped_chair", "required": false},
 		{"id": "another_furniture:mangrove_chair", "required": false},
 		{"id": "another_furniture:bamboo_chair", "required": false},
-		{"id": "another_furniture:cherry_chair", "required": false}
+		{"id": "another_furniture:cherry_chair", "required": false},
+		{"id": "another_furniture:pale_oak_chair", "required": false}
 	]
 }

@@ -9,7 +9,6 @@
 		{"id": "another_furniture:crimson_drawer", "required": false},
 		{"id": "another_furniture:crimson_lattice", "required": false},
 		{"id": "another_furniture:crimson_planter_box", "required": false},
-		{"id": "another_furniture:crimson_grandfather_clock", "required": false},
 		{"id": "another_furniture:warped_chair", "required": false},
 		{"id": "another_furniture:warped_shelf", "required": false},
 		{"id": "another_furniture:warped_table", "required": false},
@@ -17,7 +16,6 @@
 		{"id": "another_furniture:warped_bench", "required": false},
 		{"id": "another_furniture:warped_drawer", "required": false},
 		{"id": "another_furniture:warped_lattice", "required": false},
-		{"id": "another_furniture:warped_planter_box", "required": false},
-		{"id": "another_furniture:warped_grandfather_clock", "required": false}
+		{"id": "another_furniture:warped_planter_box", "required": false}
 	]
 }

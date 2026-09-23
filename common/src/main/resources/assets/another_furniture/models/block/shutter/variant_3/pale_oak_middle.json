@@ -1,0 +1,6 @@
+{
+    "parent": "another_furniture:block/template/shutter_middle",
+    "textures": {
+        "middle": "another_furniture:block/shutter/variant_3/pale_oak_middle"
+    }
+}

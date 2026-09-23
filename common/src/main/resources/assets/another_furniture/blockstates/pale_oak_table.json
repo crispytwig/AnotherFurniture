@@ -1,0 +1,78 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "facing": "north"
+            },
+            "apply": {
+                "model": "another_furniture:block/table/pale_oak_top"
+            }
+        },
+        {
+            "when": {
+                "facing": "east"
+            },
+            "apply": {
+                "model": "another_furniture:block/table/pale_oak_top",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south"
+            },
+            "apply": {
+                "model": "another_furniture:block/table/pale_oak_top",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west"
+            },
+            "apply": {
+                "model": "another_furniture:block/table/pale_oak_top",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "leg_1": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/table/pale_oak_leg",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "leg_2": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/table/pale_oak_leg",
+                "y": 90,
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "leg_3": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/table/pale_oak_leg",
+                "y": 180,
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "leg_4": "true"
+            },
+            "apply": {
+                "model": "another_furniture:block/table/pale_oak_leg",
+                "y": 270,
+                "uvlock": false
+            }
+        }
+    ]
+}

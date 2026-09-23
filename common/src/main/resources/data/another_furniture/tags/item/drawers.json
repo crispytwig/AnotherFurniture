@@ -11,6 +11,7 @@
 		{"id": "another_furniture:warped_drawer", "required": false},
 		{"id": "another_furniture:mangrove_drawer", "required": false},
 		{"id": "another_furniture:bamboo_drawer", "required": false},
-		{"id": "another_furniture:cherry_drawer", "required": false}
+		{"id": "another_furniture:cherry_drawer", "required": false},
+		{"id": "another_furniture:pale_oak_drawer", "required": false}
 	]
 }

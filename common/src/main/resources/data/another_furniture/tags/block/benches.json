@@ -11,6 +11,7 @@
 		{"id": "another_furniture:warped_bench", "required": false},
 		{"id": "another_furniture:mangrove_bench", "required": false},
 		{"id": "another_furniture:bamboo_bench", "required": false},
-		{"id": "another_furniture:cherry_bench", "required": false}
+		{"id": "another_furniture:cherry_bench", "required": false},
+		{"id": "another_furniture:pale_oak_bench", "required": false}
 	]
 }

@@ -1,0 +1,1984 @@
+{
+    "variants": {
+        "variant=1,vertical=single,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_single"
+        },
+        "variant=1,vertical=single,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_single",
+            "y": 90
+        },
+        "variant=1,vertical=single,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_single",
+            "y": 180
+        },
+        "variant=1,vertical=single,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_single",
+            "y": 270
+        },
+        "variant=1,vertical=single,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_single",
+            "y": 90
+        },
+        "variant=1,vertical=single,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_single",
+            "y": 180
+        },
+        "variant=1,vertical=single,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_single",
+            "y": 270
+        },
+        "variant=1,vertical=single,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_single"
+        },
+        "variant=1,vertical=single,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_single",
+            "y": 270
+        },
+        "variant=1,vertical=single,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_single"
+        },
+        "variant=1,vertical=single,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_single",
+            "y": 90
+        },
+        "variant=1,vertical=single,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_single",
+            "y": 180
+        },
+        "variant=1,vertical=top,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_top"
+        },
+        "variant=1,vertical=top,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_top",
+            "y": 90
+        },
+        "variant=1,vertical=top,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_top",
+            "y": 180
+        },
+        "variant=1,vertical=top,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_top",
+            "y": 270
+        },
+        "variant=1,vertical=top,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_top",
+            "y": 90
+        },
+        "variant=1,vertical=top,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_top",
+            "y": 180
+        },
+        "variant=1,vertical=top,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_top",
+            "y": 270
+        },
+        "variant=1,vertical=top,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_top"
+        },
+        "variant=1,vertical=top,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_top",
+            "y": 270
+        },
+        "variant=1,vertical=top,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_top"
+        },
+        "variant=1,vertical=top,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_top",
+            "y": 90
+        },
+        "variant=1,vertical=top,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_top",
+            "y": 180
+        },
+        "variant=1,vertical=bottom,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_bottom"
+        },
+        "variant=1,vertical=bottom,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=1,vertical=bottom,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=1,vertical=bottom,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=1,vertical=bottom,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=1,vertical=bottom,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=1,vertical=bottom,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=1,vertical=bottom,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_bottom"
+        },
+        "variant=1,vertical=bottom,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=1,vertical=bottom,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_bottom"
+        },
+        "variant=1,vertical=bottom,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=1,vertical=bottom,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=1,vertical=middle,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_middle"
+        },
+        "variant=1,vertical=middle,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_middle",
+            "y": 90
+        },
+        "variant=1,vertical=middle,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_middle",
+            "y": 180
+        },
+        "variant=1,vertical=middle,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_middle",
+            "y": 270
+        },
+        "variant=1,vertical=middle,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_middle",
+            "y": 90
+        },
+        "variant=1,vertical=middle,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_middle",
+            "y": 180
+        },
+        "variant=1,vertical=middle,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_middle",
+            "y": 270
+        },
+        "variant=1,vertical=middle,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_middle"
+        },
+        "variant=1,vertical=middle,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_middle",
+            "y": 270
+        },
+        "variant=1,vertical=middle,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_middle"
+        },
+        "variant=1,vertical=middle,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_middle",
+            "y": 90
+        },
+        "variant=1,vertical=middle,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_1/pale_oak_middle",
+            "y": 180
+        },
+        "variant=2,vertical=single,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_single"
+        },
+        "variant=2,vertical=single,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_single",
+            "y": 90
+        },
+        "variant=2,vertical=single,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_single",
+            "y": 180
+        },
+        "variant=2,vertical=single,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_single",
+            "y": 270
+        },
+        "variant=2,vertical=single,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_single",
+            "y": 90
+        },
+        "variant=2,vertical=single,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_single",
+            "y": 180
+        },
+        "variant=2,vertical=single,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_single",
+            "y": 270
+        },
+        "variant=2,vertical=single,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_single"
+        },
+        "variant=2,vertical=single,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_single",
+            "y": 270
+        },
+        "variant=2,vertical=single,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_single"
+        },
+        "variant=2,vertical=single,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_single",
+            "y": 90
+        },
+        "variant=2,vertical=single,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_single",
+            "y": 180
+        },
+        "variant=2,vertical=top,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_top"
+        },
+        "variant=2,vertical=top,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_top",
+            "y": 90
+        },
+        "variant=2,vertical=top,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_top",
+            "y": 180
+        },
+        "variant=2,vertical=top,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_top",
+            "y": 270
+        },
+        "variant=2,vertical=top,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_top",
+            "y": 90
+        },
+        "variant=2,vertical=top,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_top",
+            "y": 180
+        },
+        "variant=2,vertical=top,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_top",
+            "y": 270
+        },
+        "variant=2,vertical=top,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_top"
+        },
+        "variant=2,vertical=top,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_top",
+            "y": 270
+        },
+        "variant=2,vertical=top,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_top"
+        },
+        "variant=2,vertical=top,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_top",
+            "y": 90
+        },
+        "variant=2,vertical=top,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_top",
+            "y": 180
+        },
+        "variant=2,vertical=bottom,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_bottom"
+        },
+        "variant=2,vertical=bottom,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=2,vertical=bottom,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=2,vertical=bottom,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=2,vertical=bottom,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=2,vertical=bottom,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=2,vertical=bottom,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=2,vertical=bottom,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_bottom"
+        },
+        "variant=2,vertical=bottom,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=2,vertical=bottom,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_bottom"
+        },
+        "variant=2,vertical=bottom,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=2,vertical=bottom,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=2,vertical=middle,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_middle"
+        },
+        "variant=2,vertical=middle,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_middle",
+            "y": 90
+        },
+        "variant=2,vertical=middle,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_middle",
+            "y": 180
+        },
+        "variant=2,vertical=middle,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_middle",
+            "y": 270
+        },
+        "variant=2,vertical=middle,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_middle",
+            "y": 90
+        },
+        "variant=2,vertical=middle,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_middle",
+            "y": 180
+        },
+        "variant=2,vertical=middle,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_middle",
+            "y": 270
+        },
+        "variant=2,vertical=middle,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_middle"
+        },
+        "variant=2,vertical=middle,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_middle",
+            "y": 270
+        },
+        "variant=2,vertical=middle,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_middle"
+        },
+        "variant=2,vertical=middle,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_middle",
+            "y": 90
+        },
+        "variant=2,vertical=middle,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_2/pale_oak_middle",
+            "y": 180
+        },
+        "variant=3,vertical=single,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_single"
+        },
+        "variant=3,vertical=single,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_single",
+            "y": 90
+        },
+        "variant=3,vertical=single,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_single",
+            "y": 180
+        },
+        "variant=3,vertical=single,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_single",
+            "y": 270
+        },
+        "variant=3,vertical=single,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_single",
+            "y": 90
+        },
+        "variant=3,vertical=single,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_single",
+            "y": 180
+        },
+        "variant=3,vertical=single,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_single",
+            "y": 270
+        },
+        "variant=3,vertical=single,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_single"
+        },
+        "variant=3,vertical=single,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_single",
+            "y": 270
+        },
+        "variant=3,vertical=single,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_single"
+        },
+        "variant=3,vertical=single,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_single",
+            "y": 90
+        },
+        "variant=3,vertical=single,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_single",
+            "y": 180
+        },
+        "variant=3,vertical=top,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_top"
+        },
+        "variant=3,vertical=top,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_top",
+            "y": 90
+        },
+        "variant=3,vertical=top,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_top",
+            "y": 180
+        },
+        "variant=3,vertical=top,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_top",
+            "y": 270
+        },
+        "variant=3,vertical=top,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_top",
+            "y": 90
+        },
+        "variant=3,vertical=top,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_top",
+            "y": 180
+        },
+        "variant=3,vertical=top,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_top",
+            "y": 270
+        },
+        "variant=3,vertical=top,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_top"
+        },
+        "variant=3,vertical=top,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_top",
+            "y": 270
+        },
+        "variant=3,vertical=top,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_top"
+        },
+        "variant=3,vertical=top,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_top",
+            "y": 90
+        },
+        "variant=3,vertical=top,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_top",
+            "y": 180
+        },
+        "variant=3,vertical=bottom,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_bottom"
+        },
+        "variant=3,vertical=bottom,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=3,vertical=bottom,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=3,vertical=bottom,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=3,vertical=bottom,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=3,vertical=bottom,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=3,vertical=bottom,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=3,vertical=bottom,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_bottom"
+        },
+        "variant=3,vertical=bottom,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=3,vertical=bottom,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_bottom"
+        },
+        "variant=3,vertical=bottom,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=3,vertical=bottom,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=3,vertical=middle,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_middle"
+        },
+        "variant=3,vertical=middle,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_middle",
+            "y": 90
+        },
+        "variant=3,vertical=middle,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_middle",
+            "y": 180
+        },
+        "variant=3,vertical=middle,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_middle",
+            "y": 270
+        },
+        "variant=3,vertical=middle,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_middle",
+            "y": 90
+        },
+        "variant=3,vertical=middle,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_middle",
+            "y": 180
+        },
+        "variant=3,vertical=middle,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_middle",
+            "y": 270
+        },
+        "variant=3,vertical=middle,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_middle"
+        },
+        "variant=3,vertical=middle,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_middle",
+            "y": 270
+        },
+        "variant=3,vertical=middle,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_middle"
+        },
+        "variant=3,vertical=middle,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_middle",
+            "y": 90
+        },
+        "variant=3,vertical=middle,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_3/pale_oak_middle",
+            "y": 180
+        },
+        "variant=4,vertical=single,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_single"
+        },
+        "variant=4,vertical=single,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_single",
+            "y": 90
+        },
+        "variant=4,vertical=single,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_single",
+            "y": 180
+        },
+        "variant=4,vertical=single,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_single",
+            "y": 270
+        },
+        "variant=4,vertical=single,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_single",
+            "y": 90
+        },
+        "variant=4,vertical=single,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_single",
+            "y": 180
+        },
+        "variant=4,vertical=single,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_single",
+            "y": 270
+        },
+        "variant=4,vertical=single,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_single"
+        },
+        "variant=4,vertical=single,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_single",
+            "y": 270
+        },
+        "variant=4,vertical=single,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_single"
+        },
+        "variant=4,vertical=single,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_single",
+            "y": 90
+        },
+        "variant=4,vertical=single,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_single",
+            "y": 180
+        },
+        "variant=4,vertical=top,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_top"
+        },
+        "variant=4,vertical=top,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_top",
+            "y": 90
+        },
+        "variant=4,vertical=top,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_top",
+            "y": 180
+        },
+        "variant=4,vertical=top,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_top",
+            "y": 270
+        },
+        "variant=4,vertical=top,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_top",
+            "y": 90
+        },
+        "variant=4,vertical=top,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_top",
+            "y": 180
+        },
+        "variant=4,vertical=top,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_top",
+            "y": 270
+        },
+        "variant=4,vertical=top,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_top"
+        },
+        "variant=4,vertical=top,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_top",
+            "y": 270
+        },
+        "variant=4,vertical=top,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_top"
+        },
+        "variant=4,vertical=top,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_top",
+            "y": 90
+        },
+        "variant=4,vertical=top,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_top",
+            "y": 180
+        },
+        "variant=4,vertical=bottom,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_bottom"
+        },
+        "variant=4,vertical=bottom,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=4,vertical=bottom,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=4,vertical=bottom,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=4,vertical=bottom,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=4,vertical=bottom,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=4,vertical=bottom,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=4,vertical=bottom,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_bottom"
+        },
+        "variant=4,vertical=bottom,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=4,vertical=bottom,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_bottom"
+        },
+        "variant=4,vertical=bottom,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=4,vertical=bottom,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=4,vertical=middle,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_middle"
+        },
+        "variant=4,vertical=middle,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_middle",
+            "y": 90
+        },
+        "variant=4,vertical=middle,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_middle",
+            "y": 180
+        },
+        "variant=4,vertical=middle,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_middle",
+            "y": 270
+        },
+        "variant=4,vertical=middle,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_middle",
+            "y": 90
+        },
+        "variant=4,vertical=middle,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_middle",
+            "y": 180
+        },
+        "variant=4,vertical=middle,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_middle",
+            "y": 270
+        },
+        "variant=4,vertical=middle,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_middle"
+        },
+        "variant=4,vertical=middle,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_middle",
+            "y": 270
+        },
+        "variant=4,vertical=middle,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_middle"
+        },
+        "variant=4,vertical=middle,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_middle",
+            "y": 90
+        },
+        "variant=4,vertical=middle,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_4/pale_oak_middle",
+            "y": 180
+        },
+        "variant=5,vertical=single,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_single"
+        },
+        "variant=5,vertical=single,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_single",
+            "y": 90
+        },
+        "variant=5,vertical=single,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_single",
+            "y": 180
+        },
+        "variant=5,vertical=single,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_single",
+            "y": 270
+        },
+        "variant=5,vertical=single,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_single",
+            "y": 90
+        },
+        "variant=5,vertical=single,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_single",
+            "y": 180
+        },
+        "variant=5,vertical=single,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_single",
+            "y": 270
+        },
+        "variant=5,vertical=single,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_single"
+        },
+        "variant=5,vertical=single,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_single",
+            "y": 270
+        },
+        "variant=5,vertical=single,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_single"
+        },
+        "variant=5,vertical=single,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_single",
+            "y": 90
+        },
+        "variant=5,vertical=single,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_single",
+            "y": 180
+        },
+        "variant=5,vertical=top,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_top"
+        },
+        "variant=5,vertical=top,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_top",
+            "y": 90
+        },
+        "variant=5,vertical=top,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_top",
+            "y": 180
+        },
+        "variant=5,vertical=top,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_top",
+            "y": 270
+        },
+        "variant=5,vertical=top,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_top",
+            "y": 90
+        },
+        "variant=5,vertical=top,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_top",
+            "y": 180
+        },
+        "variant=5,vertical=top,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_top",
+            "y": 270
+        },
+        "variant=5,vertical=top,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_top"
+        },
+        "variant=5,vertical=top,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_top",
+            "y": 270
+        },
+        "variant=5,vertical=top,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_top"
+        },
+        "variant=5,vertical=top,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_top",
+            "y": 90
+        },
+        "variant=5,vertical=top,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_top",
+            "y": 180
+        },
+        "variant=5,vertical=bottom,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_bottom"
+        },
+        "variant=5,vertical=bottom,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=5,vertical=bottom,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=5,vertical=bottom,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=5,vertical=bottom,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=5,vertical=bottom,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=5,vertical=bottom,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=5,vertical=bottom,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_bottom"
+        },
+        "variant=5,vertical=bottom,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=5,vertical=bottom,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_bottom"
+        },
+        "variant=5,vertical=bottom,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=5,vertical=bottom,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=5,vertical=middle,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_middle"
+        },
+        "variant=5,vertical=middle,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_middle",
+            "y": 90
+        },
+        "variant=5,vertical=middle,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_middle",
+            "y": 180
+        },
+        "variant=5,vertical=middle,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_middle",
+            "y": 270
+        },
+        "variant=5,vertical=middle,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_middle",
+            "y": 90
+        },
+        "variant=5,vertical=middle,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_middle",
+            "y": 180
+        },
+        "variant=5,vertical=middle,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_middle",
+            "y": 270
+        },
+        "variant=5,vertical=middle,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_middle"
+        },
+        "variant=5,vertical=middle,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_middle",
+            "y": 270
+        },
+        "variant=5,vertical=middle,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_middle"
+        },
+        "variant=5,vertical=middle,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_middle",
+            "y": 90
+        },
+        "variant=5,vertical=middle,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_5/pale_oak_middle",
+            "y": 180
+        },
+        "variant=6,vertical=single,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_single"
+        },
+        "variant=6,vertical=single,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_single",
+            "y": 90
+        },
+        "variant=6,vertical=single,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_single",
+            "y": 180
+        },
+        "variant=6,vertical=single,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_single",
+            "y": 270
+        },
+        "variant=6,vertical=single,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_single",
+            "y": 90
+        },
+        "variant=6,vertical=single,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_single",
+            "y": 180
+        },
+        "variant=6,vertical=single,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_single",
+            "y": 270
+        },
+        "variant=6,vertical=single,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_single"
+        },
+        "variant=6,vertical=single,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_single",
+            "y": 270
+        },
+        "variant=6,vertical=single,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_single"
+        },
+        "variant=6,vertical=single,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_single",
+            "y": 90
+        },
+        "variant=6,vertical=single,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_single",
+            "y": 180
+        },
+        "variant=6,vertical=top,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_top"
+        },
+        "variant=6,vertical=top,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_top",
+            "y": 90
+        },
+        "variant=6,vertical=top,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_top",
+            "y": 180
+        },
+        "variant=6,vertical=top,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_top",
+            "y": 270
+        },
+        "variant=6,vertical=top,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_top",
+            "y": 90
+        },
+        "variant=6,vertical=top,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_top",
+            "y": 180
+        },
+        "variant=6,vertical=top,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_top",
+            "y": 270
+        },
+        "variant=6,vertical=top,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_top"
+        },
+        "variant=6,vertical=top,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_top",
+            "y": 270
+        },
+        "variant=6,vertical=top,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_top"
+        },
+        "variant=6,vertical=top,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_top",
+            "y": 90
+        },
+        "variant=6,vertical=top,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_top",
+            "y": 180
+        },
+        "variant=6,vertical=bottom,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_bottom"
+        },
+        "variant=6,vertical=bottom,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=6,vertical=bottom,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=6,vertical=bottom,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=6,vertical=bottom,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=6,vertical=bottom,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=6,vertical=bottom,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=6,vertical=bottom,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_bottom"
+        },
+        "variant=6,vertical=bottom,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=6,vertical=bottom,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_bottom"
+        },
+        "variant=6,vertical=bottom,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=6,vertical=bottom,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=6,vertical=middle,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_middle"
+        },
+        "variant=6,vertical=middle,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_middle",
+            "y": 90
+        },
+        "variant=6,vertical=middle,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_middle",
+            "y": 180
+        },
+        "variant=6,vertical=middle,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_middle",
+            "y": 270
+        },
+        "variant=6,vertical=middle,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_middle",
+            "y": 90
+        },
+        "variant=6,vertical=middle,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_middle",
+            "y": 180
+        },
+        "variant=6,vertical=middle,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_middle",
+            "y": 270
+        },
+        "variant=6,vertical=middle,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_middle"
+        },
+        "variant=6,vertical=middle,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_middle",
+            "y": 270
+        },
+        "variant=6,vertical=middle,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_middle"
+        },
+        "variant=6,vertical=middle,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_middle",
+            "y": 90
+        },
+        "variant=6,vertical=middle,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_6/pale_oak_middle",
+            "y": 180
+        },
+        "variant=7,vertical=single,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_single"
+        },
+        "variant=7,vertical=single,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_single",
+            "y": 90
+        },
+        "variant=7,vertical=single,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_single",
+            "y": 180
+        },
+        "variant=7,vertical=single,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_single",
+            "y": 270
+        },
+        "variant=7,vertical=single,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_single",
+            "y": 90
+        },
+        "variant=7,vertical=single,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_single",
+            "y": 180
+        },
+        "variant=7,vertical=single,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_single",
+            "y": 270
+        },
+        "variant=7,vertical=single,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_single"
+        },
+        "variant=7,vertical=single,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_single",
+            "y": 270
+        },
+        "variant=7,vertical=single,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_single"
+        },
+        "variant=7,vertical=single,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_single",
+            "y": 90
+        },
+        "variant=7,vertical=single,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_single",
+            "y": 180
+        },
+        "variant=7,vertical=top,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_top"
+        },
+        "variant=7,vertical=top,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_top",
+            "y": 90
+        },
+        "variant=7,vertical=top,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_top",
+            "y": 180
+        },
+        "variant=7,vertical=top,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_top",
+            "y": 270
+        },
+        "variant=7,vertical=top,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_top",
+            "y": 90
+        },
+        "variant=7,vertical=top,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_top",
+            "y": 180
+        },
+        "variant=7,vertical=top,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_top",
+            "y": 270
+        },
+        "variant=7,vertical=top,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_top"
+        },
+        "variant=7,vertical=top,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_top",
+            "y": 270
+        },
+        "variant=7,vertical=top,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_top"
+        },
+        "variant=7,vertical=top,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_top",
+            "y": 90
+        },
+        "variant=7,vertical=top,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_top",
+            "y": 180
+        },
+        "variant=7,vertical=bottom,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_bottom"
+        },
+        "variant=7,vertical=bottom,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=7,vertical=bottom,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=7,vertical=bottom,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=7,vertical=bottom,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=7,vertical=bottom,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=7,vertical=bottom,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=7,vertical=bottom,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_bottom"
+        },
+        "variant=7,vertical=bottom,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=7,vertical=bottom,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_bottom"
+        },
+        "variant=7,vertical=bottom,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=7,vertical=bottom,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=7,vertical=middle,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_middle"
+        },
+        "variant=7,vertical=middle,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_middle",
+            "y": 90
+        },
+        "variant=7,vertical=middle,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_middle",
+            "y": 180
+        },
+        "variant=7,vertical=middle,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_middle",
+            "y": 270
+        },
+        "variant=7,vertical=middle,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_middle",
+            "y": 90
+        },
+        "variant=7,vertical=middle,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_middle",
+            "y": 180
+        },
+        "variant=7,vertical=middle,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_middle",
+            "y": 270
+        },
+        "variant=7,vertical=middle,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_middle"
+        },
+        "variant=7,vertical=middle,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_middle",
+            "y": 270
+        },
+        "variant=7,vertical=middle,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_middle"
+        },
+        "variant=7,vertical=middle,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_middle",
+            "y": 90
+        },
+        "variant=7,vertical=middle,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_7/pale_oak_middle",
+            "y": 180
+        },
+        "variant=8,vertical=single,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_single"
+        },
+        "variant=8,vertical=single,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_single",
+            "y": 90
+        },
+        "variant=8,vertical=single,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_single",
+            "y": 180
+        },
+        "variant=8,vertical=single,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_single",
+            "y": 270
+        },
+        "variant=8,vertical=single,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_single",
+            "y": 90
+        },
+        "variant=8,vertical=single,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_single",
+            "y": 180
+        },
+        "variant=8,vertical=single,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_single",
+            "y": 270
+        },
+        "variant=8,vertical=single,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_single"
+        },
+        "variant=8,vertical=single,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_single",
+            "y": 270
+        },
+        "variant=8,vertical=single,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_single"
+        },
+        "variant=8,vertical=single,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_single",
+            "y": 90
+        },
+        "variant=8,vertical=single,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_single",
+            "y": 180
+        },
+        "variant=8,vertical=top,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_top"
+        },
+        "variant=8,vertical=top,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_top",
+            "y": 90
+        },
+        "variant=8,vertical=top,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_top",
+            "y": 180
+        },
+        "variant=8,vertical=top,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_top",
+            "y": 270
+        },
+        "variant=8,vertical=top,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_top",
+            "y": 90
+        },
+        "variant=8,vertical=top,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_top",
+            "y": 180
+        },
+        "variant=8,vertical=top,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_top",
+            "y": 270
+        },
+        "variant=8,vertical=top,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_top"
+        },
+        "variant=8,vertical=top,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_top",
+            "y": 270
+        },
+        "variant=8,vertical=top,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_top"
+        },
+        "variant=8,vertical=top,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_top",
+            "y": 90
+        },
+        "variant=8,vertical=top,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_top",
+            "y": 180
+        },
+        "variant=8,vertical=bottom,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_bottom"
+        },
+        "variant=8,vertical=bottom,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=8,vertical=bottom,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=8,vertical=bottom,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=8,vertical=bottom,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=8,vertical=bottom,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=8,vertical=bottom,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=8,vertical=bottom,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_bottom"
+        },
+        "variant=8,vertical=bottom,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=8,vertical=bottom,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_bottom"
+        },
+        "variant=8,vertical=bottom,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=8,vertical=bottom,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=8,vertical=middle,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_middle"
+        },
+        "variant=8,vertical=middle,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_middle",
+            "y": 90
+        },
+        "variant=8,vertical=middle,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_middle",
+            "y": 180
+        },
+        "variant=8,vertical=middle,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_middle",
+            "y": 270
+        },
+        "variant=8,vertical=middle,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_middle",
+            "y": 90
+        },
+        "variant=8,vertical=middle,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_middle",
+            "y": 180
+        },
+        "variant=8,vertical=middle,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_middle",
+            "y": 270
+        },
+        "variant=8,vertical=middle,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_middle"
+        },
+        "variant=8,vertical=middle,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_middle",
+            "y": 270
+        },
+        "variant=8,vertical=middle,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_middle"
+        },
+        "variant=8,vertical=middle,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_middle",
+            "y": 90
+        },
+        "variant=8,vertical=middle,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_8/pale_oak_middle",
+            "y": 180
+        },
+        "variant=9,vertical=single,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_single"
+        },
+        "variant=9,vertical=single,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_single",
+            "y": 90
+        },
+        "variant=9,vertical=single,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_single",
+            "y": 180
+        },
+        "variant=9,vertical=single,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_single",
+            "y": 270
+        },
+        "variant=9,vertical=single,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_single",
+            "y": 90
+        },
+        "variant=9,vertical=single,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_single",
+            "y": 180
+        },
+        "variant=9,vertical=single,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_single",
+            "y": 270
+        },
+        "variant=9,vertical=single,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_single"
+        },
+        "variant=9,vertical=single,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_single",
+            "y": 270
+        },
+        "variant=9,vertical=single,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_single"
+        },
+        "variant=9,vertical=single,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_single",
+            "y": 90
+        },
+        "variant=9,vertical=single,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_single",
+            "y": 180
+        },
+        "variant=9,vertical=top,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_top"
+        },
+        "variant=9,vertical=top,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_top",
+            "y": 90
+        },
+        "variant=9,vertical=top,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_top",
+            "y": 180
+        },
+        "variant=9,vertical=top,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_top",
+            "y": 270
+        },
+        "variant=9,vertical=top,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_top",
+            "y": 90
+        },
+        "variant=9,vertical=top,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_top",
+            "y": 180
+        },
+        "variant=9,vertical=top,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_top",
+            "y": 270
+        },
+        "variant=9,vertical=top,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_top"
+        },
+        "variant=9,vertical=top,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_top",
+            "y": 270
+        },
+        "variant=9,vertical=top,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_top"
+        },
+        "variant=9,vertical=top,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_top",
+            "y": 90
+        },
+        "variant=9,vertical=top,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_top",
+            "y": 180
+        },
+        "variant=9,vertical=bottom,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_bottom"
+        },
+        "variant=9,vertical=bottom,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=9,vertical=bottom,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=9,vertical=bottom,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=9,vertical=bottom,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=9,vertical=bottom,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=9,vertical=bottom,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=9,vertical=bottom,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_bottom"
+        },
+        "variant=9,vertical=bottom,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=9,vertical=bottom,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_bottom"
+        },
+        "variant=9,vertical=bottom,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=9,vertical=bottom,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=9,vertical=middle,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_middle"
+        },
+        "variant=9,vertical=middle,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_middle",
+            "y": 90
+        },
+        "variant=9,vertical=middle,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_middle",
+            "y": 180
+        },
+        "variant=9,vertical=middle,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_middle",
+            "y": 270
+        },
+        "variant=9,vertical=middle,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_middle",
+            "y": 90
+        },
+        "variant=9,vertical=middle,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_middle",
+            "y": 180
+        },
+        "variant=9,vertical=middle,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_middle",
+            "y": 270
+        },
+        "variant=9,vertical=middle,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_middle"
+        },
+        "variant=9,vertical=middle,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_middle",
+            "y": 270
+        },
+        "variant=9,vertical=middle,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_middle"
+        },
+        "variant=9,vertical=middle,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_middle",
+            "y": 90
+        },
+        "variant=9,vertical=middle,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_9/pale_oak_middle",
+            "y": 180
+        },
+        "variant=10,vertical=single,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_single"
+        },
+        "variant=10,vertical=single,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_single",
+            "y": 90
+        },
+        "variant=10,vertical=single,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_single",
+            "y": 180
+        },
+        "variant=10,vertical=single,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_single",
+            "y": 270
+        },
+        "variant=10,vertical=single,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_single",
+            "y": 90
+        },
+        "variant=10,vertical=single,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_single",
+            "y": 180
+        },
+        "variant=10,vertical=single,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_single",
+            "y": 270
+        },
+        "variant=10,vertical=single,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_single"
+        },
+        "variant=10,vertical=single,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_single",
+            "y": 270
+        },
+        "variant=10,vertical=single,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_single"
+        },
+        "variant=10,vertical=single,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_single",
+            "y": 90
+        },
+        "variant=10,vertical=single,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_single",
+            "y": 180
+        },
+        "variant=10,vertical=top,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_top"
+        },
+        "variant=10,vertical=top,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_top",
+            "y": 90
+        },
+        "variant=10,vertical=top,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_top",
+            "y": 180
+        },
+        "variant=10,vertical=top,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_top",
+            "y": 270
+        },
+        "variant=10,vertical=top,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_top",
+            "y": 90
+        },
+        "variant=10,vertical=top,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_top",
+            "y": 180
+        },
+        "variant=10,vertical=top,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_top",
+            "y": 270
+        },
+        "variant=10,vertical=top,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_top"
+        },
+        "variant=10,vertical=top,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_top",
+            "y": 270
+        },
+        "variant=10,vertical=top,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_top"
+        },
+        "variant=10,vertical=top,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_top",
+            "y": 90
+        },
+        "variant=10,vertical=top,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_top",
+            "y": 180
+        },
+        "variant=10,vertical=bottom,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_bottom"
+        },
+        "variant=10,vertical=bottom,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=10,vertical=bottom,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=10,vertical=bottom,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=10,vertical=bottom,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=10,vertical=bottom,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=10,vertical=bottom,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=10,vertical=bottom,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_bottom"
+        },
+        "variant=10,vertical=bottom,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=10,vertical=bottom,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_bottom"
+        },
+        "variant=10,vertical=bottom,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=10,vertical=bottom,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=10,vertical=middle,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_middle"
+        },
+        "variant=10,vertical=middle,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_middle",
+            "y": 90
+        },
+        "variant=10,vertical=middle,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_middle",
+            "y": 180
+        },
+        "variant=10,vertical=middle,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_middle",
+            "y": 270
+        },
+        "variant=10,vertical=middle,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_middle",
+            "y": 90
+        },
+        "variant=10,vertical=middle,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_middle",
+            "y": 180
+        },
+        "variant=10,vertical=middle,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_middle",
+            "y": 270
+        },
+        "variant=10,vertical=middle,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_middle"
+        },
+        "variant=10,vertical=middle,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_middle",
+            "y": 270
+        },
+        "variant=10,vertical=middle,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_middle"
+        },
+        "variant=10,vertical=middle,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_middle",
+            "y": 90
+        },
+        "variant=10,vertical=middle,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_10/pale_oak_middle",
+            "y": 180
+        },
+        "variant=11,vertical=single,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_single"
+        },
+        "variant=11,vertical=single,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_single",
+            "y": 90
+        },
+        "variant=11,vertical=single,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_single",
+            "y": 180
+        },
+        "variant=11,vertical=single,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_single",
+            "y": 270
+        },
+        "variant=11,vertical=single,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_single",
+            "y": 90
+        },
+        "variant=11,vertical=single,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_single",
+            "y": 180
+        },
+        "variant=11,vertical=single,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_single",
+            "y": 270
+        },
+        "variant=11,vertical=single,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_single"
+        },
+        "variant=11,vertical=single,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_single",
+            "y": 270
+        },
+        "variant=11,vertical=single,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_single"
+        },
+        "variant=11,vertical=single,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_single",
+            "y": 90
+        },
+        "variant=11,vertical=single,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_single",
+            "y": 180
+        },
+        "variant=11,vertical=top,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_top"
+        },
+        "variant=11,vertical=top,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_top",
+            "y": 90
+        },
+        "variant=11,vertical=top,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_top",
+            "y": 180
+        },
+        "variant=11,vertical=top,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_top",
+            "y": 270
+        },
+        "variant=11,vertical=top,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_top",
+            "y": 90
+        },
+        "variant=11,vertical=top,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_top",
+            "y": 180
+        },
+        "variant=11,vertical=top,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_top",
+            "y": 270
+        },
+        "variant=11,vertical=top,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_top"
+        },
+        "variant=11,vertical=top,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_top",
+            "y": 270
+        },
+        "variant=11,vertical=top,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_top"
+        },
+        "variant=11,vertical=top,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_top",
+            "y": 90
+        },
+        "variant=11,vertical=top,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_top",
+            "y": 180
+        },
+        "variant=11,vertical=bottom,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_bottom"
+        },
+        "variant=11,vertical=bottom,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=11,vertical=bottom,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=11,vertical=bottom,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=11,vertical=bottom,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=11,vertical=bottom,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=11,vertical=bottom,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=11,vertical=bottom,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_bottom"
+        },
+        "variant=11,vertical=bottom,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_bottom",
+            "y": 270
+        },
+        "variant=11,vertical=bottom,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_bottom"
+        },
+        "variant=11,vertical=bottom,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_bottom",
+            "y": 90
+        },
+        "variant=11,vertical=bottom,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_bottom",
+            "y": 180
+        },
+        "variant=11,vertical=middle,facing=north,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_middle"
+        },
+        "variant=11,vertical=middle,facing=east,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_middle",
+            "y": 90
+        },
+        "variant=11,vertical=middle,facing=south,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_middle",
+            "y": 180
+        },
+        "variant=11,vertical=middle,facing=west,open=false": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_middle",
+            "y": 270
+        },
+        "variant=11,vertical=middle,facing=north,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_middle",
+            "y": 90
+        },
+        "variant=11,vertical=middle,facing=east,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_middle",
+            "y": 180
+        },
+        "variant=11,vertical=middle,facing=south,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_middle",
+            "y": 270
+        },
+        "variant=11,vertical=middle,facing=west,open=true,hinge=right": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_middle"
+        },
+        "variant=11,vertical=middle,facing=north,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_middle",
+            "y": 270
+        },
+        "variant=11,vertical=middle,facing=east,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_middle"
+        },
+        "variant=11,vertical=middle,facing=south,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_middle",
+            "y": 90
+        },
+        "variant=11,vertical=middle,facing=west,open=true,hinge=left": {
+            "model": "another_furniture:block/shutter/variant_11/pale_oak_middle",
+            "y": 180
+        }
+    }
+}

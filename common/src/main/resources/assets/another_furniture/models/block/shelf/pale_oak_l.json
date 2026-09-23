@@ -1,0 +1,9 @@
+{
+    "parent": "another_furniture:block/template/shelf_l",
+    "textures": {
+        "top": "another_furniture:block/shelf/pale_oak_top",
+        "bottom": "another_furniture:block/shelf/pale_oak_bottom",
+        "sides": "another_furniture:block/shelf/pale_oak_sides",
+        "supports": "another_furniture:block/shelf/pale_oak_supports"
+    }
+}

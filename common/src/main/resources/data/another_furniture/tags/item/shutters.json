@@ -11,6 +11,7 @@
 		{"id": "another_furniture:warped_shutter", "required": false},
 		{"id": "another_furniture:mangrove_shutter", "required": false},
 		{"id": "another_furniture:bamboo_shutter", "required": false},
-		{"id": "another_furniture:cherry_shutter", "required": false}
+		{"id": "another_furniture:cherry_shutter", "required": false},
+		{"id": "another_furniture:pale_oak_shutter", "required": false}
 	]
 }
