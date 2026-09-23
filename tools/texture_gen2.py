@@ -160,7 +160,7 @@ def generate_color_types(color_path = "C:\\Users\\jacec\\Desktop\\another_furnit
 
 
 
-generate_wood_types()
+generate_wood_types(banned_variants = ["shutter", "drawer", "unused"])
 
 #generate_color_types()
 #    "C:\\Users\\lukeh\\Desktop\\Starfish-Modding\\AnotherFurniture\\common\\src\\main\\resources\\assets\\another_furniture\\textures\\block\\curtain",
