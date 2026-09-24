@@ -9,6 +9,9 @@
 	"Crispytwig",
 	"Synthestra"
   ],
+  "credits": [
+	"TheFusion21 (Thank you for the 26.2 port!)"
+  ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/another-furniture",
     "issues": "https://github.com/starfish-studios/AnotherFurniture/issues"

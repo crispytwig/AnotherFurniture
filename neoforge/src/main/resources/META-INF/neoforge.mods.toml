@@ -8,6 +8,7 @@ modId = "another_furniture"
 version = "${version}"
 displayName = "Another Furniture"
 authors = "Starfish Studios, Crispytwig, Synthestra"
+credits = "TheFusion21 (Thank you for the 26.2 port!)"
 description = '''
 Decorating your home just got better! Another Furniture adds various furniture, with the goal of staying vanilla-styled and consistently sized, keeping normal blocks and player sizes in mind.
 '''
