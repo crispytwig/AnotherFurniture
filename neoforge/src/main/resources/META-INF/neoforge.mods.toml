@@ -17,14 +17,14 @@ logoFile = "icon.png"
 [[dependencies.another_furniture]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.0,)"
+versionRange = "[26.1.2.114,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.another_furniture]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.1,)"
+versionRange = "[26.1.2]"
 ordering = "NONE"
 side = "BOTH"
 

@@ -1,0 +1,9 @@
+{
+    "parent": "another_furniture:block/template/table_full",
+    "textures": {
+        "top": "another_furniture:block/table/pale_oak_top",
+		"sides": "another_furniture:block/table/pale_oak_sides",
+		"bottom": "another_furniture:block/table/pale_oak_bottom",
+		"supports": "another_furniture:block/table/pale_oak_supports"
+    }
+}

@@ -87,6 +87,10 @@ public class AFRegistryImpl {
         ((FireBlockAccessor) fireBlock).invokeSetFlammable(block.get(), encouragement, flammability);
     }
 
+    public static void setFlammable(Block fireBlock, Block block, int encouragement, int flammability) {
+        ((FireBlockAccessor) fireBlock).invokeSetFlammable(block, encouragement, flammability);
+    }
+
     public static boolean isModLoaded(String mod) {
         return ModList.get().isLoaded(mod);
     }

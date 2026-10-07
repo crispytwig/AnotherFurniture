@@ -1,7 +1,7 @@
 {
 	"required": true,
 	"package": "com.starfish_studios.another_furniture.mixin.neoforge",
-	"compatibilityLevel": "JAVA_21",
+	"compatibilityLevel": "JAVA_25",
 	"minVersion": "0.8",
 	"client": [],
 	"mixins": [

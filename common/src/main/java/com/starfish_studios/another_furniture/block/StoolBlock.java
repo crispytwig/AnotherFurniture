@@ -94,19 +94,20 @@ public class StoolBlock extends SeatBlock implements SimpleWaterloggedBlock, Ham
         return super.useWithoutItem(state, level, pos, player, hitResult);
     }
 
-    public void fallOn(Level level, BlockState state, BlockPos pos, Entity entity, float dmg) {
-        super.fallOn(level, state, pos, entity, dmg * 0.5F);
+    @Override
+    public void fallOn(final Level level, final BlockState state, final BlockPos pos, final Entity entity, final double fallDistance) {
+        super.fallOn(level, state, pos, entity, fallDistance * 0.5);
     }
 
     @Override
-    public void fallOn(final Level level, final BlockState state, final BlockPos pos, final Entity entity, final double fallDistance) {
+    public void updateEntityMovementAfterFallOn(BlockGetter level, Entity entity) {
         if (entity.isSuppressingBounce()) {
             entity.setDeltaMovement(entity.getDeltaMovement().multiply(1.0, 0.0, 1.0));
         } else {
             this.bounceUp(entity);
         }
         if (entity instanceof Player) return;
-        super.fallOn(level, state, pos, entity, fallDistance);
+        super.updateEntityMovementAfterFallOn(level, entity);
     }
 
     private void bounceUp(Entity entity) {

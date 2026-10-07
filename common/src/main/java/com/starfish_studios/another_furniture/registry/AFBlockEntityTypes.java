@@ -18,7 +18,8 @@ public class AFBlockEntityTypes {
                     AFBlocks.CRIMSON_SHELF.get(),
                     AFBlocks.WARPED_SHELF.get(),
                     AFBlocks.BAMBOO_SHELF.get(),
-                    AFBlocks.CHERRY_SHELF.get()
+                    AFBlocks.CHERRY_SHELF.get(),
+                    AFBlocks.PALE_OAK_SHELF.get()
             ));
 
 //    public static final Supplier<BlockEntityType<SmallShelfBlockEntity>> SMALL_SHELF = AFRegistry.registerBlockEntityType("small_shelf",
@@ -51,7 +52,8 @@ public class AFBlockEntityTypes {
                     AFBlocks.CRIMSON_FLOWER_BOX.get(),
                     AFBlocks.WARPED_FLOWER_BOX.get(),
                     AFBlocks.BAMBOO_FLOWER_BOX.get(),
-                    AFBlocks.CHERRY_FLOWER_BOX.get()
+                    AFBlocks.CHERRY_FLOWER_BOX.get(),
+                    AFBlocks.PALE_OAK_FLOWER_BOX.get()
             ));
 
     public static final Supplier<BlockEntityType<DrawerBlockEntity>> DRAWER = AFRegistry.registerBlockEntityType("drawer",
@@ -66,7 +68,8 @@ public class AFBlockEntityTypes {
                     AFBlocks.CRIMSON_DRAWER.get(),
                     AFBlocks.WARPED_DRAWER.get(),
                     AFBlocks.BAMBOO_DRAWER.get(),
-                    AFBlocks.CHERRY_DRAWER.get()
+                    AFBlocks.CHERRY_DRAWER.get(),
+                    AFBlocks.PALE_OAK_DRAWER.get()
             ));
 //    public static final Supplier<BlockEntityType<GrandfatherClockBlockEntity>> GRANDFATHER_CLOCK = AFRegistry.registerBlockEntityType("grandfather_clock",
 //            () -> AFRegistry.createBlockEntityType(GrandfatherClockBlockEntity::new,

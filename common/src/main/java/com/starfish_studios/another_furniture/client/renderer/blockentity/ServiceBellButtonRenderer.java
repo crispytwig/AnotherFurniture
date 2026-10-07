@@ -8,8 +8,6 @@ import com.starfish_studios.another_furniture.AnotherFurniture;
 import com.starfish_studios.another_furniture.block.entity.ServiceBellBlockEntity;
 import com.starfish_studios.another_furniture.client.renderer.blockentity.state.ServiceBellRenderState;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.CubeListBuilder;
@@ -17,20 +15,19 @@ import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.model.geom.builders.MeshDefinition;
 import net.minecraft.client.model.geom.builders.PartDefinition;
 import net.minecraft.client.renderer.SubmitNodeCollector;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.feature.ModelFeatureRenderer;
 import net.minecraft.client.renderer.rendertype.RenderTypes;
 import net.minecraft.client.renderer.state.level.CameraRenderState;
 import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.client.renderer.texture.TextureAtlas;
 import net.minecraft.client.resources.model.sprite.SpriteGetter;
 import net.minecraft.client.resources.model.sprite.SpriteId;
 import net.minecraft.world.phys.Vec3;
 
-@Environment(value= EnvType.CLIENT)
 public class ServiceBellButtonRenderer implements BlockEntityRenderer<ServiceBellBlockEntity, ServiceBellRenderState> {
-    public static final SpriteId BELL_TEXTURE = new SpriteId(TextureAtlas.LOCATION_BLOCKS, AnotherFurniture.res("block/service_bell"));
+    public static final SpriteId BELL_TEXTURE = Sheets.BLOCKS_MAPPER.apply(AnotherFurniture.res("service_bell"));
 
     private final SpriteGetter sprites;
     private final ModelPart button;

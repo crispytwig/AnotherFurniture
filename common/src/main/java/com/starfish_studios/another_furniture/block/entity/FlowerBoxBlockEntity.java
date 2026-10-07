@@ -1,7 +1,7 @@
 package com.starfish_studios.another_furniture.block.entity;
 
 import com.starfish_studios.another_furniture.registry.AFBlockEntityTypes;
-import dev.architectury.injectables.annotations.PlatformOnly;
+import com.starfish_studios.another_furniture.registry.AFItemTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
@@ -12,7 +12,6 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.ProblemReporter;
-import net.minecraft.world.Clearable;
 import net.minecraft.world.Container;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -28,7 +27,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.TagValueOutput;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
-import net.minecraft.world.phys.AABB;
 
 public class FlowerBoxBlockEntity extends BlockEntity implements ListBackedContainer {
     private final NonNullList<ItemStack> items = NonNullList.withSize(2, ItemStack.EMPTY);
@@ -78,30 +76,56 @@ public class FlowerBoxBlockEntity extends BlockEntity implements ListBackedConta
     }
 
     public boolean placeFlower(ItemStack stack, int slot) {
-
-        ItemStack itemstack = this.items.get(slot);
-        if (itemstack.isEmpty()) {
-            Block block = ((BlockItem)stack.getItem()).getBlock();
+        if (this.canPlaceItem(slot, stack)) {
+            Block block = ((BlockItem) stack.getItem()).getBlock();
             this.getLevel().playSound(null, this.getBlockPos(), block.defaultBlockState().getSoundType().getBreakSound(), SoundSource.BLOCKS, 1.0F, 1.0F);
-            this.items.set(slot, stack.split(1));
-            this.markUpdated();
+            this.setItem(slot, stack.split(1));
             return true;
         }
 
         return false;
     }
 
+    @Override
+    public boolean acceptsItemType(ItemStack stack) {
+        return stack.getItem() instanceof BlockItem
+                && stack.is(AFItemTags.FLOWER_BOX_PLACEABLES)
+                && !stack.is(AFItemTags.FLOWER_BOX_BANNED);
+    }
+
+    @Override
+    public boolean canPlaceItem(int slot, ItemStack stack) {
+        return !stack.isEmpty() && this.getItem(slot).isEmpty() && this.acceptsItemType(stack);
+    }
+
+    @Override
+    public void setItem(int slot, ItemStack stack) {
+        ListBackedContainer.super.setItem(slot, stack);
+        this.markUpdated();
+    }
+
+    @Override
+    public ItemStack removeItem(int slot, int count) {
+        ItemStack stack = ListBackedContainer.super.removeItem(slot, count);
+        if (!stack.isEmpty()) this.markUpdated();
+        return stack;
+    }
+
     private void markUpdated() {
         this.setChanged();
-        this.getLevel().sendBlockUpdated(this.getBlockPos(), this.getBlockState(), this.getBlockState(), 3);
+        if (this.level != null) {
+            this.level.sendBlockUpdated(this.getBlockPos(), this.getBlockState(), this.getBlockState(), 3);
+        }
     }
 
     @Override
     public void clearContent() {
         this.items.clear();
+        this.markUpdated();
     }
 
     public void removeAllItems() {
+        if (this.level == null || this.level.isClientSide()) return;
         boolean update = false;
         for (int i = 0; i < items.size(); i++) {
             if (this.items.get(i).isEmpty()) continue;
@@ -118,11 +142,6 @@ public class FlowerBoxBlockEntity extends BlockEntity implements ListBackedConta
         if (update) {
             this.markUpdated();
         }
-    }
-
-    @PlatformOnly(PlatformOnly.FORGE)
-    public AABB getRenderBoundingBox() {
-        return new AABB(worldPosition.offset(0, 1, 0));
     }
 
     @Override

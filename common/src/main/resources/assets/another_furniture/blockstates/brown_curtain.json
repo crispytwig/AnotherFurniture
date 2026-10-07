@@ -121,10 +121,10 @@
             "y": 270
         },
         "vertical=down,horizontal=single,open=true": {
-            "model": "minecraft:block/air"
+            "model": "another_furniture:block/curtain/brown_empty"
         },
         "vertical=down,horizontal=middle,open=true": {
-            "model": "minecraft:block/air"
+            "model": "another_furniture:block/curtain/brown_empty"
         }
     }
 }

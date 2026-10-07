@@ -2,7 +2,8 @@
     "parent": "minecraft:block/block",
     "gui_light": "front",
     "textures": {
-        "all": "another_furniture:block/curtain/white"
+        "all": "another_furniture:block/curtain/white",
+        "particle": "#all"
     },
     "elements": [
         {

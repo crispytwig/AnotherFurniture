@@ -20,6 +20,19 @@ public class ServiceBellBlockEntity extends BlockEntity {
         } else {
             this.pressed = true;
         }
+        if (this.level != null) {
+            this.level.blockEvent(this.worldPosition, this.getBlockState().getBlock(), 1, 0);
+        }
+    }
+
+    @Override
+    public boolean triggerEvent(int id, int data) {
+        if (id == 1) {
+            this.ticks = 0;
+            this.pressed = true;
+            return true;
+        }
+        return super.triggerEvent(id, data);
     }
 
     public static void clientTick(Level level, BlockPos pos, BlockState state, ServiceBellBlockEntity blockEntity) {

@@ -1,5 +1,23 @@
 {
     "item_group.another_furniture.tab": "Another Furniture",
+
+    "tag.item.another_furniture.benches": "Benches",
+    "tag.item.another_furniture.chairs": "Chairs",
+    "tag.item.another_furniture.curtains": "Curtains",
+    "tag.item.another_furniture.drawers": "Drawers",
+    "tag.item.another_furniture.flower_boxes": "Flower Boxes",
+    "tag.item.another_furniture.flower_box_placeables": "Flower Box Plants",
+    "tag.item.another_furniture.flower_box_banned": "Plants Unsuitable for Flower Boxes",
+    "tag.item.another_furniture.furniture_hammers": "Furniture Hammers",
+    "tag.item.another_furniture.grandfather_clocks": "Grandfather Clocks",
+    "tag.item.another_furniture.lamps": "Lamps",
+    "tag.item.another_furniture.planter_boxes": "Flower Boxes",
+    "tag.item.another_furniture.shelves": "Hanging Shelves",
+    "tag.item.another_furniture.shutters": "Shutters",
+    "tag.item.another_furniture.sofas": "Sofas",
+    "tag.item.another_furniture.stools": "Stools",
+    "tag.item.another_furniture.tables": "Tables",
+    "tag.item.another_furniture.tall_stools": "Tall Stools",
 	
     "subtitles.block.another_furniture.service_bell.use": "Bell chimes",
     "subtitles.block.another_furniture.chair.tuck": "Chair tucked",

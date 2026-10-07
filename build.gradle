@@ -1,7 +1,7 @@
 plugins {
-    id 'dev.architectury.loom-no-remap' version '1.17-SNAPSHOT' apply false
-    id 'architectury-plugin' version '3.5-SNAPSHOT'
-    id 'com.gradleup.shadow' version '9.4.3' apply false
+    id 'dev.architectury.loom-no-remap' version '1.17.493' apply false
+    id 'architectury-plugin' version '3.5.170'
+    id 'com.gradleup.shadow' version '9.6.1' apply false
 }
 
 architectury {
@@ -25,7 +25,7 @@ subprojects {
     }
 
     repositories {
-        maven { url "https://maven.shedaniel.me/" }
+        maven { url = "https://maven.shedaniel.me/" }
     }
 
     dependencies {
@@ -51,7 +51,6 @@ subprojects {
         publications {
             mavenJava(MavenPublication) {
                 artifactId = base.archivesName.get()
-                from components.java
             }
         }
 
@@ -61,6 +60,17 @@ subprojects {
             // Notice: This block does NOT have the same function as the block in the top level.
             // The repositories here will be used for publishing your artifact, not for
             // retrieving dependencies.
+        }
+    }
+
+    afterEvaluate {
+        publishing.publications.mavenJava {
+            if (project.name == 'common') {
+                from components.java
+            } else {
+                from components.shadow
+                artifact tasks.named('sourcesJar')
+            }
         }
     }
 }

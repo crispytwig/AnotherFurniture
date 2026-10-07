@@ -1,4 +1,5 @@
 {
+	"remove": ["#minecraft:non_flammable_wood"],
 	"values": {
 		"#another_furniture:benches": {"burn_time": 300},
 		"#another_furniture:chairs": {"burn_time": 300},
@@ -8,6 +9,7 @@
 		"#another_furniture:grandfather_clocks": {"burn_time": 300},
 		"#another_furniture:lamps": {"burn_time": 300},
 		"#another_furniture:shelves": {"burn_time": 300},
+		"#another_furniture:shutters": {"burn_time": 300},
 		"#another_furniture:sofas": {"burn_time": 300},
 		"#another_furniture:stools": {"burn_time": 300},
 		"#another_furniture:tables": {"burn_time": 300},

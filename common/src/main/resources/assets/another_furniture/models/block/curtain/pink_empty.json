@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/air",
+    "textures": {
+        "particle": "another_furniture:block/curtain/pink"
+    }
+}

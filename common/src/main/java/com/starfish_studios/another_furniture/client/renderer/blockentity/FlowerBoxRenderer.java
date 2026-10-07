@@ -8,8 +8,6 @@ import com.starfish_studios.another_furniture.block.FlowerBoxBlock;
 import com.starfish_studios.another_furniture.block.entity.FlowerBoxBlockEntity;
 import com.starfish_studios.another_furniture.client.renderer.blockentity.state.FlowerBoxEntityRenderState;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.block.BlockModelRenderState;
@@ -31,11 +29,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoublePlantBlock;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
-@Environment(value= EnvType.CLIENT)
 public class FlowerBoxRenderer implements BlockEntityRenderer<FlowerBoxBlockEntity, FlowerBoxEntityRenderState> {
     private final BlockModelResolver blockModelResolver;
     public FlowerBoxRenderer(BlockEntityRendererProvider.Context context) {
@@ -45,6 +44,10 @@ public class FlowerBoxRenderer implements BlockEntityRenderer<FlowerBoxBlockEnti
     @Override
     public FlowerBoxEntityRenderState createRenderState() {
         return new FlowerBoxEntityRenderState();
+    }
+
+    public AABB getRenderBoundingBox(BlockEntity blockEntity) {
+        return new AABB(blockEntity.getBlockPos()).expandTowards(0.0, 2.0, 0.0).inflate(0.5, 0.0, 0.5);
     }
 
     @Override

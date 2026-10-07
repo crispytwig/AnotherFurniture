@@ -29,23 +29,13 @@ repositories {
         name = 'NeoForged'
         url = 'https://maven.neoforged.net/releases'
     }
-    // currently no version available for 26.2
-	// maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
-    // maven { url = "https://maven.ithundxr.dev/snapshots" } // Registrate
 }
 
 dependencies {
     neoForge "net.neoforged:neoforge:$rootProject.neoforge_version"
 
-    common(project(path: ':common')) { transitive false }
+    common(project(path: ':common')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
-	
-    // currently no version available for 26.2
-	// implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
-    // implementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}")
-    // compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
-    // runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
-    // implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 }
 
 processResources {
@@ -58,5 +48,14 @@ processResources {
 
 shadowJar {
     configurations = [project.configurations.shadowBundle]
-    archiveClassifier = 'dev-shadow'
+    archiveClassifier = ''
+}
+
+jar {
+    archiveClassifier = 'dev'
+}
+
+sourcesJar {
+    from project(':common').sourceSets.main.allSource
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }

@@ -64,18 +64,17 @@ public class SeatBlock extends Block {
     }
 
     public void fallOn(final Level level, final BlockState state, final BlockPos pos, final Entity entity, final double fallDistance) {
-        var belowPos = pos.below();
-        if (level.getBlockState(belowPos).getBlock() != this) {
+        if (!isSittable(state) || isSeatBlocked(level, pos)) {
             super.fallOn(level, state, pos, entity, fallDistance);
             return;
         }
 
-        if (!(entity instanceof LivingEntity) || !canBePickedUp(entity) || isSeatOccupied(level, belowPos)) {
+        if (!(entity instanceof LivingEntity) || !canBePickedUp(entity) || isSeatOccupied(level, pos)) {
             super.fallOn(level, state, pos, entity, fallDistance);
             return;
         }
 
-        sitDown(level, belowPos, entity);
+        sitDown(level, pos, entity);
     }
 
     public static boolean isSeatBlocked(Level level, BlockPos pos) {

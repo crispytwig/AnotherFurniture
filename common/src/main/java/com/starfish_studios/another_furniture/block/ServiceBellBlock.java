@@ -107,17 +107,12 @@ public class ServiceBellBlock extends BaseEntityBlock implements SimpleWaterlogg
         level.gameEvent(null, GameEvent.BLOCK_DEACTIVATE, pos);
     }
 
-    /*
-    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
-        if (!isMoving && !state.is(newState.getBlock())) {
-            if (state.getValue(POWERED)) {
-                this.updateNeighbours(state, level, pos);
-            }
-
-            super.onRemove(state, level, pos, newState, isMoving);
+    @Override
+    protected void affectNeighborsAfterRemoval(BlockState state, ServerLevel level, BlockPos pos, boolean movedByPiston) {
+        if (!movedByPiston && state.getValue(POWERED)) {
+            this.updateNeighbours(state, level, pos);
         }
     }
-    */
 
     public int getSignal(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return state.getValue(POWERED) ? 15 : 0;

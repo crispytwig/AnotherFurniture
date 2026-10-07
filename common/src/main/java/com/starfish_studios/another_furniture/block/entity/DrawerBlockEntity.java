@@ -5,10 +5,8 @@ import java.util.List;
 import com.starfish_studios.another_furniture.block.DrawerBlock;
 import com.starfish_studios.another_furniture.registry.AFBlockEntityTypes;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.Vec3i;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -75,10 +73,6 @@ public class DrawerBlockEntity extends RandomizableContainerBlockEntity {
         if (!this.tryLoadLootTable(input)) {
             ContainerHelper.loadAllItems(input, this.items);
         }
-    }
-
-    public void load(CompoundTag tag) {
-
     }
 
     @Override
