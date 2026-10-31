@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:birch_table"
+                "recipes": "another_furniture:birch_table"
             },
             "trigger": "minecraft:recipe_unlocked"
         }

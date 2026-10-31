@@ -3,7 +3,7 @@
     "criteria": {
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:red_stool"
+                "recipes": "another_furniture:red_stool"
             },
             "trigger": "minecraft:recipe_unlocked"
         },

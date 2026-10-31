@@ -1,28 +1,26 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "another_furniture:white_stool_dyeing"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_white_stool": {
+    "has_furniture": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "another_furniture:white_stool"
-            ]
+            "items": "#another_furniture:stools"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "another_furniture:white_stool_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_white_stool",
+      "has_furniture",
       "has_the_recipe"
     ]
   ],

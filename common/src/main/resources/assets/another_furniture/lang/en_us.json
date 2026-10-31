@@ -13,6 +13,7 @@
     "item.another_furniture.furniture_hammer": "Hammer",
 	
     "block.another_furniture.oak_chair": "Oak Chair",
+    "block.another_furniture.poplar_chair": "Poplar Chair",
     "block.another_furniture.spruce_chair": "Spruce Chair",
     "block.another_furniture.birch_chair": "Birch Chair",
     "block.another_furniture.jungle_chair": "Jungle Chair",
@@ -26,6 +27,7 @@
 	"block.another_furniture.pale_oak_chair": "Pale Oak Chair",
 	
     "block.another_furniture.oak_shelf": "Oak Hanging Shelf",
+    "block.another_furniture.poplar_shelf": "Poplar Hanging Shelf",
     "block.another_furniture.spruce_shelf": "Spruce Hanging Shelf",
     "block.another_furniture.birch_shelf": "Birch Hanging Shelf",
     "block.another_furniture.jungle_shelf": "Jungle Hanging Shelf",
@@ -39,6 +41,7 @@
 	"block.another_furniture.pale_oak_shelf": "Pale Oak Hanging Shelf",
 	
     "block.another_furniture.oak_table": "Oak Table",
+    "block.another_furniture.poplar_table": "Poplar Table",
     "block.another_furniture.spruce_table": "Spruce Table",
     "block.another_furniture.birch_table": "Birch Table",
     "block.another_furniture.jungle_table": "Jungle Table",
@@ -52,6 +55,7 @@
 	"block.another_furniture.pale_oak_table": "Pale Oak Table",
 	
     "block.another_furniture.oak_shutter": "Oak Shutter",
+    "block.another_furniture.poplar_shutter": "Poplar Shutter",
     "block.another_furniture.spruce_shutter": "Spruce Shutter",
     "block.another_furniture.birch_shutter": "Birch Shutter",
     "block.another_furniture.jungle_shutter": "Jungle Shutter",
@@ -65,6 +69,7 @@
 	"block.another_furniture.pale_oak_shutter": "Pale Oak Shutter",
 	
     "block.another_furniture.oak_flower_box": "Oak Flower Box",
+    "block.another_furniture.poplar_flower_box": "Poplar Flower Box",
     "block.another_furniture.spruce_flower_box": "Spruce Flower Box",
     "block.another_furniture.birch_flower_box": "Birch Flower Box",
     "block.another_furniture.jungle_flower_box": "Jungle Flower Box",
@@ -78,6 +83,7 @@
 	"block.another_furniture.pale_oak_flower_box": "Pale Oak Flower Box",
 
     "block.another_furniture.oak_bench": "Oak Bench",
+    "block.another_furniture.poplar_bench": "Poplar Bench",
     "block.another_furniture.spruce_bench": "Spruce Bench",
     "block.another_furniture.birch_bench": "Birch Bench",
     "block.another_furniture.jungle_bench": "Jungle Bench",
@@ -91,6 +97,7 @@
 	"block.another_furniture.pale_oak_bench": "Pale Oak Bench",
 
 	"block.another_furniture.oak_drawer": "Oak Drawer",
+	"block.another_furniture.poplar_drawer": "Poplar Drawer",
     "block.another_furniture.spruce_drawer": "Spruce Drawer",
     "block.another_furniture.birch_drawer": "Birch Drawer",
     "block.another_furniture.jungle_drawer": "Jungle Drawer",

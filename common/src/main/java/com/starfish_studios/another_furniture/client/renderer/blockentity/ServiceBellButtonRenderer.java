@@ -8,8 +8,6 @@ import com.starfish_studios.another_furniture.AnotherFurniture;
 import com.starfish_studios.another_furniture.block.entity.ServiceBellBlockEntity;
 import com.starfish_studios.another_furniture.client.renderer.blockentity.state.ServiceBellRenderState;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.CubeListBuilder;
@@ -28,7 +26,6 @@ import net.minecraft.client.resources.model.sprite.SpriteGetter;
 import net.minecraft.client.resources.model.sprite.SpriteId;
 import net.minecraft.world.phys.Vec3;
 
-@Environment(value= EnvType.CLIENT)
 public class ServiceBellButtonRenderer implements BlockEntityRenderer<ServiceBellBlockEntity, ServiceBellRenderState> {
     public static final SpriteId BELL_TEXTURE = new SpriteId(TextureAtlas.LOCATION_BLOCKS, AnotherFurniture.res("block/service_bell"));
 
@@ -78,9 +75,14 @@ public class ServiceBellButtonRenderer implements BlockEntityRenderer<ServiceBel
                 state.lightCoords,
                 OverlayTexture.NO_OVERLAY,
                 this.sprites.get(BELL_TEXTURE),
-                -1,
-                state.breakProgress
+                -1
         );
+
+        if (state.breakProgress != null) {
+            submitNodeCollector.submitCrumblingOverlay(this.button, poseStack,
+                    BELL_TEXTURE.renderType(RenderTypes::entitySolid), state.lightCoords,
+                    OverlayTexture.NO_OVERLAY, -1, state.breakProgress);
+        }
 
         poseStack.popPose();
     }

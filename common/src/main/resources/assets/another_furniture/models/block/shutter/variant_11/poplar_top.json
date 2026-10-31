@@ -1,0 +1,7 @@
+{
+  "parent": "another_furniture:block/template/shutter_top",
+  "textures": {
+    "middle": "another_furniture:block/shutter/variant_11/oak_middle_poplar",
+    "top": "another_furniture:block/shutter/variant_11/oak_top_poplar"
+  }
+}

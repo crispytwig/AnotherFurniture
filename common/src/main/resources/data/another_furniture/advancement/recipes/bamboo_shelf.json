@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:bamboo_shelf"
+                "recipes": "another_furniture:bamboo_shelf"
             },
             "trigger": "minecraft:recipe_unlocked"
         }

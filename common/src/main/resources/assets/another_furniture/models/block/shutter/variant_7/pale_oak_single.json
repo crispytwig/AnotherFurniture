@@ -1,7 +1,7 @@
 {
     "parent": "another_furniture:block/template/shutter_single",
     "textures": {
-        "middle": "another_furniture:block/shutter/variant_7/pale_oak_middle",
-        "single": "another_furniture:block/shutter/variant_7/pale_oak_single"
+        "middle": "another_furniture:block/shutter/variant_7/oak_middle_pale_oak",
+        "single": "another_furniture:block/shutter/variant_7/oak_single_pale_oak"
     }
 }

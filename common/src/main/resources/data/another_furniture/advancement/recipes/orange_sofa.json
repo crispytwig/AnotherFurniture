@@ -3,7 +3,7 @@
     "criteria": {
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:orange_sofa"
+                "recipes": "another_furniture:orange_sofa"
             },
             "trigger": "minecraft:recipe_unlocked"
         },

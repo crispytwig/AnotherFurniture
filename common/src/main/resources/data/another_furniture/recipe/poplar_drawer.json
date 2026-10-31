@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "group": "drawers",
+    "key": {
+        "#": "minecraft:poplar_planks",
+        "S": "minecraft:poplar_slab",
+        "/": "minecraft:stick"
+    },
+    "pattern": [
+        "###",
+        "S/S",
+        "###"
+    ],
+    "result": {
+        "count": 1,
+        "id": "another_furniture:poplar_drawer"
+    }
+}

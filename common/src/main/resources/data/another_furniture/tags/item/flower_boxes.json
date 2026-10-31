@@ -12,6 +12,7 @@
 		{"id": "another_furniture:mangrove_flower_box", "required": false},
 		{"id": "another_furniture:bamboo_flower_box", "required": false},
 		{"id": "another_furniture:cherry_flower_box", "required": false},
-		{"id": "another_furniture:pale_oak_flower_box", "required": false}
+		{"id": "another_furniture:pale_oak_flower_box", "required": false},
+		{"id": "another_furniture:poplar_flower_box", "required": false}
 	]
 }

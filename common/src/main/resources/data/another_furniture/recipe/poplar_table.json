@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "group": "tables",
+    "key": {
+        "#": "minecraft:poplar_planks",
+        "/": "minecraft:stick"
+    },
+    "pattern": [
+        "###",
+        "/ /"
+    ],
+    "result": {
+        "count": 3,
+        "id": "another_furniture:poplar_table"
+    }
+}

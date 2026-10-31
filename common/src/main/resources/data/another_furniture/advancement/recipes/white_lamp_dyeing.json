@@ -1,34 +1,32 @@
 {
-    "parent": "minecraft:recipes/root",
-    "criteria": {
-        "has_the_recipe": {
-            "conditions": {
-                "recipe": "another_furniture:white_lamp_dyeing"
-            },
-            "trigger": "minecraft:recipe_unlocked"
-        },
-        "has_white_lamp": {
-            "conditions": {
-                "items": [
-                    {
-                        "items": [
-                            "another_furniture:white_lamp"
-                        ]
-                    }
-                ]
-            },
-            "trigger": "minecraft:inventory_changed"
-        }
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_furniture": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#another_furniture:lamps"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     },
-    "requirements": [
-        [
-            "has_white_lamp",
-            "has_the_recipe"
-        ]
-    ],
-    "rewards": {
-        "recipes": [
-            "another_furniture:white_lamp_dyeing"
-        ]
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "another_furniture:white_lamp_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
+  },
+  "requirements": [
+    [
+      "has_furniture",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "another_furniture:white_lamp_dyeing"
+    ]
+  }
 }

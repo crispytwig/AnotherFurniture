@@ -3,7 +3,7 @@
     "criteria": {
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:yellow_lamp"
+                "recipes": "another_furniture:yellow_lamp"
             },
             "trigger": "minecraft:recipe_unlocked"
         },

@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "group": "flower_boxes",
+    "key": {
+        "#": "minecraft:poplar_planks",
+        "D": "minecraft:dirt",
+        "S": "minecraft:poplar_slab"
+    },
+    "pattern": [
+        "SDS",
+        "###"
+    ],
+    "result": {
+        "count": 3,
+        "id": "another_furniture:poplar_flower_box"
+    }
+}

@@ -1,6 +1,5 @@
 package com.starfish_studios.another_furniture.block;
 
-import com.mojang.serialization.MapCodec;
 import com.starfish_studios.another_furniture.block.entity.ShelfBlockEntity;
 import com.starfish_studios.another_furniture.block.properties.HorizontalConnectionType;
 import com.starfish_studios.another_furniture.block.properties.ModBlockStateProperties;
@@ -40,10 +39,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class ShelfBlock extends BaseEntityBlock implements SimpleWaterloggedBlock {
-    public static final MapCodec<ShelfBlock> CODEC = simpleCodec(ShelfBlock::new);
-    public MapCodec<ShelfBlock> codec() {
-        return CODEC;
-    }
     public static final EnumProperty<HorizontalConnectionType> TYPE = ModBlockStateProperties.HORIZONTAL_CONNECTION_TYPE;
     public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "sofas",
+  "ingredients": [
+    "minecraft:white_dye",
+    "#another_furniture:sofas"
+  ],
+  "result": {
+    "id": "another_furniture:white_sofa"
+  }
+}

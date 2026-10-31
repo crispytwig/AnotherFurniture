@@ -1,6 +1,5 @@
 package com.starfish_studios.another_furniture.block;
 
-import com.mojang.serialization.MapCodec;
 import com.starfish_studios.another_furniture.block.entity.ShelfBlockEntity;
 import com.starfish_studios.another_furniture.block.properties.HorizontalConnectionType;
 import com.starfish_studios.another_furniture.block.properties.ModBlockStateProperties;
@@ -37,10 +36,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class SmallShelfBlock extends BaseEntityBlock implements SimpleWaterloggedBlock {
-    public static final MapCodec<SmallShelfBlock> CODEC = simpleCodec(SmallShelfBlock::new);
-    public MapCodec<SmallShelfBlock> codec() {
-        return CODEC;
-    }
 
     public static final EnumProperty<HorizontalConnectionType> TYPE = ModBlockStateProperties.HORIZONTAL_CONNECTION_TYPE;
     public static final EnumProperty<SlabType> HALF = ModBlockStateProperties.HALF;

@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:jungle_drawer"
+                "recipes": "another_furniture:jungle_drawer"
             },
             "trigger": "minecraft:recipe_unlocked"
         }

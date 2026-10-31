@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:cherry_flower_box"
+                "recipes": "another_furniture:cherry_flower_box"
             },
             "trigger": "minecraft:recipe_unlocked"
         }

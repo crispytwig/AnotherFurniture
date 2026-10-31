@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:acacia_shelf"
+                "recipes": "another_furniture:acacia_shelf"
             },
             "trigger": "minecraft:recipe_unlocked"
         }

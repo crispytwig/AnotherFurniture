@@ -15,7 +15,7 @@ public class AFItemTags {
     public static final TagKey<Item> DRAWERS = itemTag("drawers");
     public static final TagKey<Item> GRANDFATHER_CLOCKS = itemTag("grandfather_clocks");
     public static final TagKey<Item> LAMPS = itemTag("lamps");
-    public static final TagKey<Item> PLANTER_BOXES = itemTag("planter_boxes");
+    public static final TagKey<Item> PLANTER_BOXES = itemTag("flower_boxes");
     public static final TagKey<Item> SHELVES = itemTag("shelves");
     public static final TagKey<Item> SHUTTERS = itemTag("shutters");
     public static final TagKey<Item> SOFAS = itemTag("sofas");

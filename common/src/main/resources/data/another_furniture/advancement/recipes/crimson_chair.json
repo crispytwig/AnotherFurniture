@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:crimson_chair"
+                "recipes": "another_furniture:crimson_chair"
             },
             "trigger": "minecraft:recipe_unlocked"
         }

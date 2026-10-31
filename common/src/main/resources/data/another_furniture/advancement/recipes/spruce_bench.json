@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:spruce_bench"
+                "recipes": "another_furniture:spruce_bench"
             },
             "trigger": "minecraft:recipe_unlocked"
         }

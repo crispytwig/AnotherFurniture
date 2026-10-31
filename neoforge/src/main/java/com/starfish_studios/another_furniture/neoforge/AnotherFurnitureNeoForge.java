@@ -2,11 +2,14 @@ package com.starfish_studios.another_furniture.neoforge;
 
 import com.starfish_studios.another_furniture.AnotherFurniture;
 import com.starfish_studios.another_furniture.registry.AFBlocks;
+import com.starfish_studios.another_furniture.registry.AFFurnaceFuelRegistry;
 import com.starfish_studios.another_furniture.registry.neoforge.AFRegistryImpl;
 import com.starfish_studios.another_furniture.registry.neoforge.AFTabsImpl;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
+import net.minecraft.core.component.DataComponents;
 
 @Mod(AnotherFurniture.MOD_ID)
 public class AnotherFurnitureNeoForge {
@@ -22,6 +25,7 @@ public class AnotherFurnitureNeoForge {
         AFTabsImpl.register(bus);
 
         bus.addListener(this::setup);
+        bus.addListener(this::modifyDefaultComponents);
         //NeoForge.EVENT_BUS.register(this);
 
     }
@@ -30,6 +34,12 @@ public class AnotherFurnitureNeoForge {
         event.enqueueWork(() -> {
             AFBlocks.registerFlammables();
         });
+    }
+
+    private void modifyDefaultComponents(ModifyDefaultComponentsEvent event) {
+        event.modifyMatching((item, components) -> AFFurnaceFuelRegistry.isFurnitureFuel(item),
+                (components, registries, item) -> components.set(DataComponents.COOKING_FUEL,
+                        AFFurnaceFuelRegistry.cookingFuel()));
     }
 
 }

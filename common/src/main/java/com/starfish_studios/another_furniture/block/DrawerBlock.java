@@ -1,6 +1,5 @@
 package com.starfish_studios.another_furniture.block;
 
-import com.mojang.serialization.MapCodec;
 import com.starfish_studios.another_furniture.block.entity.DrawerBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -31,10 +30,6 @@ import net.minecraft.world.phys.BlockHitResult;
 import org.jetbrains.annotations.Nullable;
 
 public class DrawerBlock extends BaseEntityBlock {
-    public static final MapCodec<DrawerBlock> CODEC = simpleCodec(DrawerBlock::new);
-    public MapCodec<DrawerBlock> codec() {
-        return CODEC;
-    }
     public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty OPEN = BlockStateProperties.OPEN;
 

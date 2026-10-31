@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:cherry_shelf"
+                "recipes": "another_furniture:cherry_shelf"
             },
             "trigger": "minecraft:recipe_unlocked"
         }

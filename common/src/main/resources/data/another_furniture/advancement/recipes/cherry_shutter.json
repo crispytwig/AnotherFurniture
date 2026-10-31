@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:cherry_shutter"
+                "recipes": "another_furniture:cherry_shutter"
             },
             "trigger": "minecraft:recipe_unlocked"
         }

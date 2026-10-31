@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:mangrove_chair"
+                "recipes": "another_furniture:mangrove_chair"
             },
             "trigger": "minecraft:recipe_unlocked"
         }

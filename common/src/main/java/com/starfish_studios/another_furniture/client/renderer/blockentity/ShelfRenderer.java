@@ -12,8 +12,6 @@ import com.starfish_studios.another_furniture.block.entity.ShelfBlockEntity;
 import com.starfish_studios.another_furniture.client.renderer.blockentity.state.FlowerBoxEntityRenderState;
 import com.starfish_studios.another_furniture.client.renderer.blockentity.state.ShelfEntityRenderState;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.block.BlockModelResolver;
@@ -31,7 +29,6 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
 
-@Environment(value= EnvType.CLIENT)
 public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity, ShelfEntityRenderState> {
     private final ItemModelResolver itemModelResolver;
     public ShelfRenderer(BlockEntityRendererProvider.Context context) {
@@ -69,7 +66,7 @@ public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity, Shel
 
         poseStack.pushPose();
         poseStack.translate(0.5, 1.18, 0.5);
-        poseStack.mulPose(Axis.YP.rotationDegrees(rotation));
+        poseStack.rotateDegrees(Axis.YP, rotation);
         for (int j = 0; j < state.getItems().size(); j++) {
             ItemStackRenderState renderState = state.getItems().get(j);
             if (renderState.isEmpty()) continue;

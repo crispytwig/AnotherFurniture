@@ -5,8 +5,6 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import com.starfish_studios.another_furniture.block.ShelfBlock;
 import com.starfish_studios.another_furniture.block.entity.ShelfBlockEntity;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
@@ -16,7 +14,6 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 
-@Environment(value= EnvType.CLIENT)
 public class SmallShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity> {
 
     public SmallShelfRenderer(BlockEntityRendererProvider.Context context) {

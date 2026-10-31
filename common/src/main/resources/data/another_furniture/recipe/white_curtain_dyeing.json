@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "curtains",
+  "ingredients": [
+    "minecraft:white_dye",
+    "#another_furniture:curtains"
+  ],
+  "result": {
+    "id": "another_furniture:white_curtain"
+  }
+}

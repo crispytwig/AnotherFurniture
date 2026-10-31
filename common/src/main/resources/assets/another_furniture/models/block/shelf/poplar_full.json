@@ -1,0 +1,9 @@
+{
+  "parent": "another_furniture:block/template/shelf_full",
+  "textures": {
+    "top": "another_furniture:block/shelf/oak_top_poplar",
+    "bottom": "another_furniture:block/shelf/oak_bottom_poplar",
+    "sides": "another_furniture:block/shelf/oak_sides_poplar",
+    "supports": "another_furniture:block/shelf/oak_supports_poplar"
+  }
+}

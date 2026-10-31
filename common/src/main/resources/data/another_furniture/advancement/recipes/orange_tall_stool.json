@@ -3,7 +3,7 @@
     "criteria": {
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:orange_tall_stool"
+                "recipes": "another_furniture:orange_tall_stool"
             },
             "trigger": "minecraft:recipe_unlocked"
         },

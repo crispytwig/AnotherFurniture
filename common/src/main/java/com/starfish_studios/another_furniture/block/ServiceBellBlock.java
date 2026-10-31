@@ -1,6 +1,5 @@
 package com.starfish_studios.another_furniture.block;
 
-import com.mojang.serialization.MapCodec;
 import com.starfish_studios.another_furniture.AnotherFurniture;
 import com.starfish_studios.another_furniture.block.entity.ServiceBellBlockEntity;
 import com.starfish_studios.another_furniture.entity.SeatEntity;
@@ -36,10 +35,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class ServiceBellBlock extends BaseEntityBlock implements SimpleWaterloggedBlock {
-    public static final MapCodec<ServiceBellBlock> CODEC = simpleCodec(ServiceBellBlock::new);
-    public MapCodec<ServiceBellBlock> codec() {
-        return CODEC;
-    }
     protected static final VoxelShape SHAPE = Block.box(4.0D, 0.0D, 4.0D, 12.0D, 7.0D, 12.0D);
 
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;

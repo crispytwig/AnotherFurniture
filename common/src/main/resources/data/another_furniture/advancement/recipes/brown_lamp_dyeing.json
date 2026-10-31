@@ -3,7 +3,7 @@
     "criteria": {
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:brown_lamp_dyeing"
+                "recipes": "another_furniture:brown_lamp_dyeing"
             },
             "trigger": "minecraft:recipe_unlocked"
         },

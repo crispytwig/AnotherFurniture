@@ -3,7 +3,7 @@
     "criteria": {
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:magenta_lamp"
+                "recipes": "another_furniture:magenta_lamp"
             },
             "trigger": "minecraft:recipe_unlocked"
         },

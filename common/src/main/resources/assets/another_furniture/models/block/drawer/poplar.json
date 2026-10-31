@@ -1,0 +1,8 @@
+{
+  "parent": "another_furniture:block/template/drawer",
+  "textures": {
+    "front": "another_furniture:block/drawer/oak_front_poplar",
+    "side": "another_furniture:block/drawer/oak_side_poplar",
+    "top": "another_furniture:block/drawer/oak_top_poplar"
+  }
+}

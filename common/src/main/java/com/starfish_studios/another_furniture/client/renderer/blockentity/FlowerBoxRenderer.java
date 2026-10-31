@@ -8,8 +8,6 @@ import com.starfish_studios.another_furniture.block.FlowerBoxBlock;
 import com.starfish_studios.another_furniture.block.entity.FlowerBoxBlockEntity;
 import com.starfish_studios.another_furniture.client.renderer.blockentity.state.FlowerBoxEntityRenderState;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.block.BlockModelRenderState;
@@ -35,7 +33,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.phys.Vec3;
 
-@Environment(value= EnvType.CLIENT)
 public class FlowerBoxRenderer implements BlockEntityRenderer<FlowerBoxBlockEntity, FlowerBoxEntityRenderState> {
     private final BlockModelResolver blockModelResolver;
     public FlowerBoxRenderer(BlockEntityRendererProvider.Context context) {
@@ -100,7 +97,7 @@ public class FlowerBoxRenderer implements BlockEntityRenderer<FlowerBoxBlockEnti
             if (itemStates.isEmpty()) continue;
 
             poseStack.pushPose();
-            poseStack.mulPose(Axis.YP.rotationDegrees(rotation)); // rotate based on direction
+            poseStack.rotateDegrees(Axis.YP, rotation); // rotate based on direction
             poseStack.translate(0.6f - 0.8 * i, 0.001f * i, 0.2f); // position each flower at left and right
             poseStack.translate(0f, 0.001f * i, 0.001f * i); // prevent z-clipping
 

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "another_furniture:service_bell"
+        "recipes": "another_furniture:service_bell"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

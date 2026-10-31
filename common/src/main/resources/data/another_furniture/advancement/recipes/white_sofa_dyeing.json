@@ -1,34 +1,32 @@
 {
-    "parent": "minecraft:recipes/root",
-    "criteria": {
-        "has_the_recipe": {
-            "conditions": {
-                "recipe": "another_furniture:white_sofa_dyeing"
-            },
-            "trigger": "minecraft:recipe_unlocked"
-        },
-        "has_white_sofa": {
-            "conditions": {
-                "items": [
-                    {
-                        "items": [
-                            "another_furniture:white_sofa"
-                        ]
-                    }
-                ]
-            },
-            "trigger": "minecraft:inventory_changed"
-        }
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_furniture": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#another_furniture:sofas"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     },
-    "requirements": [
-        [
-            "has_white_sofa",
-            "has_the_recipe"
-        ]
-    ],
-    "rewards": {
-        "recipes": [
-            "another_furniture:white_sofa_dyeing"
-        ]
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "another_furniture:white_sofa_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
+  },
+  "requirements": [
+    [
+      "has_furniture",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "another_furniture:white_sofa_dyeing"
+    ]
+  }
 }

@@ -3,7 +3,7 @@
     "criteria": {
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:gray_tall_stool_dyeing"
+                "recipes": "another_furniture:gray_tall_stool_dyeing"
             },
             "trigger": "minecraft:recipe_unlocked"
         },

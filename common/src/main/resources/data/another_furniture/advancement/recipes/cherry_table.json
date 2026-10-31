@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:cherry_table"
+                "recipes": "another_furniture:cherry_table"
             },
             "trigger": "minecraft:recipe_unlocked"
         }

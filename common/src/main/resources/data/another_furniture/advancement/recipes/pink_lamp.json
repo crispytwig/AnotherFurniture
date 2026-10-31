@@ -3,7 +3,7 @@
     "criteria": {
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:pink_lamp"
+                "recipes": "another_furniture:pink_lamp"
             },
             "trigger": "minecraft:recipe_unlocked"
         },

@@ -1,0 +1,6 @@
+{
+    "parent": "another_furniture:item/template/bench",
+	"textures": {
+		"all": "another_furniture:block/bench/pale_oak"
+	}
+}

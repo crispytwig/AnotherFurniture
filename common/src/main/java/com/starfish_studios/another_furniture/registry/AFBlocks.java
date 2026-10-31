@@ -31,11 +31,12 @@ public class AFBlocks {
         public static BlockBehaviour.Properties bamboo_wood = BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.BAMBOO_WOOD).ignitedByLava();
         public static BlockBehaviour.Properties cherry_wood = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.CHERRY_WOOD).ignitedByLava();
         public static BlockBehaviour.Properties pale_oak_wood = BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava();
+        public static BlockBehaviour.Properties poplar_wood = BlockBehaviour.Properties.of().mapColor(Blocks.POPLAR_PLANKS.defaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava();
 
 
         public static BlockBehaviour.Properties weak_wood = oak_wood.strength(1.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava().mapColor(MapColor.WOOD);
         
-        public static BlockBehaviour.Properties curtain = Block.Properties.of().strength(0.1F).noOcclusion().sound(SoundType.WOOL).mapColor(MapColor.WOOL).pushReaction(PushReaction.DESTROY);
+        public static BlockBehaviour.Properties curtain = Block.Properties.of().strength(0.1F).noOcclusion().sound(SoundType.WOOL).mapColor(MapColor.WOOL).pushReaction(PushReaction.POPPED);
         public static BlockBehaviour.Properties service_bell = Block.Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).mapColor(MapColor.METAL);
         public static BlockBehaviour.Properties lamp = weak_wood.lightLevel((blockState) -> blockState.hasProperty(BlockStateProperties.LIT) && blockState.getValue(BlockStateProperties.LIT) ? (blockState.getValue(ModBlockStateProperties.LEVEL_1_3) * 5) : 0);
     }
@@ -53,6 +54,7 @@ public class AFBlocks {
     public static final Supplier<Block> CRIMSON_CHAIR = registerBlock("crimson_chair", (properties) -> new ChairBlock(10, properties), Properties.crimson_wood);
     public static final Supplier<Block> WARPED_CHAIR = registerBlock("warped_chair", (properties) -> new ChairBlock(11, properties), Properties.warped_wood);
     public static final Supplier<Block> PALE_OAK_CHAIR = registerBlock("pale_oak_chair", (properties) -> new ChairBlock(1, properties), Properties.pale_oak_wood);
+    public static final Supplier<Block> POPLAR_CHAIR = registerBlock("poplar_chair", (properties) -> new ChairBlock(1, properties), Properties.poplar_wood);
 
     // Shelf
     public static final Supplier<Block> OAK_SHELF = registerBlock("oak_shelf", ShelfBlock::new, Properties.oak_wood);
@@ -67,6 +69,7 @@ public class AFBlocks {
     public static final Supplier<Block> CRIMSON_SHELF = registerBlock("crimson_shelf", ShelfBlock::new, Properties.crimson_wood);
     public static final Supplier<Block> WARPED_SHELF = registerBlock("warped_shelf", ShelfBlock::new, Properties.warped_wood);
     public static final Supplier<Block> PALE_OAK_SHELF = registerBlock("pale_oak_shelf", ShelfBlock::new, Properties.pale_oak_wood);
+    public static final Supplier<Block> POPLAR_SHELF = registerBlock("poplar_shelf", ShelfBlock::new, Properties.poplar_wood);
 
     // Small Shelf
 //    public static final Supplier<Block> OAK_SMALL_SHELF = registerBlock("oak_small_shelf", () -> new SmallShelfBlock(Properties.wood));
@@ -94,6 +97,7 @@ public class AFBlocks {
     public static final Supplier<Block> CRIMSON_TABLE = registerBlock("crimson_table", TableBlock::new, Properties.crimson_wood);
     public static final Supplier<Block> WARPED_TABLE = registerBlock("warped_table", TableBlock::new, Properties.warped_wood);
     public static final Supplier<Block> PALE_OAK_TABLE = registerBlock("pale_oak_table", TableBlock::new, Properties.pale_oak_wood);
+    public static final Supplier<Block> POPLAR_TABLE = registerBlock("poplar_table", TableBlock::new, Properties.poplar_wood);
 
     // Stool
     public static final Supplier<Block> WHITE_STOOL = registerBlock("white_stool", (properties) -> new StoolBlock(properties), Properties.weak_wood);
@@ -125,6 +129,7 @@ public class AFBlocks {
     public static final Supplier<Block> CRIMSON_SHUTTER = registerBlock("crimson_shutter", (properties) -> new ShutterBlock(10, properties), Properties.crimson_wood.noOcclusion());
     public static final Supplier<Block> WARPED_SHUTTER = registerBlock("warped_shutter", (properties) -> new ShutterBlock(11, properties), Properties.warped_wood.noOcclusion());
     public static final Supplier<Block> PALE_OAK_SHUTTER = registerBlock("pale_oak_shutter", (properties) -> new ShutterBlock(1, properties), Properties.pale_oak_wood.noOcclusion());
+    public static final Supplier<Block> POPLAR_SHUTTER = registerBlock("poplar_shutter", (properties) -> new ShutterBlock(1, properties), Properties.poplar_wood.noOcclusion());
 
     // Planter Box
     public static final Supplier<Block> OAK_FLOWER_BOX = registerBlock("oak_flower_box", FlowerBoxBlock::new, Properties.oak_wood);
@@ -139,6 +144,7 @@ public class AFBlocks {
     public static final Supplier<Block> CRIMSON_FLOWER_BOX = registerBlock("crimson_flower_box", FlowerBoxBlock::new, Properties.crimson_wood);
     public static final Supplier<Block> WARPED_FLOWER_BOX = registerBlock("warped_flower_box", FlowerBoxBlock::new, Properties.warped_wood);
     public static final Supplier<Block> PALE_OAK_FLOWER_BOX = registerBlock("pale_oak_flower_box", FlowerBoxBlock::new, Properties.pale_oak_wood);
+    public static final Supplier<Block> POPLAR_FLOWER_BOX = registerBlock("poplar_flower_box", FlowerBoxBlock::new, Properties.poplar_wood);
 
     // Curtain
     public static final Supplier<Block> WHITE_CURTAIN = registerBlock("white_curtain", CurtainBlock::new, Properties.curtain);
@@ -174,6 +180,7 @@ public class AFBlocks {
     public static final Supplier<Block> CRIMSON_BENCH = registerBlock("crimson_bench", BenchBlock::new, Properties.crimson_wood);
     public static final Supplier<Block> WARPED_BENCH = registerBlock("warped_bench", BenchBlock::new, Properties.warped_wood);
     public static final Supplier<Block> PALE_OAK_BENCH = registerBlock("pale_oak_bench", BenchBlock::new, Properties.pale_oak_wood);
+    public static final Supplier<Block> POPLAR_BENCH = registerBlock("poplar_bench", BenchBlock::new, Properties.poplar_wood);
 
     // Drawer
     public static final Supplier<Block> OAK_DRAWER = registerBlock("oak_drawer", DrawerBlock::new, Properties.oak_wood);
@@ -188,6 +195,7 @@ public class AFBlocks {
     public static final Supplier<Block> CRIMSON_DRAWER = registerBlock("crimson_drawer", DrawerBlock::new, Properties.crimson_wood);
     public static final Supplier<Block> WARPED_DRAWER = registerBlock("warped_drawer", DrawerBlock::new, Properties.warped_wood);
     public static final Supplier<Block> PALE_OAK_DRAWER = registerBlock("pale_oak_drawer", DrawerBlock::new, Properties.pale_oak_wood);
+    public static final Supplier<Block> POPLAR_DRAWER = registerBlock("poplar_drawer", DrawerBlock::new, Properties.poplar_wood);
 
     // Lamp
     public static final Supplier<Block> WHITE_LAMP = registerBlock("white_lamp", (properties) -> new LampBlock(DyeColor.WHITE, properties), Properties.lamp);
@@ -301,6 +309,7 @@ public class AFBlocks {
         AFRegistry.setFlammable(CHERRY_CHAIR, 5, 20);
         AFRegistry.setFlammable(BAMBOO_CHAIR, 5, 20);
         AFRegistry.setFlammable(PALE_OAK_CHAIR, 5, 20);
+        AFRegistry.setFlammable(POPLAR_CHAIR, 5, 20);
 
         AFRegistry.setFlammable(OAK_SHELF, 5, 20);
         AFRegistry.setFlammable(SPRUCE_SHELF, 5, 20);
@@ -312,6 +321,7 @@ public class AFBlocks {
         AFRegistry.setFlammable(CHERRY_SHELF, 5, 20);
         AFRegistry.setFlammable(BAMBOO_SHELF, 5, 20);
         AFRegistry.setFlammable(PALE_OAK_SHELF, 5, 20);
+        AFRegistry.setFlammable(POPLAR_SHELF, 5, 20);
 
         AFRegistry.setFlammable(OAK_TABLE, 5, 20);
         AFRegistry.setFlammable(SPRUCE_TABLE, 5, 20);
@@ -323,6 +333,7 @@ public class AFBlocks {
         AFRegistry.setFlammable(CHERRY_TABLE, 5, 20);
         AFRegistry.setFlammable(BAMBOO_TABLE, 5, 20);
         AFRegistry.setFlammable(PALE_OAK_TABLE, 5, 20);
+        AFRegistry.setFlammable(POPLAR_TABLE, 5, 20);
 
         AFRegistry.setFlammable(OAK_SHUTTER, 5, 20);
         AFRegistry.setFlammable(SPRUCE_SHUTTER, 5, 20);
@@ -334,6 +345,7 @@ public class AFBlocks {
         AFRegistry.setFlammable(CHERRY_SHUTTER, 5, 20);
         AFRegistry.setFlammable(BAMBOO_SHUTTER, 5, 20);
         AFRegistry.setFlammable(PALE_OAK_SHUTTER, 5, 20);
+        AFRegistry.setFlammable(POPLAR_SHUTTER, 5, 20);
 
         AFRegistry.setFlammable(OAK_FLOWER_BOX, 5, 20);
         AFRegistry.setFlammable(SPRUCE_FLOWER_BOX, 5, 20);
@@ -345,6 +357,7 @@ public class AFBlocks {
         AFRegistry.setFlammable(CHERRY_FLOWER_BOX, 5, 20);
         AFRegistry.setFlammable(BAMBOO_FLOWER_BOX, 5, 20);
         AFRegistry.setFlammable(PALE_OAK_FLOWER_BOX, 5, 20);
+        AFRegistry.setFlammable(POPLAR_FLOWER_BOX, 5, 20);
 
         AFRegistry.setFlammable(WHITE_STOOL, 5, 20);
         AFRegistry.setFlammable(ORANGE_STOOL, 5, 20);
@@ -390,6 +403,7 @@ public class AFBlocks {
         AFRegistry.setFlammable(CHERRY_BENCH, 5, 20);
         AFRegistry.setFlammable(BAMBOO_BENCH, 5, 20);
         AFRegistry.setFlammable(PALE_OAK_BENCH, 5, 20);
+        AFRegistry.setFlammable(POPLAR_BENCH, 5, 20);
 
         AFRegistry.setFlammable(OAK_DRAWER, 5, 20);
         AFRegistry.setFlammable(SPRUCE_DRAWER, 5, 20);
@@ -401,6 +415,7 @@ public class AFBlocks {
         AFRegistry.setFlammable(CHERRY_DRAWER, 5, 20);
         AFRegistry.setFlammable(BAMBOO_DRAWER, 5, 20);
         AFRegistry.setFlammable(PALE_OAK_DRAWER, 5, 20);
+        AFRegistry.setFlammable(POPLAR_DRAWER, 5, 20);
 
         AFRegistry.setFlammable(WHITE_LAMP, 5, 20);
         AFRegistry.setFlammable(ORANGE_LAMP, 5, 20);

@@ -1,6 +1,5 @@
 package com.starfish_studios.another_furniture.block;
 
-import com.mojang.serialization.MapCodec;
 import com.starfish_studios.another_furniture.block.entity.FlowerBoxBlockEntity;
 import com.starfish_studios.another_furniture.block.properties.HorizontalConnectionType;
 import com.starfish_studios.another_furniture.block.properties.ModBlockStateProperties;
@@ -34,10 +33,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class FlowerBoxBlock extends BaseEntityBlock {
-    public static final MapCodec<FlowerBoxBlock> CODEC = simpleCodec(FlowerBoxBlock::new);
-    public MapCodec<FlowerBoxBlock> codec() {
-        return CODEC;
-    }
 
     public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final EnumProperty<HorizontalConnectionType> TYPE = ModBlockStateProperties.HORIZONTAL_CONNECTION_TYPE;

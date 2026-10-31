@@ -3,7 +3,7 @@
     "criteria": {
         "has_the_recipe": {
             "conditions": {
-                "recipe": "another_furniture:green_curtain"
+                "recipes": "another_furniture:green_curtain"
             },
             "trigger": "minecraft:recipe_unlocked"
         },
